@@ -17,30 +17,30 @@ async function run () {
 
     if (temps == "Si") {
 
-        console.log("Si, mira quin sol que fà")
+        console.log("* Si, mira quin sol que fà")
 
     } else {
         
-        console.log("No, que no veus que està plovent!")
+        console.log("* No, que no veus que està plovent!")
     }
 
     let jugar = await prompt("- Creus que podrem jugar a futbol? (Si/No) ")
 
     if (jugar == "Si" && temps == "Si") {
         
-        console.log("Com que fa bon dia i podem jugar, quedem a les 15 al camp")
+        console.log("* Com que fa bon dia i podem jugar, quedem a les 15 al camp")
 
     } else if (jugar == "Si" && temps == "No") {
 
-        console.log("Vinga, anem a jugar a futbol encara que no faci sol")
+        console.log("* Vinga, anem a jugar a futbol encara que no faci sol")
 
     } else if (jugar == "No" && temps == "Si") {
 
-        console.log("Tot i que fa bon dia, no podrem jugar perquè ets un aburrit")
+        console.log("* Tot i que fa bon dia, no podrem jugar perquè ets un aburrit")
 
     } else {
 
-        console.log("Doncs res, ni fa bon dia ni jugarem a futbol")
+        console.log("* Doncs res, ni fa bon dia ni jugarem a futbol")
     }
 
     prompt.end()
