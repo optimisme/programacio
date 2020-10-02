@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Exercicis i exemples de Javascript",
+  "keywords": [],
+  "author": {
+    "name": "Nom de l'autor",
+    "email": "autor@exemple.com"
+  },
+  "dependencies": {
+    "prompt-promise": "latest"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "main": "",
+  "scripts": {
+    "start": "",
+    "watch": "",
+    "app": "",
+    "postinstall": ""
+  }
+}
