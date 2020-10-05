@@ -2,12 +2,13 @@ const prompt = require('prompt-promise');
 
 /*
 
-Primer executa aquest programa i mira com funciona a partir del codi
+Afegeix les línies que faci falta entre els dos 'console.log', 
+i fes servir la variable 'valorC', per tal que:
 
-Després, modifica aquest programa, per tal que:
+El primer console.log escrigui "Valors originals:  Casa Gran"
+El primer console.log escrigui "Valors originals:  Gran Casa"
 
-- Enlloc de demanar el temps, demani si "Creus que plourà?"
-- Arregla les respostes perquè tingui sentit la nova conversa
+Sense modificar les línies de console.log originals
 
 */
 
@@ -15,6 +16,7 @@ async function main () {
 
     let valorA = 'Casa'
     let valorB = 'Gran'
+    let valorC = ''
 
     console.log('Valors originals: ', valorA, valorB)
 
