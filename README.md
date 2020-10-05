@@ -24,3 +24,8 @@ Per descarregar els mòduls necessaris:
 ```
 cd programacio
 npm install
+```
+Per actualitzar el codi des del servidor remot:
+```
+git pull origin main
+```
