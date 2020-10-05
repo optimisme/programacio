@@ -2,38 +2,48 @@ const prompt = require('prompt-promise');
 
 /*
 
-Modifica el següent programa per tal que et suggereixi
-una serie segons les següents edats:
+Primer executa aquest programa i mira com funciona a partir del codi
 
-- Menys de 10 anys, 'La patrulla canina'
-- Entre 10 i 15 anys, 'Tokyo Ghoul'
-- Entre 15 i 18 anys, 'Stranger things'
-- Entre 18 i 35 anys, 'The Boys'
-- Entre 35 i 50 anys, 'Euphoria'
+Després, modifica aquest programa, per tal que:
 
-- Més the 50 anys et demanarà: 'Ets molt romàntic?'
-
-- Si la resposta és que 'No', et suggerirà: 'Sharp objects'
-- Sinó 'Big little lies'
+- Enlloc de demanar el temps, demani si "Creus que plourà?"
+- Arregla les respostes perquè tingui sentit la nova conversa
 
 */
 
-async function run () {
+async function main () {
 
-    let edat = await prompt("- Quina edat tens? (Escriu un número) ")
+    let temps = await prompt("- Avui fa bon dia? (Si/No) ")
 
-    if (edat < 5) {
+    if (temps == "Si") {
 
-        console.log("Podries veure 'La patrulla canina'")
+        console.log("* Si, mira quin sol que fà")
 
-    } else if (edat < 18) {
+    } else {
+        
+        console.log("* No, que no veus que està plovent!")
+    }
+
+    let jugar = await prompt("- Creus que podrem jugar a futbol? (Si/No) ")
+
+    if (jugar == "Si" && temps == "Si") {
+        
+        console.log("* Com que fa bon dia i podem jugar, quedem a les 15 al camp")
+
+    } else if (jugar == "Si" && temps == "No") {
+
+        console.log("* Vinga, anem a jugar a futbol encara que no faci sol")
+
+    } else if (jugar == "No" && temps == "Si") {
+
+        console.log("* Tot i que fa bon dia, no podrem jugar perquè ets un aburrit")
 
     } else {
 
+        console.log("* Doncs res, ni fa bon dia ni jugarem a futbol")
     }
-
 
     prompt.end()
 }
 
-run()
+main()

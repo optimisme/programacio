@@ -1,6 +1,6 @@
 const prompt = require('prompt-promise');
 
-async function run () {
+async function main () {
 
     let numeroGossos = await prompt("Quants gossos tens? ")
 
@@ -20,4 +20,4 @@ async function run () {
     prompt.end()
 }
 
-run()
+main()

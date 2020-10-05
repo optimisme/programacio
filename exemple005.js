@@ -1,6 +1,6 @@
 const prompt = require('prompt-promise');
 
-async function run () {
+async function main () {
 
     let fruita = await prompt("- Quina fruita t'agrada? ")
 
@@ -21,4 +21,4 @@ async function run () {
     prompt.end()
 }
 
-run()
+main()

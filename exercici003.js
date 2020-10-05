@@ -2,35 +2,38 @@ const prompt = require('prompt-promise');
 
 /*
 
-Modifica el següent programa per tal que endevini
-el teu caràcter segons el teu color preferit a 
-partir de la següent llista:
+Modifica el següent programa per tal que et suggereixi
+una serie segons les següents edats:
 
-verd: tranquil
-blau: fred i distant
-lila: analític
-vermell: impulsiu
-taronja: enèrgic
-gris: emàtic
-groc: sociable
+- Menys de 10 anys, 'La patrulla canina'
+- Entre 10 i 15 anys, 'Tokyo Ghoul'
+- Entre 15 i 18 anys, 'Stranger things'
+- Entre 18 i 35 anys, 'The Boys'
+- Entre 35 i 50 anys, 'Euphoria'
 
-Qualsevol altre color serà: "Ets una persona fosca i amargada"
+- Més the 50 anys et demanarà: 'Ets molt romàntic?'
+
+- Si la resposta és que 'No', et suggerirà: 'Sharp objects'
+- Sinó 'Big little lies'
 
 */
 
-async function run () {
+async function main () {
 
-    let color = await prompt("- Quin és el teu color preferit? ")
+    let edat = await prompt("- Quina edat tens? (Escriu un número) ")
 
-    switch (color) {
-        case 'verd':
-            console.log("Tens un caràcter tranquil")
-            break
-        default:
+    if (edat < 5) {
+
+        console.log("Podries veure 'La patrulla canina'")
+
+    } else if (edat < 18) {
+
+    } else {
+
     }
 
 
     prompt.end()
 }
 
-run()
+main()
