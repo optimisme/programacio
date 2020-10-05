@@ -10,6 +10,11 @@ El primer console.log escrigui "Valors originals:  Gran Casa"
 
 Sense modificar les línies de console.log originals
 
+I sense assignar directament:
+
+valorA = "Gran"
+valorB = "Casa"
+
 */
 
 async function main () {
