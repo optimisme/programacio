@@ -11,7 +11,7 @@ al executar-lo sigui (segons el color):
     En Picachu és de color groc
     Ni idea de quin color és aquest
 
-Fes-ho amb condicions tipus 'if', 'if else', 'else'
+Fes-ho amb condicions tipus 'if', 'else if', 'else'
 
 */
 

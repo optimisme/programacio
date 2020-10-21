@@ -11,7 +11,7 @@ al executar-lo sigui (segons l'edat):
     Entre 40 i 60 anys ets un adult
     Més de 60 anys estàs fet un xaval 
 
-Fes-ho amb condicions tipus 'if', 'if else', 'else'
+Fes-ho amb condicions tipus 'if', 'else if', 'else'
 
 */
 
