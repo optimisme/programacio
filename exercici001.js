@@ -2,32 +2,24 @@ const prompt = require('prompt-promise');
 
 /*
 
-Afegeix les línies que faci falta entre els dos 'console.log', 
-i fes servir la variable 'valorC', per tal que:
+Modifica el següent programa per tal que la sortida
+al executar-lo sigui:
 
-El primer console.log escrigui "Valors originals:  Casa Gran"
-El primer console.log escrigui "Valors originals:  Gran Casa"
-
-Sense modificar les línies de console.log originals
-
-I sense assignar directament:
-
-valorA = "Gran"
-valorB = "Casa"
+    En Pep està  trist
+    Després de parlar amb tu en Pep està content
 
 */
 
 async function main () {
 
-    let valorA = 'Casa'
-    let valorB = 'Gran'
-    let valorC = ''
+    let anims = 'trist'
 
-    console.log('Valors originals: ', valorA, valorB)
+    console.log('En Pep està ', anims)
 
+    // Canvia aquí el valor de la variable a 'content'
 
+    console.log('Després de parlar amb tu en Pep està', anims)
 
-    console.log('Valors modificats:', valorA, valorB)
 }
 
 main()

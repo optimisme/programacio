@@ -2,48 +2,31 @@ const prompt = require('prompt-promise');
 
 /*
 
-Primer executa aquest programa i mira com funciona a partir del codi
+Modifica el següent programa per tal que la sortida
+al executar-lo sigui:
 
-Després, modifica aquest programa, per tal que:
+    L'Anna té  200 €
+    En Pau té  300 €
+    Tots dos junts tenen  500 €
 
-- Enlloc de demanar el temps, demani si "Creus que plourà?"
-- Arregla les respostes perquè tingui sentit la nova conversa
+Fes servir les variables, no escriguis els números directament
 
 */
 
 async function main () {
 
-    let temps = await prompt("- Avui fa bon dia? (Si/No) ")
+    let dinersAnna = 200
+    let dinersPau = 300
+    let total = 0
 
-    if (temps == "Si") {
+    console.log('L\'Anna té ', dinersAnna, '€')
+    console.log('En Pau té ', dinersPau, '€')
 
-        console.log("* Si, mira quin sol que fà")
+    // Suma aqúi els diners de l'Anna i d'en Pau i guarda el resultat a la variable 'total'
+    total = dinersAnna + dinersPau
 
-    } else {
-        
-        console.log("* No, que no veus que està plovent!")
-    }
+    console.log('Tots dos junts tenen ', total, '€')
 
-    let jugar = await prompt("- Creus que podrem jugar a futbol? (Si/No) ")
-
-    if (jugar == "Si" && temps == "Si") {
-        
-        console.log("* Com que fa bon dia i podem jugar, quedem a les 15 al camp")
-
-    } else if (jugar == "Si" && temps == "No") {
-
-        console.log("* Vinga, anem a jugar a futbol encara que no faci sol")
-
-    } else if (jugar == "No" && temps == "Si") {
-
-        console.log("* Tot i que fa bon dia, no podrem jugar perquè ets un aburrit")
-
-    } else {
-
-        console.log("* Doncs res, ni fa bon dia ni jugarem a futbol")
-    }
-
-    prompt.end()
 }
 
 main()

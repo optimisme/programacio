@@ -2,35 +2,21 @@ const prompt = require('prompt-promise');
 
 /*
 
-Modifica el següent programa per tal que endevini
-el teu caràcter segons el teu color preferit a 
-partir de la següent llista:
+Modifica el següent programa per tal que la sortida
+al executar-lo sigui:
 
-verd: tranquil
-blau: fred i distant
-lila: analític
-vermell: impulsiu
-taronja: enèrgic
-gris: emàtic
-groc: sociable
-
-Qualsevol altre color serà: "Ets una persona fosca i amargada"
 
 */
 
 async function main () {
 
-    let color = await prompt("- Quin és el teu color preferit? ")
+    let deute = 1500
 
-    switch (color) {
-        case 'verd':
-            console.log("Tens un caràcter tranquil")
-            break
-        default:
-    }
+    console.log('El deute d\'en Marc és de ', deute, '€')
+    
+    // Resta aquí 250€ al deute d'en Marc
 
-
-    prompt.end()
+    console.log('Després de perdonar-li una part, ara el deute és de ', deute)
 }
 
 main()
