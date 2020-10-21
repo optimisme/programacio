@@ -27,6 +27,8 @@ async function main () {
     // Mostra aquí el text 'Després de perdonar-li XX, ara el deute és de  YY'
     // on XX és el valor de condonament
     // i YY és el valor final del deute
+
+    prompt.end()
 }
 
 main()
