@@ -16,7 +16,7 @@ async function main () {
 
     console.log('En Pep està ', anims)
 
-    // Canvia aquí el valor de la variable a 'content'
+    // Canvia aquí el valor de la variable 'anims' a 'content'
 
     console.log('Després de parlar amb tu en Pep està', anims)
 
