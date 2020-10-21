@@ -6,7 +6,7 @@ Modifica el següent programa per tal que la sortida
 al executar-lo sigui:
 
     Quin és el teu color preferit?  
-    El teu color preferit és  blau
+    El teu color preferit és blau
 
 On 'blau' ha de ser el color preferit introduit per l'usuari
 
