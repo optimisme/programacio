@@ -24,7 +24,7 @@ async function main () {
     if (numero < 50) {
         // Fes que escrigui aquí que el número és menor que 50
     } else {
-        console.log(numero, 'és més gran o igual a 50')
+        console.log(`${numero} és més gran o igual a 50`)
     }
 
     prompt.end()
