@@ -9,7 +9,8 @@ al executar-lo sigui (segons l'entrada de l'usuari):
     El client vol menjar sopa i fruita
     El client vol gelat de postre
     El client vol carn i cafè
-    El client vol mató o flam
+    El client vol yogurt o flam
+    El client vol una combinació extranya
 
 */
 
