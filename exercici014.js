@@ -3,23 +3,24 @@ const prompt = require('prompt-promise');
 /*
 
 Modifica el següent programa per tal que la sortida
-al executar-lo sigui (segons l'edat):
+al executar-lo sigui (segons afició):
 
-    Menys de 10 anys ets un nen
-    Entre 10 i 18 anys ets un adolescent
-    Entre 19 i 30 anys encara ets jove
-    Entre 40 i 60 anys ets un adult
-    Més de 60 anys estàs fet un xaval 
+    M'agrada fer música
+    M'agrada practicar un esport
+    M'agrada estar amb els amics
+    M'agrada provar nous menjars
+    M'agrada viatjar
+    M'agrada qualsevol cosa 
 
-Fes-ho amb condicions tipus 'switch'
+Fes-ho amb condicio tipus 'switch'
 
 */
 
 async function main () {
 
-    let edat = parseFloat(await prompt("Quina edat tens? "))
+    let edat = parseFloat(await prompt("Quina és la teva afició? (musica, esport, amics, menjar, viatjar) "))
 
-    // Posa aquí el codi per tal d'escriure els texts segons l'edat introduida
+    // Posa aquí el codi per tal d'escriure els texts segons l'afició
 
     prompt.end()
 }
