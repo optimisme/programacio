@@ -6,9 +6,9 @@ Modifica el següent programa per tal que la sortida
 al executar-lo sigui:
 
     El color de la posició 0 és verd
-    El color de la posició 0 és blau
-    El color de la posició 0 és vermell
-    El color de la posició 0 és groc
+    El color de la posició 1 és blau
+    El color de la posició 2 és vermell
+    El color de la posició 3 és groc
     En total hi ha 6 colors a l'array
 
 */
