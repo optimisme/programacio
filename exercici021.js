@@ -21,7 +21,6 @@ async function main () {
 
     for (cnt = 0; cnt < colors.length; cnt = cnt + 1) {
         // Fes que escrigui aquí cada color com a l'exemple de sortida
-        console.log('Color', colors[cnt])
     }
 
     prompt.end()
