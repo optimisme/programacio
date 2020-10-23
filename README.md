@@ -34,20 +34,23 @@ git pull origin main
 
 Per descarregar el codi del servidor remot, mantenint els canvis locals:
 ```
-git stash && git pull && git stash pop
+git reset --hard HEAD 
+git stash
+git pull --rebase origin main
+git stash pop
 ```
-Aleshores els arxius que heu modificat tindràn "conflictes", per mantenir els vostres canvis a tots els arxius amb conflictes podeu fer:
+Els arxius que heu modificat, tindràn conflictes, aleshores:
+
+- Per quedar-vos amb els tots els vostres arxius modificats:
 ```
-git pull -X theirs
+git checkout --theirs .
 ```
-Per mantenir els vostres canvis a només un arxiu amb conflictes, podeu fer:
+- Per quedar-vos amb només amb arxius modificats específics:
 ```
 git checkout --theirs -- exercici001.js
+git checkout --theirs -- exercici002.js
+git checkout --ours 
 ```
-On "exercici001.js" és el nom de l'arxiu amb conflictes
-
-Si cal, els conflictes també es poden editar a mà
-
 ### Actualitzar codi del servidor esborrant canvis locals ###
 
 Per descarregar el codi del servidor remot, esborrant els canvis locals:
