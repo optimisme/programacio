@@ -34,7 +34,7 @@ git pull origin main
 
 Per descarregar el codi del servidor remot, mantenint els canvis locals:
 ```
-git reset --mixed && git stash && git pull && git stash pop
+git stash && git pull && git stash pop
 ```
 Aleshores els arxius que heu modificat tindràn "conflictes", per mantenir els vostres canvis a tots els arxius amb conflictes podeu fer:
 ```
