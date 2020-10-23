@@ -4,7 +4,7 @@ let b = 2
 let c = a + b
 
 console.log('---- 1 ----')
-console.log(`El valor de a és ${a} FFF`)
+console.log(`El valor de a és ${a} ZZZ`)
 console.log(`El valor de b és ${b}`)
 console.log(`El valor de c és ${c}`)
 
