@@ -30,7 +30,7 @@ Per actualitzar el codi des del servidor remot:
 git pull origin main
 ```
 
-### Actualitzar codi del servidor ###
+### Actualitzar codi del servidor mantenint canvis locals ###
 
 Per descarregar el codi del servidor remot, mantenint els canvis locals:
 ```
@@ -47,3 +47,11 @@ git checkout --theirs -- exercici001.js
 On "exercici001.js" és el nom de l'arxiu amb conflictes
 
 Si cal, els conflictes també es poden editar a mà
+
+### Actualitzar codi del servidor esborrant canvis locals ###
+
+Per descarregar el codi del servidor remot, esborrant els canvis locals:
+```
+git fetch --all
+git reset --hard origin/main
+```
