@@ -1,1 +1,1 @@
-console.log("Hola món DEF")
+console.log("Hola món")

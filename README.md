@@ -29,3 +29,23 @@ Per actualitzar el codi des del servidor remot:
 ```
 git pull origin main
 ```
+
+### Actualitzar codi del servidor ###
+
+Per descarregar el codi del servidor remot, mantenint els canvis locals:
+```
+git stash
+git pull
+git stash pop
+```
+Aleshores els arxius que heu modificat tindràn "conflictes", per mantenir els vostres canvis a tots els arxius amb conflictes podeu fer:
+```
+git pull -X theirs
+```
+Per mantenir els vostres canvis a només un arxiu amb conflictes, podeu fer:
+```
+git checkout --theirs -- exercici001.js
+```
+On "exercici001.js" és el nom de l'arxiu amb conflictes
+
+Si cal, els conflictes també es poden editar a mà
