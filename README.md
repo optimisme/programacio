@@ -34,7 +34,6 @@ git pull origin main
 
 Per descarregar el codi del servidor remot, mantenint els canvis locals:
 ```
-git reset --hard HEAD 
 git stash
 git pull --rebase origin main
 git stash pop
