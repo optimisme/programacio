@@ -30,10 +30,29 @@ Per actualitzar el codi des del servidor remot:
 git pull origin main
 ```
 
+### Crear una branca per fer els exercicis
+
+Per crear una branca per fer els exercicis
+```
+git branch exercicis
+git checkout exercicis
+
+```
+Ara podeu fer els canvis oportuns al codi
+
+Per descarregar el nou codi sense afectar als exercicis que has fet
+```
+git checkout main
+
+
+```
+
+
 ### Actualitzar codi del servidor mantenint canvis locals ###
 
 Per descarregar el codi del servidor remot, mantenint els canvis locals:
 ```
+git add . && git commit -m "Changes"
 git stash
 git pull --rebase origin main
 git stash pop
