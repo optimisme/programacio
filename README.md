@@ -43,36 +43,8 @@ Ara podeu fer els canvis oportuns al codi
 Per descarregar el nou codi sense afectar als exercicis que has fet
 ```
 git checkout main
-
-
+git pull
+git checkout exercicis
+git merge main
 ```
-
-
-### Actualitzar codi del servidor mantenint canvis locals ###
-
-Per descarregar el codi del servidor remot, mantenint els canvis locals:
-```
-git add . && git commit -m "Changes"
-git stash
-git pull --rebase origin main
-git stash pop
-```
-Els arxius que heu modificat, tindràn conflictes, aleshores:
-
-- Per quedar-vos amb els tots els vostres arxius modificats:
-```
-git checkout --theirs .
-```
-- Per quedar-vos amb només amb arxius modificats específics:
-```
-git checkout --theirs -- exercici001.js
-git checkout --theirs -- exercici002.js
-git checkout --ours 
-```
-### Actualitzar codi del servidor esborrant canvis locals ###
-
-Per descarregar el codi del servidor remot, esborrant els canvis locals:
-```
-git fetch --all
-git reset --hard origin/main
-```
+Caldrà resoldre els conflictes, es fa editant el codi i arreglant a mà el codi en conflicte

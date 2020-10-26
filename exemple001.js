@@ -1,1 +1,1 @@
-console.log("Hola món CCC")
+console.log("Hola món")
