@@ -40,6 +40,8 @@ git checkout exercicis
 ```
 Ara podeu fer els canvis oportuns al codi
 
+### Descarregar canvis remots i barrejar-los amb els vostres exercicis
+
 Per descarregar el nou codi sense afectar als exercicis que has fet
 ```
 git checkout main
