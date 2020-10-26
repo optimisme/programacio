@@ -55,7 +55,7 @@ Per descarregar el nou codi sense afectar als exercicis que has fet
 git checkout main
 git pull
 git checkout exercicis
-git merge main
+git merge main --strategy-option ours -m "Merge"
 ```
 
 Caldrà resoldre els conflictes, es fa editant el codi i arreglant a mà el codi en conflicte
