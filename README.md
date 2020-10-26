@@ -48,9 +48,9 @@ git checkout exercicis
 git commit -a -m "Explicació de les modificacions"
 ```
 
-### Descarregar canvis remots i barrejar-los amb els vostres exercicis
+### Descarregar canvis remots
 
-Per descarregar el nou codi sense afectar als exercicis que has fet
+Per descarregar el nou codi remot sense afectar les teves modificacions
 ```
 git checkout main
 git pull
@@ -58,4 +58,11 @@ git checkout exercicis
 git merge main --strategy-option ours -m "Merge"
 ```
 
-Caldrà resoldre els conflictes, es fa editant el codi i arreglant a mà el codi en conflicte
+Per descarregar el nou codi remot, però mirant els conflictes amb les teves modificacions
+```
+git checkout main
+git pull
+git checkout exercicis
+git merge main -m "Merge"
+```
+En cas de conflictes, caldrà un per un arreglant el codi
