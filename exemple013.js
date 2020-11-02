@@ -8,6 +8,7 @@ async function main () {
 
     console.log(fruites)
     console.log(subArr)
+    console.log(subArr[1])
 }
 
 main()

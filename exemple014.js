@@ -2,25 +2,21 @@ const prompt = require('prompt-promise');
 
 async function main () {
 
-    let alumnes = []
-
-    alumnes.push({
+    let alumne = {
         nom: "Albert",
         cognom: "Palacios",
         edat: 41,
         altura: 181
-    })
+    }
 
-    alumnes.push({
-        nom: "Marc",
-        cognom: "Safont",
-        edat: 19,
-        altura: 193
-    })
+    console.log(alumne)
 
-    alumnes[1].nom = 'Pepito'
+    alumne.nom = 'Pepito'
+    alumne.edat = 35
 
-    console.log(alumnes[1].nom)
+    console.log(alumne)
+    console.log(alumne.nom)
+    console.log(alumne.edat)
 
 }
 
