@@ -11,19 +11,19 @@ Per exemple:
 
     Escriu una frase: la Vero i en Toni han anat al taller a buscar el cotxe
     Vero:
-      llarg = 4,lletres (V, o), la primera lletra és consonant
+      llarg = 4, lletres (V, o), la primera lletra és consonant
     Toni:
-      llarg = 4,lletres (T, i), la primera lletra és consonant
+      llarg = 4, lletres (T, i), la primera lletra és consonant
     han:
-      llarg = 3,lletres (h, n), la primera lletra és consonant
+      llarg = 3, lletres (h, n), la primera lletra és consonant
     anat:
-      llarg = 4,lletres (a, t), la primera lletra és vocal
+      llarg = 4, lletres (a, t), la primera lletra és vocal
     taller:
-      llarg = 6,lletres (t, r), la primera lletra és consonant
+      llarg = 6, lletres (t, r), la primera lletra és consonant
     buscar:
-      llarg = 6,lletres (b, r), la primera lletra és consonant
+      llarg = 6, lletres (b, r), la primera lletra és consonant
     cotxe:
-      llarg = 5,lletres (c, e), la primera lletra és consonant
+      llarg = 5, lletres (c, e), la primera lletra és consonant
 
 */
 
