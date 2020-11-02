@@ -18,7 +18,7 @@ Fes-ho amb condicio tipus 'switch'
 
 async function main () {
 
-    let edat = parseFloat(await prompt("Quina és la teva afició? (musica, esport, amics, menjar, viatjar) "))
+    let aficio = await prompt("Quina és la teva afició? (musica, esport, amics, menjar, viatjar) ")
 
     // Posa aquí el codi per tal d'escriure els texts segons l'afició
 

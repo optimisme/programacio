@@ -18,13 +18,13 @@ async function main () {
     let joc = await prompt("Escull un joc, corda o pilota:")
 
     if (animal === 'gat' && joc === 'corda') {
-        // Escriu aquí la frase corresponent
+        console.log('El gat juga amb una corda')
     } else if (animal === 'gat' && joc === 'pilota') {
-        // Escriu aquí la frase corresponent
+       console.log('El gat ignora la pilota')
     } else if (animal === 'gos' && joc ==='corda') {
-        // Escriu aquí la frase corresponent
-    } else {
-        // Escriu aquí la frase corresponent
+        console.log('El gos mossega la corda')
+    } else if (animal === 'gos' && joc === 'pilota') {
+        console.log('El gos juga amb la pilota')
     }
 
     prompt.end()

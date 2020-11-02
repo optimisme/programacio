@@ -24,11 +24,15 @@ async function main () {
     let numA = parseFloat(await prompt("Escriu un número: "))
     let numB = parseFloat(await prompt("Escriu un número: "))
 
-    // Posa aquí una comparació per saber si numA és més petit o més gran que numB
-    // Si són iguals, que no escrigui res
+    if (numA < numB) {
+        console.log(numA, 'és més petit que', numB)
+    }
 
-    console.log(numA, 'és més petit que', numB)
-    console.log(numA, 'és més gran que', numB)
+    if (numA > numB) {
+        console.log(numA, 'és més gran que', numB)
+    }
+
+    // Atenció que si són iguals no escriu res
 
     prompt.end()
 }

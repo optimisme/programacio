@@ -19,8 +19,10 @@ async function main () {
 
     let animals = ['gos', 'gat', 'ocell', 'cabra', 'llop']
     
-    // Fes que escrigui aquí els animals de les posicions 0, 1 i 2
-    // Fes que escrigui aquí el total d'animals amb la propietat '.length' de l'array
+    console.log('A la posició 0 hi ha un', animals[0])
+    console.log('A la posició 1 hi ha un', animals[1])
+    console.log('A la posició 2 hi ha un', animals[2])
+    console.log('En total hi ha', animals.length,'animals')
 
     prompt.end()
 }
