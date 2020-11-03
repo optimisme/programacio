@@ -149,14 +149,9 @@ function partidaAcabada (taulell, liniesPossibles) {
         }
     }
 
-    for (cnt = 0; cnt < liniesPossibles.length; cnt = cnt + 1) {
-        if (esLinia('X', taulell, liniesPossibles[cnt])) {
-            return 'X'
-        }
-    }
-
-    // TODO: Comprova si totes les caselles del taulell tenen un caràcter diferent a '-'
-    //       en aquest cas (que totes siguin diferents a '-') retorna el text 'empat'
+    // TODO: Comprova (com en el codi anterior), si el jugador 'X' 
+    //       ha aconseguit fer alguna de les 'liniesPossibles'
+    //       si és així, torna un caràcter 'X'
 
     return 'ningu'
 }

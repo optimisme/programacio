@@ -129,31 +129,8 @@ function jugaOrdinador (taulell, liniesPossibles) {
     taulell[posicio.y][posicio.x] = 'X'
 }
 
-function esLinia (jugador, taulell, linia) {
+function partidaAcabada (taulell) {
 
-    if (taulell[linia[0].y][linia[0].x] == jugador &&
-        taulell[linia[1].y][linia[1].x] == jugador &&
-        taulell[linia[2].y][linia[2].x] == jugador) {
-        return true
-    } else {
-        return false
-    }
-}
-
-function partidaAcabada (taulell, liniesPossibles) {
-    let cnt = 0
-
-    for (cnt = 0; cnt < liniesPossibles.length; cnt = cnt + 1) {
-        if (esLinia('O', taulell, liniesPossibles[cnt])) {
-            return 'O'
-        }
-    }
-
-    // TODO: Comprova (com en el codi anterior), si el jugador 'X' 
-    //       ha aconseguit fer alguna de les 'liniesPossibles'
-    //       si és així, torna un caràcter 'X'
-
-    return 'ningu'
 }
 
 async function jugar (taulell) {
@@ -188,15 +165,21 @@ async function jugar (taulell) {
             if (jugadaValida) {
                 resultats.intents = resultats.intents + 1
                 dibuixaTaulell(taulell)
-                resultats.guanyador = partidaAcabada(taulell, liniesPossibles)
-                if (resultats.guanyador == 'ningu') {
-                    await prompt("Ara jugarà l\'ordinador, apreta 'intro'")
-                    jugaOrdinador(taulell, liniesPossibles)
-                    resultats.guanyador = partidaAcabada(taulell, liniesPossibles)
-                } 
-                if (resultats.guanyador != 'ningu') {
-                    sortir = true
-                }
+                // TODO: guarda a la variable 'guanyador' de l'objecte 'resultats'
+                //       el retorn de la funció 'partidaAcabada' quan la crides
+                //       amb els paràmetres 'taulell' i 'liniesPossibles'
+
+                // TODO: Afegeix una condició que comprovi que
+                //       la variable 'guanyador' de l'objecte 'resultats' és igual a 'ningu'
+                //       si és així, dins d'aquesta comprovació:
+                //       - Demana amb 'await prompt' el text: "Ara jugarà l\'ordinador, apreta 'intro'"
+                //       - Crida a la funció 'jugaOrdinador' amb parametres 'taulell' i 'liniesPossibles'
+                //       - Guarda a la variable 'guanyador' de l'objecte 'resultats
+                //         el retorn de la funció 'partidaAcabada'
+
+                // TODO: Afegeix una condició que comprovi que 
+                //       la variable 'guanyador' de l'objecte 'resultats' és diferent de 'ningu'
+                //       si és així, dins d'aquesta comprovació posa la variable 'sortir' a certa
             }
         }
     }

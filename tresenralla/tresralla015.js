@@ -217,14 +217,14 @@ async function jugar (taulell) {
 function mostraResultats (resultats) {
 
     console.log("Resultats de la partida:")
-    // TODO: Afegeix una condició:
-    // - Si la variable 'abandona' de l'objecte 'resultats' és certa, escriu:
-    //   `El jugador ha abandonat la partida després de XX intents`
-    // - Si la variable 'guanyador' de l'objecte 'resultats' és 'O', escriu:
-    //   `El jugador ha guanyat la partida després de XX intents`
-    // - Si la variable 'guanyador' de l'objecte 'resultats' és 'X', escriu:
-    //   `El jugador ha perdut la partida després de XX intents`
-    // - Escriu: `La partida ha acabat amb empat` en qualsevol altre cas
-    // 
-    // Tingues en compte que XX és el valor de 'intents' que hi ha a l'objecte 'resultats'
+    if (resultats.abandona) {
+        console.log(`El jugador ha abandonat la partida després de ${resultats.intents} intents`)
+    } else if (resultats.guanyador == 'O') {
+        console.log(`El jugador ha guanyat la partida després de ${resultats.intents} intents`)
+    } else if (resultats.guanyador == 'X') {
+        console.log(`El jugador ha perdut la partida després de ${resultats.intents} intents`)
+    } else {
+        console.log(`La partida ha acabat amb empat`)
+    }
+
 }

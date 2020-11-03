@@ -94,11 +94,13 @@ function buscaJugadaX (taulell, posicions) {
         posicio.linia = true
         posicio.x = posicions[1].x
         posicio.y = posicions[1].y
-    } else if (casella0 == '-' && casella1 == 'O' && casella2 == 'O') {
-        posicio.linia = true
-        posicio.x = posicions[0].x
-        posicio.y = posicions[0].y
-    }
+    } // TODO: Aqui falta un 'else if' pel case que
+      //       casella0 és '-', casella1 és 'O' i casella2 és 'O'
+      //       - A dins d'aquest 'else if' has d'informar que 
+      //         la variable 'linia' de l'objecte posició és cert
+      //       - Has de posar els valors de les variables x i y
+      //         de l'objecte posició, segons els valors x i y
+      //         de la posició 0 de l'array 'posicions'
 
     if (taulell[0][0] != '-' && posicio.x == 0 && posicio.y == 0) {
         if (taulell[1][1] == '-')       { posicio.x = 1; posicio.y = 1 } 
@@ -120,17 +122,10 @@ function jugaOrdinador (taulell, liniesPossibles) {
     posicio = buscaJugadaX(taulell, liniesPossibles[0])
     if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[1]) }
     if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[2]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[3]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[4]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[5]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[6]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[7]) }
+    // TODO: Les dues linies anteriors, busquen futures linies del jugador pels cassos 0, 1 i 2
+    //       acaba de buscar futures linies, pels cassos 3, 4, 5, 6 i 7
 
     taulell[posicio.y][posicio.x] = 'X'
-}
-
-function partidaAcabada (taulell) {
-
 }
 
 async function jugar (taulell) {
@@ -165,21 +160,8 @@ async function jugar (taulell) {
             if (jugadaValida) {
                 resultats.intents = resultats.intents + 1
                 dibuixaTaulell(taulell)
-                // TODO: guarda a la variable 'guanyador' de l'objecte 'resultats'
-                //       el retorn de la funció 'partidaAcabada' quan la crides
-                //       amb els paràmetres 'taulell' i 'liniesPossibles'
-
-                // TODO: Afegeix una condició que comprovi que
-                //       la variable 'guanyador' de l'objecte 'resultats' és igual a 'ningu'
-                //       si és així, dins d'aquesta comprovació:
-                //       - Demana amb 'await prompt' el text: "Ara jugarà l\'ordinador, apreta 'intro'"
-                //       - Crida a la funció 'jugaOrdinador' amb parametres 'taulell' i 'liniesPossibles'
-                //       - Guarda a la variable 'guanyador' de l'objecte 'resultats
-                //         el retorn de la funció 'partidaAcabada'
-
-                // TODO: Afegeix una condició que comprovi que 
-                //       la variable 'guanyador' de l'objecte 'resultats' és diferent de 'ningu'
-                //       si és així, dins d'aquesta comprovació posa la variable 'sortir' a certa
+                await prompt("Ara jugarà l\'ordinador, apreta 'intro'")
+                jugaOrdinador(taulell, liniesPossibles)
             }
         }
     }

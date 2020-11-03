@@ -99,13 +99,15 @@ async function jugar (taulell) {
     let liniesPossibles = [
         [{x:0, y: 0}, {x: 1, y: 1}, {x: 2, y: 2}],
         [{x:1, y: 0}, {x: 1, y: 1}, {x: 1, y: 2}],
-        [{x:2, y: 0}, {x: 1, y: 1}, {x: 0, y: 2}],
-        [{x:0, y: 1}, {x: 1, y: 1}, {x: 2, y: 1}],
-        [{x:0, y: 0}, {x: 0, y: 1}, {x: 0, y: 2}],
-        [{x:2, y: 0}, {x: 2, y: 1}, {x: 2, y: 2}],
-        [{x:0, y: 0}, {x: 1, y: 0}, {x: 2, y: 0}],
-        [{x:0, y: 2}, {x: 1, y: 2}, {x: 2, y: 2}]
     ]
+
+    // TODO: - Al 3 en ralla només hi ha 8 tipus de linies possibles:
+    //            les dues que fan una creu a les diagonals
+    //            les dues que fan una creu (vertical i horitzontal)
+    //            les horitzontals (a dalt i a baix) i les verticals (dreta i esquerra)
+    //         a l'array anterior, hi ha l'exemple de com definir les
+    //         dues linies que fan la creu diagonal
+    //       - Afegeix les 6 linies que falten a l'array 'liniesPossibles'
 
     while (sortir === false) {
         dibuixaTaulell(taulell)

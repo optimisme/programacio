@@ -5,7 +5,9 @@ const prompt = require('prompt-promise');
 En aquest seguit d'exercicis implementarem un joc 
 tipus 'buscamines' que funciona des del terminal.
 
-En aquest exercici podràs jugar, però no es detecterà cap guanyador
+En aquest exercici la sortida esperada és:
+
+    Resultats de la partida:
 */
 
 async function main () {
@@ -66,7 +68,7 @@ function dibuixaTaulell (taulell) {
     dibuixaFiles (taulell)
 }
 
-function intentaJugadaO (comanda, taulell) {
+function intentaJugada (comanda, taulell) {
 
     let arr = comanda.split(',')
     let x = arr[0]
@@ -80,52 +82,8 @@ function intentaJugadaO (comanda, taulell) {
     }
 }
 
-function buscaJugadaX (taulell, posicions) {
-    let posicio = {linia: false, x: 0, y: 0 }
-    let casella0 = taulell[posicions[0].y][posicions[0].x]
-    let casella1 = taulell[posicions[1].y][posicions[1].x]
-    let casella2 = taulell[posicions[2].y][posicions[2].x]
+function jugaOrdinador (taulell) {
 
-    if (casella0 == 'O' && casella1 == 'O' && casella2 == '-') {
-        posicio.linia = true
-        posicio.x = posicions[2].x
-        posicio.y = posicions[2].y
-    } else if (casella0 == 'O' && casella1 == '-' && casella2 == 'O') {
-        posicio.linia = true
-        posicio.x = posicions[1].x
-        posicio.y = posicions[1].y
-    } // TODO: Aqui falta un 'else if' pel case que
-      //       casella0 és '-', casella1 és 'O' i casella2 és 'O'
-      //       - A dins d'aquest 'else if' has d'informar que 
-      //         la variable 'linia' de l'objecte posició és cert
-      //       - Has de posar els valors de les variables x i y
-      //         de l'objecte posició, segons els valors x i y
-      //         de la posició 0 de l'array 'posicions'
-
-    if (taulell[0][0] != '-' && posicio.x == 0 && posicio.y == 0) {
-        if (taulell[1][1] == '-')       { posicio.x = 1; posicio.y = 1 } 
-        else if (taulell[0][2] == '-')  { posicio.x = 2; posicio.y = 0 } 
-        else if (taulell[2][0] == '-')  { posicio.x = 0; posicio.y = 2 } 
-        else if (taulell[2][2] == '-')  { posicio.x = 2; posicio.y = 2 } 
-        else if (taulell[0][1] == '-')  { posicio.x = 1; posicio.y = 0 } 
-        else if (taulell[1][0] == '-')  { posicio.x = 0; posicio.y = 1 } 
-        else if (taulell[1][2] == '-')  { posicio.x = 2; posicio.y = 1 } 
-        else if (taulell[2][1] == '-')  { posicio.x = 1; posicio.y = 2 }
-    }
-
-    return posicio
-}
-
-function jugaOrdinador (taulell, liniesPossibles) {
-    let posicio = {linia: false, x: 0, y: 0 }
-
-    posicio = buscaJugadaX(taulell, liniesPossibles[0])
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[1]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[2]) }
-    // TODO: Les dues linies anteriors, busquen futures linies del jugador pels cassos 0, 1 i 2
-    //       acaba de buscar futures linies, pels cassos 3, 4, 5, 6 i 7
-
-    taulell[posicio.y][posicio.x] = 'X'
 }
 
 async function jugar (taulell) {
@@ -156,13 +114,13 @@ async function jugar (taulell) {
             sortir = true
             resultats.abandona = true
         } else {
-            jugadaValida = intentaJugadaO(comanda, taulell)
-            if (jugadaValida) {
-                resultats.intents = resultats.intents + 1
-                dibuixaTaulell(taulell)
-                await prompt("Ara jugarà l\'ordinador, apreta 'intro'")
-                jugaOrdinador(taulell, liniesPossibles)
-            }
+            jugadaValida = intentaJugada(comanda, taulell)
+
+            // TODO: afegeix una condició, de manera que si 'jugadaValida' és certa
+            //       - Incrementi en 1 el valor de la variable 'intents de l'objecte 'resultats'
+            //       - Cridi a la funcio 'dibuixaTaulell' amb la variable 'taulell' com a paràmetre
+            //       - Esperi l'entrada de l'usuari, amb un 'await prompt' i el text "Ara jugarà l'\ordinador"
+            //       - Cridi la funció 'jugaOrdinador' amb 'taulell' i 'liniesPossibles' com a paràmetres
         }
     }
 

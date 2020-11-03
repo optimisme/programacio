@@ -155,11 +155,8 @@ function partidaAcabada (taulell, liniesPossibles) {
         }
     }
 
-    if (taulell[0][0] != '-' && taulell[0][1] != '-' && taulell[0][2] != '-' &&
-        taulell[1][0] != '-' && taulell[1][1] != '-' && taulell[1][2] != '-' &&
-        taulell[2][0] != '-' && taulell[2][1] != '-' && taulell[2][2] != '-') {
-            return 'empat'
-    }
+    // TODO: Comprova si totes les caselles del taulell tenen un caràcter diferent a '-'
+    //       en aquest cas (que totes siguin diferents a '-') retorna el text 'empat'
 
     return 'ningu'
 }
@@ -217,14 +214,4 @@ async function jugar (taulell) {
 function mostraResultats (resultats) {
 
     console.log("Resultats de la partida:")
-    // TODO: Afegeix una condició:
-    // - Si la variable 'abandona' de l'objecte 'resultats' és certa, escriu:
-    //   `El jugador ha abandonat la partida després de XX intents`
-    // - Si la variable 'guanyador' de l'objecte 'resultats' és 'O', escriu:
-    //   `El jugador ha guanyat la partida després de XX intents`
-    // - Si la variable 'guanyador' de l'objecte 'resultats' és 'X', escriu:
-    //   `El jugador ha perdut la partida després de XX intents`
-    // - Escriu: `La partida ha acabat amb empat` en qualsevol altre cas
-    // 
-    // Tingues en compte que XX és el valor de 'intents' que hi ha a l'objecte 'resultats'
 }
