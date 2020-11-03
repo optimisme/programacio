@@ -21,7 +21,7 @@ async function main () {
 
     // Reemplaça la paraula 'ovella' de conte per la paraula 'vaca' i guarda el resultat a la variable 'conteAmbVaca'
 
-    // Reemplaça totes les aparicions de la paraula 'feliç' de conte i guarda el resultat a la variable 'conteAmbAmargada'
+    // Reemplaça totes les aparicions de la paraula 'feliç' per 'amargada' de conte i guarda el resultat a la variable 'conteAmbAmargada'
 
     console.log('El conte amb vaca:', conteAmbVaca)
     console.log('El conte amb amargada:', conteAmbAmargada)
