@@ -117,12 +117,6 @@ async function jugar (taulell) {
             resultats.abandona = true
         } else {
             jugadaValida = intentaJugada(comanda, taulell)
-
-            // TODO: afegeix una condició, de manera que si 'jugadaValida' és certa
-            //       - Incrementi en 1 el valor de la variable 'intents de l'objecte 'resultats'
-            //       - Cridi a la funcio 'dibuixaTaulell' amb la variable 'taulell' com a paràmetre
-            //       - Esperi l'entrada de l'usuari, amb un 'await prompt' i el text "Ara jugarà l'\ordinador"
-            //       - Cridi la funció 'jugaOrdinador' amb 'taulell' i 'liniesPossibles' com a paràmetres
         }
     }
 
