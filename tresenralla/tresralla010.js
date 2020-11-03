@@ -81,17 +81,17 @@ function intentaJugadaO (comanda, taulell) {
 }
 
 function buscaJugadaX (taulell, linia) {
-    let posicio = {linia: false, x: 0, y: 0 }
+    let posicio = {trobada: false, x: 0, y: 0 }
     let casella0 = taulell[linia[0].y][linia[0].x]
     let casella1 = taulell[linia[1].y][linia[1].x]
     let casella2 = taulell[linia[2].y][linia[2].x]
 
     if (casella0 == 'O' && casella1 == 'O' && casella2 == '-') {
-        posicio.linia = true
+        posicio.trobada = true
         posicio.x = linia[2].x
         posicio.y = linia[2].y
     } else if (casella0 == 'O' && casella1 == '-' && casella2 == 'O') {
-        posicio.linia = true
+        posicio.trobada = true
         posicio.x = linia[1].x
         posicio.y = linia[1].y
     } // TODO: Aqui falta un 'else if' pel case que
@@ -103,7 +103,7 @@ function buscaJugadaX (taulell, linia) {
       //         de la posició 0 de l'array 'posicions'
 
     // Si no ha trobat una posició i la 0,0 està ocupada, en busquem una altre
-    if (taulell[0][0] != '-' && posicio.x == 0 && posicio.y == 0) {
+    if (taulell[0][0] != '-' && posicio.trobada == false) {
         if (taulell[1][1] == '-')       { posicio.x = 1; posicio.y = 1 } 
         else if (taulell[0][2] == '-')  { posicio.x = 2; posicio.y = 0 } 
         else if (taulell[2][0] == '-')  { posicio.x = 0; posicio.y = 2 } 
@@ -118,11 +118,11 @@ function buscaJugadaX (taulell, linia) {
 }
 
 function jugaOrdinador (taulell, liniesPossibles) {
-    let posicio = {linia: false, x: 0, y: 0 }
+    let posicio = {trobada: false, x: 0, y: 0 }
 
     posicio = buscaJugadaX(taulell, liniesPossibles[0])
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[1]) }
-    if (posicio.linia === false) { posicio = buscaJugadaX(taulell, liniesPossibles[2]) }
+    if (posicio.trobada === false) { posicio = buscaJugadaX(taulell, liniesPossibles[1]) }
+    if (posicio.trobada === false) { posicio = buscaJugadaX(taulell, liniesPossibles[2]) }
     // TODO: Les dues linies anteriors, busquen futures linies del jugador pels cassos 0, 1 i 2
     //       acaba de buscar futures linies, pels cassos 3, 4, 5, 6 i 7
 
