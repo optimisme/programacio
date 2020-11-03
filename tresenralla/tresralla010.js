@@ -94,7 +94,7 @@ function buscaJugadaX (taulell, linia) {
         posicio.trobada = true
         posicio.x = linia[1].x
         posicio.y = linia[1].y
-    } // TODO: Aqui falta un 'else if' pel case que
+    } // TODO: Aqui falta un 'else if' pel cas que
       //       casella0 és '-', casella1 és 'O' i casella2 és 'O'
       //       - A dins d'aquest 'else if' has d'informar que 
       //         la variable 'linia' de l'objecte posició és cert
