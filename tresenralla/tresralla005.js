@@ -75,7 +75,7 @@ function dibuixaFiles (taulell) {
 
 function dibuixaTaulell (taulell) {
 
-    process.stdout.write('\033c') // Aquest codi el terminal
+    process.stdout.write('\033c') // Aquest codi neteja el terminal
 
     console.log('# 0 1 2')
 
