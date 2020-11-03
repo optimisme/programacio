@@ -80,20 +80,20 @@ function intentaJugadaO (comanda, taulell) {
     }
 }
 
-function buscaJugadaX (taulell, posicions) {
+function buscaJugadaX (taulell, linia) {
     let posicio = {linia: false, x: 0, y: 0 }
-    let casella0 = taulell[posicions[0].y][posicions[0].x]
-    let casella1 = taulell[posicions[1].y][posicions[1].x]
-    let casella2 = taulell[posicions[2].y][posicions[2].x]
+    let casella0 = taulell[linia[0].y][linia[0].x]
+    let casella1 = taulell[linia[1].y][linia[1].x]
+    let casella2 = taulell[linia[2].y][linia[2].x]
 
     if (casella0 == 'O' && casella1 == 'O' && casella2 == '-') {
         posicio.linia = true
-        posicio.x = posicions[2].x
-        posicio.y = posicions[2].y
+        posicio.x = linia[2].x
+        posicio.y = linia[2].y
     } else if (casella0 == 'O' && casella1 == '-' && casella2 == 'O') {
         posicio.linia = true
-        posicio.x = posicions[1].x
-        posicio.y = posicions[1].y
+        posicio.x = linia[1].x
+        posicio.y = linia[1].y
     } // TODO: Aqui falta un 'else if' pel case que
       //       casella0 és '-', casella1 és 'O' i casella2 és 'O'
       //       - A dins d'aquest 'else if' has d'informar que 
@@ -102,6 +102,7 @@ function buscaJugadaX (taulell, posicions) {
       //         de l'objecte posició, segons els valors x i y
       //         de la posició 0 de l'array 'posicions'
 
+    // Si no ha trobat una posició i la 0,0 està ocupada, en busquem una altre
     if (taulell[0][0] != '-' && posicio.x == 0 && posicio.y == 0) {
         if (taulell[1][1] == '-')       { posicio.x = 1; posicio.y = 1 } 
         else if (taulell[0][2] == '-')  { posicio.x = 2; posicio.y = 0 } 
