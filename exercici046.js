@@ -25,18 +25,18 @@ async function main () {
         }
 
     console.log('L\'animal és un', animal.tipus)
-    // Fes que escrigui aquí el color de l'animal
+    // TODO: Fes que escrigui aquí el color de l'animal
     console.log('L\'animal té', animal.edat, 'anys')
 
     console.log('\nModifiquem les dades de l\'objecte "animal"\n')
 
     animal.tipus = 'gat'
-    // Modifica aquí el color de l'objecte animal perquè sigui "blanc"
-    // Modifica aquí l'edat de l'objecte animal perquè tingui 14 anys
+    // TODO: Modifica aquí el color de l'objecte animal perquè sigui "blanc"
+    // TODO: Modifica aquí l'edat de l'objecte animal perquè tingui 14 anys
 
     console.log('L\'animal és un', animal.tipus)
     console.log('L\'animal és de color', animal.color)
-    // Escriu aquí l'edat de l'objecte animal
+    // TODO: Escriu aquí l'edat de l'objecte animal
    
     prompt.end()
 }

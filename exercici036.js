@@ -24,7 +24,7 @@ async function main () {
     for (cnt = 0; cnt < paraules.length; cnt = cnt + 1) {
         paraula = paraules[cnt]
         ultimaLletra = paraula.charAt(paraula.length - 1)
-        // Posa aquí una condició que comprovi si la última lletra de la paraula és una 'a' i l'escrigui si es compleix la condició
+        // TODO: Posa aquí una condició que comprovi si la última lletra de la paraula és una 'a' i l'escrigui si es compleix la condició
     }
 
     prompt.end()

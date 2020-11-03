@@ -25,7 +25,7 @@ async function main () {
     console.log('En Joan va amb', varA)
     console.log('La marta va amb', varB)
 
-    // Intercanvia aquí els valors de varA i varB fent servir varC
+    // TODO: Intercanvia aquí els valors de varA i varB fent servir varC
 
     console.log('Quan es trobin es canviaràn de transport i ...')
 

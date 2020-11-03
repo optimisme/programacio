@@ -39,8 +39,8 @@ async function main () {
         numero = numeros[cnt]
         parell = ((numero % 2) == 0)
 
-        // Fes que el valor de suma, sumi el valor del numero actual, només si aquest numero és imparell
-        // Fes que el valor de multiplicio, multipliqui pel valor del numero actual, només si aquest numero és parell      
+        // TODO: Fes que el valor de suma, sumi el valor del numero actual, només si aquest numero és imparell
+        // TODO: Fes que el valor de multiplicio, multipliqui pel valor del numero actual, només si aquest numero és parell      
     }
 
     console.log('La suma dels números imparells que has introduit és:', suma)

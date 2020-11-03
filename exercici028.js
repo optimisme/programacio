@@ -15,7 +15,7 @@ async function main () {
     let marques = ['coca-cola', 'colgate', 'tesla', 'adidas', 'apple']
     let text = ''
 
-    // Transforma aquí l'array de marques en una cadena de text on les marques estàn separades per ';'
+    // TODO: Transforma aquí l'array de marques en una cadena de text on les marques estàn separades per ';'
     // guarda el valor anterior a la variable 'text'
 
     console.log(text)

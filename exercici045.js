@@ -13,7 +13,7 @@ al executar-lo sigui:
 
 async function main () {
 
-    // Modifica el següent objecte cotxe, perquè la sortida sigui correcte
+    // TODO: Modifica el següent objecte cotxe, perquè la sortida sigui correcte
 
     let televisio = {
             marca: 'Sony',
@@ -24,7 +24,7 @@ async function main () {
     console.log('M\'he comprat un televisor', televisio.marca)
     console.log('que és de', televisio.pulzades, 'pulzades')
     
-    // Posa aquí una condició per escollir entre les seguents frases
+    // TODO: Posa aquí una condició per escollir entre les seguents frases
     // segons si la TV té SmartTV o no
     console.log('Aquesta televisió té SmartTV')
     console.log('Aquesta televisió no té SmartTV')

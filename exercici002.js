@@ -22,7 +22,7 @@ async function main () {
     console.log('L\'Anna té', dinersAnna, '€')
     console.log('En Pau té', dinersPau, '€')
 
-    // Suma aqúi els diners de l'Anna i d'en Pau i guarda el resultat a la variable 'total'
+    // TODO: Suma aqúi els diners de l'Anna i d'en Pau i guarda el resultat a la variable 'total'
 
     console.log('Tots dos junts tenen', total, '€')
 

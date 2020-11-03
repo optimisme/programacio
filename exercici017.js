@@ -20,7 +20,7 @@ async function main () {
     let cnt = 0
 
     for (cnt = 0; cnt <= numero; cnt = cnt + 1) {
-        // Fes que escrigui aquí el número que anem comptant
+        // TODO: Fes que escrigui aquí el número que anem comptant
     }
 
     prompt.end()

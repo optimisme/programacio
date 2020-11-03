@@ -19,8 +19,8 @@ async function main () {
 
     let animals = ['gos', 'gat', 'ocell', 'cabra', 'llop']
     
-    // Fes que escrigui aquí els animals de les posicions 0, 1 i 2
-    // Fes que escrigui aquí el total d'animals amb la propietat '.length' de l'array
+    // TODO: Fes que escrigui aquí els animals de les posicions 0, 1 i 2
+    // TODO: Fes que escrigui aquí el total d'animals amb la propietat '.length' de l'array
 
     prompt.end()
 }

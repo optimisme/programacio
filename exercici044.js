@@ -20,7 +20,7 @@ al executar-lo sigui:
 
 async function main () {
 
-    // Modifica el següent objecte cotxe, perquè la sortida sigui correcte
+    // TODO: Modifica el següent objecte cotxe, perquè la sortida sigui correcte
 
     let cotxe = {
             nom: 'Tesla',

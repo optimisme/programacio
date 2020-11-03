@@ -38,7 +38,7 @@ async function main () {
     let posicioFinal = parseFloat(await prompt("Escriu un número entre 5 i 9: "))
     let subArray = []
 
-    // Fes que subArray tingui els continguts del troç d'array que hi ha entre els números introduïts per l'usuari,
+    // TODO: Fes que subArray tingui els continguts del troç d'array que hi ha entre els números introduïts per l'usuari,
     // fes servir la funció 'slice' de JavaScript
 
     console.log('L\'array original és:', numeros)

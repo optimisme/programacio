@@ -14,7 +14,7 @@ On 'Munich' ha de ser l'equip preferit introduit per l'usuari
 
 async function main () {
 
-    let equip = '' // Demana aquí l'equip preferit de l'usuari
+    let equip = '' // TODO: Demana aquí l'equip preferit de l'usuari
 
     console.log('El teu equip preferit és el', equip)
 

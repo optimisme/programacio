@@ -19,7 +19,7 @@ async function main () {
     let menjar = await prompt("Escull un menjar entre pasta, arròs, sopa o carn:")
     let postre = await prompt("Escull un postre entre fruita, gelat, yogurt, flam o cafè :")
 
-    // Posa condicions perquè els següents resultats tinguin sentit segons les dades introduides per l'usuari
+    // TODO: Posa condicions perquè els següents resultats tinguin sentit segons les dades introduides per l'usuari
     console.log('El client vol menjar pasta o arros')
     console.log('El client vol menjar sopa i fruita')
     console.log('El client vol gelat de postre')

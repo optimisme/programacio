@@ -22,7 +22,7 @@ async function main () {
     let numero = parseFloat(await prompt("Escriu un número entre 0 i 100: "))
 
     if (numero < 50) {
-        // Fes que escrigui aquí que el número és menor que 50
+        // TODO: Fes que escrigui aquí que el número és menor que 50
     } else {
         console.log(`${numero} és més gran o igual a 50`)
     }

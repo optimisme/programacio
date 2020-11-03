@@ -19,7 +19,7 @@ async function main () {
 
     let edat = parseFloat(await prompt("Quina edat tens? "))
 
-    // Posa aquí el codi per tal d'escriure els texts segons l'edat introduida
+    // TODO: Posa aquí el codi per tal d'escriure els texts segons l'edat introduida
 
     prompt.end()
 }

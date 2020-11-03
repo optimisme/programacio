@@ -19,7 +19,7 @@ async function main () {
     let numB = parseFloat(await prompt("Escriu un número: "))
     let suma = 0
 
-    // Fes la suma de 'numA' i 'numB' i guarda el resultat a la variable 'suma'
+    // TODO: Fes la suma de 'numA' i 'numB' i guarda el resultat a la variable 'suma'
 
     console.log('La suma d\'aquests números és', suma)
 

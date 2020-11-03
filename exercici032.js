@@ -20,9 +20,9 @@ async function main () {
     let posicioColgate = 0
     let posicioNike = 0
 
-    // Fes que la variable 'posicioColgate' contingui la posició de la paraula 'colgate' a l'array marques
+    // TODO: Fes que la variable 'posicioColgate' contingui la posició de la paraula 'colgate' a l'array marques
 
-    // Fes que la variable 'posicioNike' contingui la posició de la paraula 'cotxe' a l'array marques
+    // TODO: Fes que la variable 'posicioNike' contingui la posició de la paraula 'cotxe' a l'array marques
 
     console.log('La posició de la paraula "colgate":', posicioColgate)
     console.log('La posició de la paraula "nike":', posicioNike)

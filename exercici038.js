@@ -25,7 +25,7 @@ async function main () {
     let numero = 0
     let parell = false
 
-    // Transforma aquí el text que ha introduït l'usuari en un array i guarda el resultat a la variable 'numerosText'
+    // TODO: Transforma aquí el text que ha introduït l'usuari en un array i guarda el resultat a la variable 'numerosText'
 
     // El següent codi, transforma l'array de textos que hi ha a 'numerosText' en un array de números i el guarda a la variable 'numeros'
     numeros = numerosText.map((numero) => { return parseFloat(numero) })
@@ -35,7 +35,7 @@ async function main () {
         numero = numeros[cnt]
         parell = ((numero % 2) == 0)
 
-        // Posa aquí una condició, per tal que si el número és parell, l'escrigui tal i com està a l'exemple de sortida
+        // TODO: Posa aquí una condició, per tal que si el número és parell, l'escrigui tal i com està a l'exemple de sortida
     }
 
     prompt.end()

@@ -19,7 +19,7 @@ async function main () {
 
     let color = await prompt("Escriu un d'aquests colors (verd, blau, vermell, groc): ")
 
-    // Posa aquí el codi per tal d'escriure els texts segons el color escollit
+    // TODO: Posa aquí el codi per tal d'escriure els texts segons el color escollit
 
     prompt.end()
 }

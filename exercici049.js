@@ -43,11 +43,11 @@ async function main () {
 
     console.log('La Marta medeix', marta.alt, 'i pesa', marta.pes)
     
-    // Modifica aquí el codi perquè escrigui l'alçada i el pes d'en Marc
+    // TODO: Modifica aquí el codi perquè escrigui l'alçada i el pes d'en Marc
     
     console.log('La Marta té el cabell', marta.cabell, 'i és de caràcter', marta.caracter)
     
-    // Modifica aquí el codi, perquè escrigui el cabell i el caràcter d'en Marc
+    // TODO: Modifica aquí el codi, perquè escrigui el cabell i el caràcter d'en Marc
 
     if (marta.pigues) {
         console.log('La Marta té pigues') 
@@ -55,7 +55,7 @@ async function main () {
         console.log('La Marta no té pigues')
     }
 
-    // Modifica aquí el codi, perquè escrigui si en Marc té o no té pigues, segons la variable 'pigues' del seu objecte
+    // TODO: Modifica aquí el codi, perquè escrigui si en Marc té o no té pigues, segons la variable 'pigues' del seu objecte
 
     console.log('Els estudis de la Marta:')
     for (cnt = 0; cnt < marta.estudis.length; cnt = cnt + 1) {
@@ -64,7 +64,7 @@ async function main () {
 
     console.log('Els estudis d\'en Marc:')
     
-    // Afegeix aquí un bucle que escrigui els estudis d'en Marc
+    // TODO: Afegeix aquí un bucle que escrigui els estudis d'en Marc
 
     prompt.end()
 }

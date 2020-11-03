@@ -20,9 +20,9 @@ async function main () {
     let posicioCavall = 0
     let posicioCotxe = 0
 
-    // Fes que la variable 'posicioCavall' contingui la posició de la paraula 'cavall' a la cadena de text 'conte'
+    // TODO: Fes que la variable 'posicioCavall' contingui la posició de la paraula 'cavall' a la cadena de text 'conte'
 
-    // Fes que la variable 'posicioCotxe' contingui la posició de la paraula 'cotxe' a la cadena de text 'conte'
+    // TODO: Fes que la variable 'posicioCotxe' contingui la posició de la paraula 'cotxe' a la cadena de text 'conte'
 
     console.log('La posició de la paraula "cavall":', posicioCavall)
     console.log('La posició de la paraula "cotxe":', posicioCotxe)

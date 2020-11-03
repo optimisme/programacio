@@ -29,7 +29,7 @@ async function main () {
     for (cnt = 0; cnt < numeros.length; cnt = cnt + 1) {
         numero = numeros[cnt]
 
-        // Fes que la variable 'suma' valgui el valor que té actualment més el valor del número actual de l'array
+        // TODO: Fes que la variable 'suma' valgui el valor que té actualment més el valor del número actual de l'array
     }
 
     console.log('La suma dels números que has introduit és:', suma)

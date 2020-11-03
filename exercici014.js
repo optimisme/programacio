@@ -20,7 +20,7 @@ async function main () {
 
     let aficio = await prompt("Quina és la teva afició? (musica, esport, amics, menjar, viatjar) ")
 
-    // Posa aquí el codi per tal d'escriure els texts segons l'afició
+    // TODO: Posa aquí el codi per tal d'escriure els texts segons l'afició
 
     prompt.end()
 }

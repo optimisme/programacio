@@ -21,10 +21,10 @@ async function main () {
 
     console.log('El deute d\'en Marc és de', deute, '€')
     
-    // Resta aquí el valor de 'condonament' al deute d'en Marc
+    // TODO: Resta aquí el valor de 'condonament' al deute d'en Marc
     
 
-    // Mostra aquí el text 'Després de perdonar-li XX, ara el deute és de  YY'
+    // TODO: Mostra aquí el text 'Després de perdonar-li XX, ara el deute és de  YY'
     // on XX és el valor de condonament
     // i YY és el valor final del deute
 

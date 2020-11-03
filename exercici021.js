@@ -20,7 +20,7 @@ async function main () {
     let cnt = 0
 
     for (cnt = 0; cnt < colors.length; cnt = cnt + 1) {
-        // Fes que escrigui aquí cada color com a l'exemple de sortida
+        // TODO: Fes que escrigui aquí cada color com a l'exemple de sortida
     }
 
     prompt.end()

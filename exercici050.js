@@ -29,7 +29,7 @@ Per exemple:
 
 async function main () {
 
-    // Posa el codi necessari aquí
+    // TODO: Posa el codi necessari aquí
 
     prompt.end()
 }

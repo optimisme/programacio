@@ -21,7 +21,7 @@ async function main () {
     let cadena = ''
 
     for (cnt = 0; cnt < numero; cnt = cnt + 1) {
-        // Aquí, concatena (suma) un '#' a cadena
+        // TODO: Aquí, concatena (suma) un '#' a cadena
         console.log(cadena)
     }
 

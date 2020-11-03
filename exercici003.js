@@ -16,7 +16,7 @@ async function main () {
 
     console.log('El deute d\'en Marc és de', deute, '€')
     
-    // Resta aquí 250€ al deute d'en Marc
+    // TODO: Resta aquí 250€ al deute d'en Marc
 
     console.log('Després de perdonar-li una part, ara el deute és de', deute, '€')
 

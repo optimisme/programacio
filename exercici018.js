@@ -20,7 +20,7 @@ async function main () {
     let numero = parseFloat(await prompt("Fins a quin número vols comptar?"))
     let cnt = 0
 
-    // Posa el següent console.log dins d'un bucle fins al número
+    // TODO: Posa el següent console.log dins d'un bucle fins al número
     // introduit per l'usuari, i fes que compti de dos en dos
     console.log('#', cnt)
 

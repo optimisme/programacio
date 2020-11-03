@@ -16,7 +16,7 @@ async function main () {
 
     let color = await prompt("Quin és el teu color preferit? ")
 
-    // Fes que escrigui aquí el color preferit de l'usuari
+    // TODO: Fes que escrigui aquí el color preferit de l'usuari
 
     prompt.end()
 }

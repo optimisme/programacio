@@ -19,11 +19,11 @@ async function main () {
     
     console.log('El color de la posició 0 és', colors[0])
 
-    // Fes que escrigui aquí el color de la posició 1
+    // TODO: Fes que escrigui aquí el color de la posició 1
 
     console.log('El color de la posició 2 és', colors[2])
 
-    // Fes que escrigui aquí el color de la posició 3
+    // TODO: Fes que escrigui aquí el color de la posició 3
 
     console.log('En total hi ha ', colors.length,' colors a l\'array')
 

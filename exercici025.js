@@ -21,7 +21,7 @@ async function main () {
     let numero = parseFloat(await prompt("Escriu un número: "))
     let cnt = 0
 
-    // Fes un bucle que t'escrigui els dos números anterios i els dos posteriors al número introduit
+    // TODO: Fes un bucle que t'escrigui els dos números anterios i els dos posteriors al número introduit
     
     prompt.end()
 }

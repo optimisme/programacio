@@ -22,7 +22,7 @@ async function main () {
 
     for (cnt = 0; cnt < animals.length; cnt = cnt + 1) {
         animal = animals[cnt]
-        // Posa condicions aquí per tal que la sortida sigui com a l'exemple
+        // TODO: Posa condicions aquí per tal que la sortida sigui com a l'exemple
         console.log('Un', animal, 'és un animal salvatge')
         console.log('Un', animal, 'és un animal domesticat')
     }

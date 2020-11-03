@@ -26,12 +26,12 @@ async function main () {
 
     numerosText = text.split(' ')
 
-    // El següent codi, transforma l'array de textos que hi ha a 'numerosText' en un array de números i el guarda a la variable 'numeros'
+    // TODO: El següent codi, transforma l'array de textos que hi ha a 'numerosText' en un array de números i el guarda a la variable 'numeros'
     numeros = numerosText.map((numero) => { return parseFloat(numero) })
 
     console.log('Números imparells que ha escrit l\'usuari:')
 
-    // Posa aquí un bucle que escrigui els números imparells que ha introduït l'usuari
+    // TODO: Posa aquí un bucle que escrigui els números imparells que ha introduït l'usuari
    
     prompt.end()
 }

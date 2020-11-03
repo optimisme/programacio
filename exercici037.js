@@ -24,9 +24,9 @@ async function main () {
     console.log('Paraules de l\'array que començen en vocal:')
     for (cnt = 0; cnt < paraules.length; cnt = cnt + 1) {
         paraula = paraules[cnt]
-        // modifica aquí el valor de 'primeraLletra' perquè contingui la primera lletra del text 'paraula'
+        // TODO: modifica aquí el valor de 'primeraLletra' perquè contingui la primera lletra del text 'paraula'
 
-        // afegint només dues línies de codi, modifica el següent switch perquè escrigui només les paraules que començen per vocal
+        // TODO: afegint només dues línies de codi, modifica el següent switch perquè escrigui només les paraules que començen per vocal
         switch(primeraLletra) {
             case 'a':
             case 'e':

@@ -24,7 +24,7 @@ async function main () {
     let numA = parseFloat(await prompt("Escriu un número: "))
     let numB = parseFloat(await prompt("Escriu un número: "))
 
-    // Posa aquí una comparació per saber si numA és més petit o més gran que numB
+    // TODO: Posa aquí una comparació per saber si numA és més petit o més gran que numB
     // Si són iguals, que no escrigui res
 
     console.log(numA, 'és més petit que', numB)
