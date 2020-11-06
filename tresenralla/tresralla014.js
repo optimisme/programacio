@@ -100,18 +100,6 @@ function buscaJugadaX (taulell, linia) {
         posicio.y = linia[0].y
     }
 
-    // Si no ha trobat una posició i la 0,0 està ocupada, en busquem una altre
-    if (taulell[0][0] != '-' && posicio.trobada == false) {
-        if (taulell[1][1] == '-')       { posicio.x = 1; posicio.y = 1 } 
-        else if (taulell[0][2] == '-')  { posicio.x = 2; posicio.y = 0 } 
-        else if (taulell[2][0] == '-')  { posicio.x = 0; posicio.y = 2 } 
-        else if (taulell[2][2] == '-')  { posicio.x = 2; posicio.y = 2 } 
-        else if (taulell[0][1] == '-')  { posicio.x = 1; posicio.y = 0 } 
-        else if (taulell[1][0] == '-')  { posicio.x = 0; posicio.y = 1 } 
-        else if (taulell[1][2] == '-')  { posicio.x = 2; posicio.y = 1 } 
-        else if (taulell[2][1] == '-')  { posicio.x = 1; posicio.y = 2 }
-    }
-
     return posicio
 }
 
@@ -126,6 +114,18 @@ function jugaOrdinador (taulell, liniesPossibles) {
     if (posicio.trobada === false) { posicio = buscaJugadaX(taulell, liniesPossibles[5]) }
     if (posicio.trobada === false) { posicio = buscaJugadaX(taulell, liniesPossibles[6]) }
     if (posicio.trobada === false) { posicio = buscaJugadaX(taulell, liniesPossibles[7]) }
+
+    // Si no ha trobat una posició i la 0,0 està ocupada, en busquem una altre
+    if (taulell[0][0] != '-' && posicio.trobada == false) {
+        if (taulell[1][1] == '-')       { posicio.x = 1; posicio.y = 1 } 
+        else if (taulell[0][2] == '-')  { posicio.x = 2; posicio.y = 0 } 
+        else if (taulell[2][0] == '-')  { posicio.x = 0; posicio.y = 2 } 
+        else if (taulell[2][2] == '-')  { posicio.x = 2; posicio.y = 2 } 
+        else if (taulell[0][1] == '-')  { posicio.x = 1; posicio.y = 0 } 
+        else if (taulell[1][0] == '-')  { posicio.x = 0; posicio.y = 1 } 
+        else if (taulell[1][2] == '-')  { posicio.x = 2; posicio.y = 1 } 
+        else if (taulell[2][1] == '-')  { posicio.x = 1; posicio.y = 2 }
+    }
 
     taulell[posicio.y][posicio.x] = 'X'
 }
