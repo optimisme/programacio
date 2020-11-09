@@ -33,17 +33,20 @@ async function main () {
 
     persona.nom = await prompt("Escriu el teu nom: ")
 
-    // TODO: Pregunta aquí el color preferit de l'usuari 
+    // Pregunta aquí el color preferit de l'usuari 
     // i guarda el valor a la variable 'color' de l'objecte 'persona'
+    persona.color = await prompt("Quin és el teu color preferit? ")
 
     persona.edat = parseFloat(await prompt("Quants anys tens? "))
 
-    // TODO: Pregunta aquí l'alçada en cm de l'usuari 
+    // Pregunta aquí l'alçada en cm de l'usuari 
     // i guarda el valor a la variable 'alt' de l'objecte 'persona'
+    persona.alt = await prompt("Quina és la teva alçada en cm? ")
 
-    // TODO: Pregunta aquí les aficions de l'usuari, separades per un 'espai'
+    // Pregunta aquí les aficions de l'usuari, separades per un 'espai'
     // fes servir la funció 'split' per transformar-les en un array
     // guarda el resultat a la variable 'aficions' de l'objecte 'persona'
+    persona.aficions = (await prompt("Llista les teves aficions (separant-les per un espai): ")).split(' ')
 
     console.log(persona)
 

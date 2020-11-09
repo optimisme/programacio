@@ -22,14 +22,18 @@ async function main () {
     lletra = text.charAt(3)
     console.log('La lletra que hi ha a la posició 3 de la cadena de text és:', lletra)
 
-    // TODO: Escriu aquí la lletra de la posició 4 segons l'exemple de resultat
+    // Escriu aquí la lletra de la posició 4 segons l'exemple de resultat
+    lletra = text.charAt(4)
+    console.log('La lletra que hi ha a la posició 3 de la cadena de text és:', lletra)
 
 
     lletra = text.charAt(5)
     console.log('La lletra que hi ha a la posició 5 de la cadena de text és:', lletra)
 
 
-    // TODO: Escriu aquí la lletra de la posició 6 segons l'exemple de resultat
+    // Escriu aquí la lletra de la posició 6 segons l'exemple de resultat
+    lletra = text.charAt(6)
+    console.log('La lletra que hi ha a la posició 3 de la cadena de text és:', lletra)
 
     prompt.end()
 }

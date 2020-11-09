@@ -29,8 +29,9 @@ async function main () {
     for (cnt = 0; cnt < marques.length; cnt = cnt + 1) {
         marca = marques[cnt]
         
-        // TODO: Fes que escrigui aquí el text "La llargada de la paraula XXX és YY"
+        // Fes que escrigui aquí el text "La llargada de la paraula XXX és YY"
         // on XXX representa cada una de les paraules de l'array 'marques' i YY la seva llargada
+        console.log(`La llargada de la paraula ${marca} és ${marca.length}`)
     }
 
     prompt.end()

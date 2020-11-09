@@ -23,13 +23,13 @@ async function main () {
     // TODO: Modifica el següent objecte cotxe, perquè la sortida sigui correcte
 
     let cotxe = {
-            nom: 'Tesla',
-            motor: 120,
-            color: 'vermell',
-            ocupació: 5,
-            combustible: 'electricitat',
-            extras: ['elevadures', 'aire acondicionat', 'comandament remot', 'autopilot'],
-            ecologic: true
+            nom: 'Citroen C2',
+            motor: 70,
+            color: 'negre',
+            ocupació: 4,
+            combustible: 'gasolina',
+            extras: ['elevadures', 'aire acondicionat', 'comandament remot'],
+            ecologic: false
         }
     let cnt = 0
 

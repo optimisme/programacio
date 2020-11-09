@@ -31,7 +31,9 @@ async function main () {
         console.log(paraula,':')
         console.log('  La primera lletra és', paraula.charAt(0))
         console.log('  La longitud és', paraula.length)
-        // TODO: Esciu aquí la última lletra de cada paraula de l'array, com a l'exemple de sortida
+        
+        // Esciu aquí la última lletra de cada paraula de l'array, com a l'exemple de sortida
+        console.log('  La última lletra és', paraula.charAt(paraula.length - 1))
     }
 
     prompt.end()

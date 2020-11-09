@@ -19,9 +19,11 @@ async function main () {
     let posicioBosc = 0
     let posicioGuineu = 0
 
-    // TODO: Fes que la variable 'posicioBosc' contingui la posició de la paraula 'bosc' a la cadena de text 'conte'
+    // Fes que la variable 'posicioBosc' contingui la posició de la paraula 'bosc' a la cadena de text 'conte'
+    posicioBosc = conte.indexOf('bosc')
 
-    // TODO: Fes que la variable 'posicioGuineu' contingui la posició de la paraula 'guineu' a la cadena de text 'conte'
+    // Fes que la variable 'posicioGuineu' contingui la posició de la paraula 'guineu' a la cadena de text 'conte'
+    posicioGuineu = conte.indexOf('guineu')
 
     console.log('La paraula bosc està a la posicio', posicioBosc)
     console.log('La paraula guineu està a la posicio', posicioGuineu)

@@ -22,7 +22,8 @@ async function main () {
     let animals = await prompt("- Escriu tipus d'animals separats per espai ? ")
     let arr = []
 
-    // TODO: Transforma aquí els continguts de la variable 'animals' en un array i guarda aquest array a la variable 'arr'
+    // Transforma aquí els continguts de la variable 'animals' en un array i guarda aquest array a la variable 'arr'
+    arr = animals.split(' ')
 
     console.log('Els animals de l\'array:')
     for (cnt = 0; cnt < arr.length; cnt = cnt + 1) {

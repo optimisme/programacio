@@ -19,9 +19,11 @@ async function main () {
     let conteAmbVaca = ''
     let conteAmbAmargada = ''
 
-    // TODO: Reemplaça la paraula 'ovella' de conte per la paraula 'vaca' i guarda el resultat a la variable 'conteAmbVaca'
+    // Reemplaça la paraula 'ovella' de conte per la paraula 'vaca' i guarda el resultat a la variable 'conteAmbVaca'
+    conteAmbVaca = conte.replace('ovella', 'vaca')
 
-    // TODO: Reemplaça totes les aparicions de la paraula 'feliç' per 'amargada' de conte i guarda el resultat a la variable 'conteAmbAmargada'
+    // Reemplaça totes les aparicions de la paraula 'feliç' per 'amargada' de conte i guarda el resultat a la variable 'conteAmbAmargada'
+    conteAmbAmargada = conte.replace(/feliç/g, 'amargada')
 
     console.log('El conte amb vaca:', conteAmbVaca)
     console.log('El conte amb amargada:', conteAmbAmargada)

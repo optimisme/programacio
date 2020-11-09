@@ -22,7 +22,10 @@ async function main () {
 
     console.log('Les marques de l\'array:')
 
-    // TODO: Fes un bucle que mostri aquí les marques de l'array 'marques'
+    // Fes un bucle que mostri aquí les marques de l'array 'marques'
+    for (cnt = 0; cnt < marques.length; cnt = cnt + 1) {
+        console.log(marques[cnt])
+    }
 
     prompt.end()
 }

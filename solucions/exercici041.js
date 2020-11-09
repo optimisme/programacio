@@ -28,8 +28,9 @@ async function main () {
     let posicioFinal = parseFloat(await prompt("Escriu un número més gran que l'anterior: "))
     let subCadena = ''
 
-    // TODO: Fes que subCadena tingui els continguts del troç de text que hi ha entre els números introduïts per l'usuari,
+    // Fes que subCadena tingui els continguts del troç de text que hi ha entre els números introduïts per l'usuari,
     // fes servir la funció 'substring' de JavaScript
+    subCadena = text.substring(posicioInicial, posicioFinal)
 
     console.log('La cadena de text original és:', text)
     console.log('La subcadena escollida per l\'usuari va des de la posició', posicioInicial, 'fins a la posicio', posicioFinal)

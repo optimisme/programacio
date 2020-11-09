@@ -27,11 +27,13 @@ async function main () {
 
     console.log('L\'alumne fa el curs:', alumne.curs)
     console.log('L\'alumne fa els estudis:', alumne.estudis)
-    // TODO: Escriu aquí la conducta que té habitualment l'alumne
+    // Escriu aquí la conducta que té habitualment l'alumne
+    console.log('L\'alumne normalment és:', alumne.conducta)
     
     console.log('Els comunicats de l\'alumne:')
     for (cnt = 0; cnt < alumne.comunicats.length; cnt = cnt + 1) {
-        // TODO: Escriu aquí els comunicats de l'alumne, tenint en compte aquest bucle
+        // Escriu aquí els comunicats de l'alumne, tenint en compte aquest bucle
+        console.log(`- ${alumne.comunicats[cnt]}`)
     }
    
     prompt.end()

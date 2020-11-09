@@ -29,7 +29,35 @@ Per exemple:
 
 async function main () {
 
-    // TODO: Posa el codi necessari aquí
+    let frase = await prompt("Escriu una frase: ")
+    let arr = frase.split(' ')
+    let cnt = 0
+    let paraula = ''
+    let primeraLletra = ''
+    let ultimaLletra = ''
+
+    for (cnt = 0; cnt < arr.length; cnt = cnt + 1) {
+      paraula = arr[cnt]
+      if (['en', 'la', 'i', 'al', 'a', 'el'].indexOf(paraula) == -1) {
+        primeraLletra = paraula.charAt(0)
+        ultimaLletra = paraula.charAt(paraula.length - 1)
+
+        console.log(`${paraula}:`)
+
+        switch (primeraLletra) {
+          case 'a':
+          case 'e':
+          case 'i':
+          case 'o':
+          case 'u':
+            console.log(`  llarg = ${paraula.length}, lletres (${primeraLletra}, ${ultimaLletra}), la primera lletra és vocal`)
+            break;
+          default:
+            console.log(`  llarg = ${paraula.length}, lletres (${primeraLletra}, ${ultimaLletra}), la primera lletra és consonant`)
+            break;
+        }
+      }
+    }
 
     prompt.end()
 }
