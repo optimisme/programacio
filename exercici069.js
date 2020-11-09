@@ -18,6 +18,24 @@ Modifica el següent programa segons les instruccions
         Tipus: Scripted
     Mostrant 2 resultats de 10 rebuts
 
+Un altre exemple:
+
+    Busca les dades d'una sèrie (per exemple 'walking dead'): Gold 
+    Quants resultats vols mostrar? 3
+    Resultat número 0:
+        Puntuació: 15.978084
+        Nom: Gold Rush
+        Tipus: Reality
+    Resultat número 1:
+        Puntuació: 14.971569
+        Nom: Black Gold
+        Tipus: Reality
+    Resultat número 2:
+        Puntuació: 14.21803
+        Nom: Hitler's Gold
+        Tipus: Documentary
+    Mostrant 3 resultats de 10 rebuts
+
 */
 
 async function cridaJSON (url) {
