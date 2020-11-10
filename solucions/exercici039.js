@@ -31,7 +31,15 @@ async function main () {
 
     console.log('Números imparells que ha escrit l\'usuari:')
 
-    // TODO: Posa aquí un bucle que escrigui els números imparells que ha introduït l'usuari
+    for (cnt = 0; cnt < numeros.length; cnt = cnt + 1) {
+        numero = numeros[cnt]
+        parell = ((numero % 2) == 0)
+
+        // Posa aquí una condició, per tal que si el número és parell, l'escrigui tal i com està a l'exemple de sortida
+        if (parell == false) {
+            console.log(`El número ${numero} és imparell`)
+        }
+    }
    
     prompt.end()
 }
