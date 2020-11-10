@@ -29,6 +29,11 @@ async function comprova (num, inputs, args) {
     let out = await runNode(`${carpeta}exercici${num}.js`, inputs)
     let outOk = await runNode(`${carpetaSolucions}exercici${num}.js`, inputs)
 
+    if (out == '') {
+        console.log(`${num} \x1b[31mKO\x1b[0m - ${inputs}`)
+        return [num, 0]
+    }
+
     if (out == outOk) {
         console.log(`${num} \x1b[32mOK\x1b[0m - ${inputs}`)
         return [num, 1]
