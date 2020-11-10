@@ -1,0 +1,1133 @@
+[
+    {
+        "num": "001",
+        "inputs": [],
+        "args": null,
+        "out": "En Pep està trist\nDesprés de parlar amb tu en Pep està content\n"
+    },
+    {
+        "num": "002",
+        "inputs": [],
+        "args": null,
+        "out": "L'Anna té 200 €\nEn Pau té 300 €\nTots dos junts tenen 500 €\n"
+    },
+    {
+        "num": "003",
+        "inputs": [],
+        "args": null,
+        "out": "El deute d'en Marc és de 1500 €\nDesprés de perdonar-li una part, ara el deute és de 1250 €\n"
+    },
+    {
+        "num": "004",
+        "inputs": [
+            "500",
+            "50"
+        ],
+        "args": null,
+        "out": "Quant diners et deu en Marc? 500\nQuant diners li vols perdonar? 50\nEl deute d'en Marc és de 500 €\nDesprés de perdonar-li 50, ara el deute és de 450\n"
+    },
+    {
+        "num": "004",
+        "inputs": [
+            "200",
+            "25"
+        ],
+        "args": null,
+        "out": "Quant diners et deu en Marc? 200\nQuant diners li vols perdonar? 25\nEl deute d'en Marc és de 200 €\nDesprés de perdonar-li 25, ara el deute és de 175\n"
+    },
+    {
+        "num": "005",
+        "inputs": [],
+        "args": null,
+        "out": "En Joan va amb bicicleta\nLa marta va amb cotxe\nQuan es trobin es canviaràn de transport i ...\nEn Joan va amb cotxe\nLa marta va amb bicicleta\n"
+    },
+    {
+        "num": "006",
+        "inputs": [
+            "blau"
+        ],
+        "args": null,
+        "out": "Quin és el teu color preferit? blau\nEl teu color preferit és blau\n"
+    },
+    {
+        "num": "006",
+        "inputs": [
+            "taronja"
+        ],
+        "args": null,
+        "out": "Quin és el teu color preferit? taronja\nEl teu color preferit és taronja\n"
+    },
+    {
+        "num": "007",
+        "inputs": [
+            "25",
+            "50"
+        ],
+        "args": null,
+        "out": "Escriu un número: 25\nEscriu un número: 50\nLa suma d'aquests números és 75\n"
+    },
+    {
+        "num": "007",
+        "inputs": [
+            "2",
+            "5"
+        ],
+        "args": null,
+        "out": "Escriu un número: 2\nEscriu un número: 5\nLa suma d'aquests números és 7\n"
+    },
+    {
+        "num": "008",
+        "inputs": [
+            "voltregà"
+        ],
+        "args": null,
+        "out": "Quin és el teu equip preferit? voltregà\nEl teu equip preferit és el voltregà\n"
+    },
+    {
+        "num": "008",
+        "inputs": [
+            "manlleu"
+        ],
+        "args": null,
+        "out": "Quin és el teu equip preferit? manlleu\nEl teu equip preferit és el manlleu\n"
+    },
+    {
+        "num": "009",
+        "inputs": [
+            "25"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 0 i 100: 25\n25 és menor de 50\n"
+    },
+    {
+        "num": "009",
+        "inputs": [
+            "50"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 0 i 100: 50\n50 és més gran o igual a 50\n"
+    },
+    {
+        "num": "009",
+        "inputs": [
+            "75"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 0 i 100: 75\n75 és més gran o igual a 50\n"
+    },
+    {
+        "num": "010",
+        "inputs": [
+            "50",
+            "25"
+        ],
+        "args": null,
+        "out": "Escriu un número: 50\nEscriu un número: 25\n50 és més gran que 25\n"
+    },
+    {
+        "num": "010",
+        "inputs": [
+            "25",
+            "50"
+        ],
+        "args": null,
+        "out": "Escriu un número: 25\nEscriu un número: 50\n25 és més petit que 50\n"
+    },
+    {
+        "num": "010",
+        "inputs": [
+            "40",
+            "40"
+        ],
+        "args": null,
+        "out": "Escriu un número: 40\nEscriu un número: 40\n"
+    },
+    {
+        "num": "011",
+        "inputs": [
+            "verd"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):verd\nEl parc del poble té moltes plantes de color verd\n"
+    },
+    {
+        "num": "011",
+        "inputs": [
+            "blau"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):blau\nEl mar és blau\n"
+    },
+    {
+        "num": "011",
+        "inputs": [
+            "vermell"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):vermell\nTinc un jersei de color vermell\n"
+    },
+    {
+        "num": "011",
+        "inputs": [
+            "groc"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):groc\nEn Picachu és de color groc\n"
+    },
+    {
+        "num": "011",
+        "inputs": [
+            "lila"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):lila\nNi idea de quin color és aquest\n"
+    },
+    {
+        "num": "012",
+        "inputs": [
+            "verd"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): verd\nEl parc del poble té moltes plantes de color verd\n"
+    },
+    {
+        "num": "012",
+        "inputs": [
+            "blau"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): blau\nEl mar és blau\n"
+    },
+    {
+        "num": "012",
+        "inputs": [
+            "vermell"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): vermell\nTinc un jersei de color vermell\n"
+    },
+    {
+        "num": "012",
+        "inputs": [
+            "groc"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): groc\nEn Picachu és de color groc\n"
+    },
+    {
+        "num": "012",
+        "inputs": [
+            "lila"
+        ],
+        "args": null,
+        "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): lila\nNi idea de quin color és aquest\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "9"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 9\nMenys de 10 anys ets un nen\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "10"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 10\nEntre 10 i 18 anys ets un adolescent\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "11"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 11\nEntre 10 i 18 anys ets un adolescent\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "17"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 17\nEntre 10 i 18 anys ets un adolescent\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "18"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 18\nEntre 19 i 30 anys encara ets jove\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "19"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 19\nEntre 19 i 30 anys encara ets jove\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "29"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 29\nEntre 19 i 30 anys encara ets jove\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "30"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 30\nEntre 40 i 60 anys ets un adult\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "31"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 31\nEntre 40 i 60 anys ets un adult\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "39"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 39\nEntre 40 i 60 anys ets un adult\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "40"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 40\nEntre 40 i 60 anys ets un adult\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "41"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 41\nEntre 40 i 60 anys ets un adult\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "59"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 59\nEntre 40 i 60 anys ets un adult\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "60"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 60\nMés de 60 anys estàs fet un xaval\n"
+    },
+    {
+        "num": "013",
+        "inputs": [
+            "61"
+        ],
+        "args": null,
+        "out": "Quina edat tens? 61\nMés de 60 anys estàs fet un xaval\n"
+    },
+    {
+        "num": "014",
+        "inputs": [
+            "musica"
+        ],
+        "args": null,
+        "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) musica\nM'agrada fer música\n"
+    },
+    {
+        "num": "014",
+        "inputs": [
+            "esports"
+        ],
+        "args": null,
+        "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) esports\nM'agrada qualsevol cosa\n"
+    },
+    {
+        "num": "014",
+        "inputs": [
+            "amics"
+        ],
+        "args": null,
+        "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) amics\nM'agrada estar amb els amics\n"
+    },
+    {
+        "num": "014",
+        "inputs": [
+            "menjar"
+        ],
+        "args": null,
+        "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) menjar\nM'agrada provar nous menjars\n"
+    },
+    {
+        "num": "014",
+        "inputs": [
+            "viatjar"
+        ],
+        "args": null,
+        "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) viatjar\nM'agrada viatjar\n"
+    },
+    {
+        "num": "014",
+        "inputs": [
+            "saltar"
+        ],
+        "args": null,
+        "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) saltar\nM'agrada qualsevol cosa\n"
+    },
+    {
+        "num": "015",
+        "inputs": [
+            "gat",
+            "corda"
+        ],
+        "args": null,
+        "out": "Escull un animal, gat o gos:gat\nEscull un joc, corda o pilota:corda\nEl gat juga amb una corda\n"
+    },
+    {
+        "num": "015",
+        "inputs": [
+            "gat",
+            "pilota"
+        ],
+        "args": null,
+        "out": "Escull un animal, gat o gos:gat\nEscull un joc, corda o pilota:pilota\nEl gat ignora la pilota\n"
+    },
+    {
+        "num": "015",
+        "inputs": [
+            "gos",
+            "corda"
+        ],
+        "args": null,
+        "out": "Escull un animal, gat o gos:gos\nEscull un joc, corda o pilota:corda\nEl gos mossega la corda\n"
+    },
+    {
+        "num": "015",
+        "inputs": [
+            "gos",
+            "pilota"
+        ],
+        "args": null,
+        "out": "Escull un animal, gat o gos:gos\nEscull un joc, corda o pilota:pilota\nEl gos juga amb la pilota\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "pasta",
+            "fruita"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:pasta\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :fruita\nEl client vol menjar pasta o arros\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "arròs",
+            "fruita"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:arròs\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :fruita\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "sopa",
+            "fruita"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:sopa\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :fruita\nEl client vol menjar sopa i fruita\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "carn",
+            "gelat"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:carn\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :gelat\nEl client vol gelat de postre\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "carn",
+            "cafè"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:carn\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :cafè\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "arròs",
+            "yogurt"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:arròs\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :yogurt\nEl client vol yogurt o flam\n"
+    },
+    {
+        "num": "016",
+        "inputs": [
+            "arròs",
+            "flam"
+        ],
+        "args": null,
+        "out": "Escull un menjar entre pasta, arròs, sopa o carn:arròs\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :flam\nEl client vol yogurt o flam\n"
+    },
+    {
+        "num": "017",
+        "inputs": [
+            "5"
+        ],
+        "args": null,
+        "out": "Fins a quin número vols comptar?5\n# 0\n# 1\n# 2\n# 3\n# 4\n# 5\n"
+    },
+    {
+        "num": "017",
+        "inputs": [
+            "9"
+        ],
+        "args": null,
+        "out": "Fins a quin número vols comptar?9\n# 0\n# 1\n# 2\n# 3\n# 4\n# 5\n# 6\n# 7\n# 8\n# 9\n"
+    },
+    {
+        "num": "018",
+        "inputs": [
+            "5"
+        ],
+        "args": null,
+        "out": "Fins a quin número vols comptar?5\n# 0\n# 2\n# 4\n"
+    },
+    {
+        "num": "018",
+        "inputs": [
+            "8"
+        ],
+        "args": null,
+        "out": "Fins a quin número vols comptar?8\n# 0\n# 2\n# 4\n# 6\n# 8\n"
+    },
+    {
+        "num": "019",
+        "inputs": [],
+        "args": null,
+        "out": "El color de la posició 0 és verd\nEl color de la posició 1 és blau\nEl color de la posició 2 és vermell\nEl color de la posició 3 és groc\nEn total hi ha  6  colors a l'array\n"
+    },
+    {
+        "num": "020",
+        "inputs": [],
+        "args": null,
+        "out": "A la posició 0 hi ha un gos\nA la posició 1 hi ha un gat\nA la posició 2 hi ha un ocell\nEn total hi ha 5 animals\n"
+    },
+    {
+        "num": "021",
+        "inputs": [],
+        "args": null,
+        "out": "Color verd\nColor blau\nColor vermell\nColor groc\nColor taronja\nColor lila\n"
+    },
+    {
+        "num": "022",
+        "inputs": [],
+        "args": null,
+        "out": "Un gos és un animal domesticat\nUn gat és un animal domesticat\nUn hamster és un animal domesticat\nUn cabrit és un animal salvatge\nUn llop és un animal salvatge\nUn cocodril és un animal salvatge\n"
+    },
+    {
+        "num": "023",
+        "inputs": [
+            "2"
+        ],
+        "args": null,
+        "out": "Fins a quin número vols comptar?2\n#\n##\n"
+    },
+    {
+        "num": "023",
+        "inputs": [
+            "5"
+        ],
+        "args": null,
+        "out": "Fins a quin número vols comptar?5\n#\n##\n###\n####\n#####\n"
+    },
+    {
+        "num": "024",
+        "inputs": [
+            "8"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 1 i 100?8\n8\n7\n6\n5\n4\n3\n2\n1\n0\n"
+    },
+    {
+        "num": "024",
+        "inputs": [
+            "16"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 1 i 100?16\n16\n15\n14\n13\n12\n11\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n"
+    },
+    {
+        "num": "025",
+        "inputs": [
+            "7"
+        ],
+        "args": null,
+        "out": "Escriu un número: 7\n5\n6\n7\n8\n9\n"
+    },
+    {
+        "num": "025",
+        "inputs": [
+            "42"
+        ],
+        "args": null,
+        "out": "Escriu un número: 42\n40\n41\n42\n43\n44\n"
+    },
+    {
+        "num": "026",
+        "inputs": [
+            "gat gos guineu lleó ovella"
+        ],
+        "args": null,
+        "out": "- Escriu tipus d'animals separats per espai ? gat gos guineu lleó ovella\nEls animals de l'array:\ngat\ngos\nguineu\nlleó\novella\n"
+    },
+    {
+        "num": "026",
+        "inputs": [
+            "conill roselló"
+        ],
+        "args": null,
+        "out": "- Escriu tipus d'animals separats per espai ? conill roselló\nEls animals de l'array:\nconill\nroselló\n"
+    },
+    {
+        "num": "027",
+        "inputs": [],
+        "args": null,
+        "out": "Les marques de l'array:\ncoca-cola\ncolgate\ntesla\nadidas\napple\n"
+    },
+    {
+        "num": "028",
+        "inputs": [],
+        "args": null,
+        "out": "coca-cola;colgate;tesla;adidas;apple\n"
+    },
+    {
+        "num": "029",
+        "inputs": [],
+        "args": null,
+        "out": "La paraula bosc està a la posicio 28\nLa paraula guineu està a la posicio 46\n"
+    },
+    {
+        "num": "030",
+        "inputs": [],
+        "args": null,
+        "out": "El conte amb vaca: Una vaca molt feliç es va perdre pel bosc fins que una guineu se la va menjar i es va quedar feliç\nEl conte amb amargada: Una ovella molt amargada es va perdre pel bosc fins que una guineu se la va menjar i es va quedar amargada\n"
+    },
+    {
+        "num": "031",
+        "inputs": [],
+        "args": null,
+        "out": "La posició de la paraula \"cavall\": 3\nLa posició de la paraula \"cotxe\": -1\nFixa't que quan no troba una paraula diu que la posició és -1!\n"
+    },
+    {
+        "num": "032",
+        "inputs": [],
+        "args": null,
+        "out": "La posició de la paraula \"colgate\": 2\nLa posició de la paraula \"nike\": -1\nFixa't que quan no troba una paraula diu que la posició és -1!\n"
+    },
+    {
+        "num": "033",
+        "inputs": [],
+        "args": null,
+        "out": "La llargada de la paraula casa és 8\nLa llargada de la paraula coca-cola és 9\nLa llargada de la paraula sony és 4\nLa llargada de la paraula colgate és 7\nLa llargada de la paraula tesla és 5\nLa llargada de la paraula adidas és 6\nLa llargada de la paraula apple és 5\n"
+    },
+    {
+        "num": "034",
+        "inputs": [],
+        "args": null,
+        "out": "La lletra que hi ha a la posició 3 de la cadena de text és: c\nLa lletra que hi ha a la posició 3 de la cadena de text és: a\nLa lletra que hi ha a la posició 5 de la cadena de text és: s\nLa lletra que hi ha a la posició 3 de la cadena de text és: a\n"
+    },
+    {
+        "num": "035",
+        "inputs": [],
+        "args": null,
+        "out": "cotxe :\n  La primera lletra és c\n  La longitud és 5\n  La última lletra és e\nara :\n  La primera lletra és a\n  La longitud és 3\n  La última lletra és a\nplàtan :\n  La primera lletra és p\n  La longitud és 6\n  La última lletra és n\n"
+    },
+    {
+        "num": "036",
+        "inputs": [],
+        "args": null,
+        "out": "Paraules de l'array que acaben en \"a\":\nara\nsabata\nicona\n"
+    },
+    {
+        "num": "037",
+        "inputs": [],
+        "args": null,
+        "out": "Paraules de l'array que començen en vocal:\nara\nestiu\nicona\nordinador\nutòpic\n"
+    },
+    {
+        "num": "038",
+        "inputs": [
+            "22 25 12 181 2 3 4 5 6 7 8 9"
+        ],
+        "args": null,
+        "out": "Escriu uns quants números separats per un espai:22 25 12 181 2 3 4 5 6 7 8 9\nNúmeros parells que ha escrit l'usuari:\n22\n12\n2\n4\n6\n8\n"
+    },
+    {
+        "num": "039",
+        "inputs": [
+            "1 2 3 4 5 6 7 8 9"
+        ],
+        "args": null,
+        "out": "Escriu uns quants números separats per un espai:1 2 3 4 5 6 7 8 9\nNúmeros imparells que ha escrit l'usuari:\nEl número 1 és imparell\nEl número 3 és imparell\nEl número 5 és imparell\nEl número 7 és imparell\nEl número 9 és imparell\n"
+    },
+    {
+        "num": "039",
+        "inputs": [
+            "22 25 12 18 17 15 44"
+        ],
+        "args": null,
+        "out": "Escriu uns quants números separats per un espai:22 25 12 18 17 15 44\nNúmeros imparells que ha escrit l'usuari:\nEl número 25 és imparell\nEl número 17 és imparell\nEl número 15 és imparell\n"
+    },
+    {
+        "num": "040",
+        "inputs": [
+            "1",
+            "8"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 0 i 5: 1\nEscriu un número entre 5 i 9: 8\nL'array original és: [\n   0, 1,  1,  2,  3,\n   5, 8, 13, 21, 34,\n  55\n]\nEl subarray escollit per l'usuari va des de la posició 1 fins a la posicio 8\nEl subarray escollit per l'usuari és: [\n  1, 1,  2, 3,\n  5, 8, 13\n]\n"
+    },
+    {
+        "num": "040",
+        "inputs": [
+            "4",
+            "6"
+        ],
+        "args": null,
+        "out": "Escriu un número entre 0 i 5: 4\nEscriu un número entre 5 i 9: 6\nL'array original és: [\n   0, 1,  1,  2,  3,\n   5, 8, 13, 21, 34,\n  55\n]\nEl subarray escollit per l'usuari va des de la posició 4 fins a la posicio 6\nEl subarray escollit per l'usuari és: [ 3, 5 ]\n"
+    },
+    {
+        "num": "041",
+        "inputs": [
+            "4",
+            "22"
+        ],
+        "args": null,
+        "out": "Escriu un número: 4\nEscriu un número més gran que l'anterior: 22\nLa cadena de text original és: La ovella més bonica va saltar la tanca per anar a veure aigua al riu\nLa subcadena escollida per l'usuari va des de la posició 4 fins a la posicio 22\nLa subcadena escollida per l'usuari és: vella més bonica v\n"
+    },
+    {
+        "num": "041",
+        "inputs": [
+            "17",
+            "37"
+        ],
+        "args": null,
+        "out": "Escriu un número: 17\nEscriu un número més gran que l'anterior: 37\nLa cadena de text original és: La ovella més bonica va saltar la tanca per anar a veure aigua al riu\nLa subcadena escollida per l'usuari va des de la posició 17 fins a la posicio 37\nLa subcadena escollida per l'usuari és: ica va saltar la tan\n"
+    },
+    {
+        "num": "042",
+        "inputs": [
+            "22 25 12"
+        ],
+        "args": null,
+        "out": "Escriu uns quants números separats per un espai: 22 25 12\nLa suma dels números que has introduit és: 59\n"
+    },
+    {
+        "num": "042",
+        "inputs": [
+            "12 18 17 15 44"
+        ],
+        "args": null,
+        "out": "Escriu uns quants números separats per un espai: 12 18 17 15 44\nLa suma dels números que has introduit és: 106\n"
+    },
+    {
+        "num": "043",
+        "inputs": [
+            "22 25 12 7 5 6"
+        ],
+        "args": null,
+        "out": "Escriu uns quants números separats per un espai: 22 25 12 7 5 6\nLa suma dels números imparells que has introduit és: 37\nLa multiplicacio dels números parells que has introduit és: 1584\n"
+    },
+    {
+        "num": "044",
+        "inputs": [],
+        "args": null,
+        "out": "- El cotxe d'en Toni és un Citroen C2\n  té un motor de 70 cavalls\n  i funciona amb gasolina\n  a més, té una ocupació de 4 persones\n  i és de color negre\n  No és un cotxe ecològic\n  Els seus extras són:\n\t elevadures\n\t aire acondicionat\n\t comandament remot\n"
+    },
+    {
+        "num": "045",
+        "inputs": [],
+        "args": null,
+        "out": "M'he comprat un televisor Samsung\nque és de 55 pulzades\nAquesta televisió té SmartTV\n"
+    },
+    {
+        "num": "046",
+        "inputs": [],
+        "args": null,
+        "out": "L'animal és un gos\nL'animal és de color negre\nL'animal té 8 anys\n\nModifiquem les dades de l'objecte \"animal\"\n\nL'animal és un gat\nL'animal és de color blanc\nL'animal té 14 anys\n"
+    },
+    {
+        "num": "047",
+        "inputs": [],
+        "args": null,
+        "out": "L'alumne fa el curs: 1\nL'alumne fa els estudis: smx\nL'alumne normalment és: maleducat\nEls comunicats de l'alumne:\n- 10/02\n- 15/03\n- 08/07\n"
+    },
+    {
+        "num": "048",
+        "inputs": [
+            "Albert",
+            "verd",
+            "41",
+            "181",
+            "programació musica passejar"
+        ],
+        "args": null,
+        "out": "Escriu el teu nom: Albert\nQuin és el teu color preferit? verd\nQuants anys tens? 41\nQuina és la teva alçada en cm? 181\nLlista les teves aficions (separant-les per un espai): programació musica passejar\n{\n  nom: 'Albert',\n  color: 'verd',\n  edat: 41,\n  alt: '181',\n  aficions: [ 'programació', 'musica', 'passejar' ]\n}\n"
+    },
+    {
+        "num": "049",
+        "inputs": [],
+        "args": null,
+        "out": "La Marta medeix 165 i pesa 60\nEn Marc medeix 176 i pesa 70\nLa Marta té el cabell pelroig i és de caràcter alegre\nEn Marc té el cabell castany i és de caràcter malhumorat\nLa Marta té pigues\nEn Marc no té pigues\nEls estudis de la Marta:\n\t eso\n\t batxillerat\n\t biologia\nEls estudis d'en Marc:\n\t eso\n\t smx\n"
+    },
+    {
+        "num": "050",
+        "inputs": [
+            "La Marta i en Manel tornen de l'hort amb una eixada, alls i patates"
+        ],
+        "args": null,
+        "out": "Escriu una frase: La Marta i en Manel tornen de l'hort amb una eixada, alls i patates\nLa:\n  llarg = 2, lletres (L, a), la primera lletra és consonant\nMarta:\n  llarg = 5, lletres (M, a), la primera lletra és consonant\nManel:\n  llarg = 5, lletres (M, l), la primera lletra és consonant\ntornen:\n  llarg = 6, lletres (t, n), la primera lletra és consonant\nde:\n  llarg = 2, lletres (d, e), la primera lletra és consonant\nl'hort:\n  llarg = 6, lletres (l, t), la primera lletra és consonant\namb:\n  llarg = 3, lletres (a, b), la primera lletra és vocal\nuna:\n  llarg = 3, lletres (u, a), la primera lletra és vocal\neixada,:\n  llarg = 7, lletres (e, ,), la primera lletra és vocal\nalls:\n  llarg = 4, lletres (a, s), la primera lletra és vocal\npatates:\n  llarg = 7, lletres (p, s), la primera lletra és consonant\n"
+    },
+    {
+        "num": "051",
+        "inputs": [],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "052",
+        "inputs": [],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "053",
+        "inputs": [
+            "verd"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "053",
+        "inputs": [
+            "groc"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "054",
+        "inputs": [
+            "3",
+            "5"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "054",
+        "inputs": [
+            "11",
+            "4"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "055",
+        "inputs": [
+            "11",
+            "4",
+            "16"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "055",
+        "inputs": [
+            "8",
+            "200",
+            "25"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "056",
+        "inputs": [
+            "6",
+            "7"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "056",
+        "inputs": [
+            "11",
+            "19"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "057",
+        "inputs": [
+            "verd",
+            "blau"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "057",
+        "inputs": [
+            "groc",
+            "vermell"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "057",
+        "inputs": [
+            "blanc",
+            "taronja"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "058",
+        "inputs": [
+            "6",
+            "7"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "058",
+        "inputs": [
+            "11",
+            "19"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "058",
+        "inputs": [
+            "5",
+            "5"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "1",
+            "2",
+            "3"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "1",
+            "3",
+            "2"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "2",
+            "1",
+            "3"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "2",
+            "3",
+            "2"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "3",
+            "1",
+            "2"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "3",
+            "2",
+            "1"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "3",
+            "1",
+            "1"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "2",
+            "2",
+            "1"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "3",
+            "1",
+            "3"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "059",
+        "inputs": [
+            "1",
+            "2",
+            "1"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "060",
+        "inputs": [
+            "34"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "060",
+        "inputs": [
+            "35"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "060",
+        "inputs": [
+            "36"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "060",
+        "inputs": [
+            "49"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "060",
+        "inputs": [
+            "50"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "060",
+        "inputs": [
+            "51"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "061",
+        "inputs": [],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "062",
+        "inputs": [],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "063",
+        "inputs": [],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "064",
+        "inputs": [
+            "exercici064.txt"
+        ],
+        "args": null,
+        "out": ""
+    },
+    {
+        "num": "069",
+        "inputs": [
+            "king",
+            "3"
+        ],
+        "args": null,
+        "out": ""
+    }
+]
