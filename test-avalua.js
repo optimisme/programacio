@@ -26,10 +26,9 @@ async function runNode (file, inputs, args) {
     })
 }
 
-async function comprova (num, inputs, args, solucio) {
+async function comprova (num, inputs, args, solucio, detalls) {
 
-    let carpeta = './'
-    let out = await runNode(`${carpeta}exercici${num}.js`, inputs)
+    let out = await runNode(`exercici${num}.js`, inputs)
 
     if (out == '') {
         console.log(`${num} - \x1b[31mKO\x1b[0m - ${inputs}`)
@@ -42,10 +41,12 @@ async function comprova (num, inputs, args, solucio) {
         return [num, 1]
     } else {
         console.log(`${num} - \x1b[31mKO\x1b[0m - ${inputs}`)
-        console.log(`S'esperava:`)
-        console.log(`${solucio.replace(/ /g, '·')}`)
-        console.log(`S'ha obtingut:`)
-        console.log(`${out.replace(/ /g, '·')}`)
+        if (detalls) {
+            console.log(`S'esperava:`)
+            console.log(`${solucio.replace(/ /g, '·')}`)
+            console.log(`S'ha obtingut:`)
+            console.log(`${out.replace(/ /g, '·')}`)
+        }
         return [num, 0]
     }
 }
@@ -58,15 +59,19 @@ async function main () {
     let key = ''
     let cnt = 0
     let nota = 0
+    let detalls = (callArgs[1] === 'detalls')
     let crides = JSON.parse(await fs.promises.readFile('./test-validacions.json', 'utf-8'))
 
     if (callArgs.length === 0) {
         console.log('Falta un argument, per exemple:')
         console.log('  node test-avalua.js 010')
-        console.log('  node test-avalua tots')
+        console.log('  node test-avalua.js 010 detalls')
+        console.log('  node test-avalua.js tots')
+        console.log('  node test-avalua.js tots detalls')
     } else if (callArgs[0] === 'tots') {
+        
         for (cnt = 0; cnt < crides.length; cnt = cnt + 1) {
-            arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args, crides[cnt].out))
+            arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args, crides[cnt].out, detalls))
         }
     
         for (cnt = 0; cnt < arrRst.length; cnt = cnt + 1) {
@@ -93,7 +98,7 @@ async function main () {
     } else {
         for (cnt = 0; cnt < crides.length; cnt = cnt + 1) {
             if (crides[cnt].num === callArgs[0]) {
-                arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args, crides[cnt].out))
+                arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args, crides[cnt].out, detalls))
             }
         }
     }
