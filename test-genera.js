@@ -149,7 +149,8 @@ let crides = [
     { "num": "066", "inputs": [ "L'Asterix va anar a roma", "i es va enfadar amb els funcionaris" ], "args": [] },
     { "num": "067", "inputs": [], "args": [] },
     { "num": "068", "inputs": [], "args": [] },
-    { "num": "069", "inputs": [ "king", "3" ], "args": [] }
+    { "num": "069", "inputs": [ "king", "3" ], "args": [] },
+    { "num": "070", "inputs": [], "args": [] }
 ]
 
 async function runNode (file, inputs, args) {

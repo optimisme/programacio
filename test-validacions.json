@@ -1174,6 +1174,12 @@
             "3"
         ],
         "args": [],
-        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.167316\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.239665\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.197502\n    Nom: The Winter King\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
+        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.16752\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.239893\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.197714\n    Nom: The Winter King\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
+    },
+    {
+        "num": "070",
+        "inputs": [],
+        "args": [],
+        "out": "Consoles fabricades als 80: Mega Drive,NES,Master System,Atari 7800\nConsoles més ràpides de 100MHz: Xbox Series X,Playstation 5,Nintendo Switch,Xbox One,Playstation 4,Wii U,Wii,Playstation 3,Xbox 360,Xbox,GameCube,Playstation 2,Dreamcast\nConsoles fabricades per Sega: Dreamcast,Nintendo 64,Sega Saturn,Sega 32X,Mega Drive,Super Nintendo,Master System\nConsoles fabricades amb processador PowerPC: Wii U,Wii,Playstation 3,Xbox 360,GameCube,Apple Bandai\nConsoles de Sony amb processador AMD: Playstation 5,Playstation 4\nConsoles alternatives rares: Apple Bandai,Amiga,Atari 7800\nConsoles blanques de Microsoft: Xbox 360\nConsoles que han venut més de 100M d'unitat: Playstation 4,Wii,Playstation 2,Playstation\n"
     }
 ]
