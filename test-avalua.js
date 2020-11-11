@@ -29,15 +29,20 @@ async function comprova (num, inputs, args, solucio) {
     let out = await runNode(`${carpeta}exercici${num}.js`, inputs)
 
     if (out == '') {
-        console.log(`${num} \x1b[31mKO\x1b[0m - ${inputs}`)
+        console.log(`${num} - \x1b[31mKO\x1b[0m - ${inputs}`)
+        console.log(`Hi ha algun error amb l'execució`)
         return [num, 0]
     }
 
     if (out == solucio) {
-        console.log(`${num} \x1b[32mOK\x1b[0m - ${inputs}`)
+        console.log(`${num} - \x1b[32mOK\x1b[0m - ${inputs}`)
         return [num, 1]
     } else {
-        console.log(`${num} \x1b[31mKO\x1b[0m - ${inputs}`)
+        console.log(`${num} - \x1b[31mKO\x1b[0m - ${inputs}`)
+        console.log(`S'esperava:`)
+        console.log(`${solucio.replace(/ /g, '·')}`)
+        console.log(`S'ha obtingut:`)
+        console.log(`${out.replace(/ /g, '·')}`)
         return [num, 0]
     }
 }
