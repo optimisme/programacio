@@ -14,7 +14,7 @@ async function llegirArxiu (nom) {
 
     let contingutsArxiu = await fs.promises.readFile(nom, 'utf-8')
 
-    console.log(contingutsArxiu)
+    return contingutsArxiu
 }
 
 async function escriuArxiu (nom, text) {
@@ -31,7 +31,7 @@ async function main () {
     //       nomArxiu i la variable text
     //       posa 'await' abans de la funció, perquè esperi a l'escriptura
 
-    await llegirArxiu(nomArxiu)
+    console.log(await llegirArxiu(nomArxiu))
 
     prompt.end()
 }

@@ -17,7 +17,7 @@ async function llistarArxius (directori) {
     let arxius = []
 
     try {
-        await fs.promises.readdir(directori)
+        arxius = await fs.promises.readdir(directori)
     } catch (e) {
         if (e.code != 'ENOENT') {
             console.log(e)
@@ -62,13 +62,16 @@ async function main () {
     //       que tens guardats a la variable 'arxius'
     //       copia'l a la carpeta 'copia' amb
     //       await copiarArxiu(nom, 'copia/' + nom)
-    //       només si el seu nom conté un '.' i no comença per 'e' ni '.'
+    //       només si el seu nom conté un 'exercici01' o un 'exercici02'
     for (cnt = 0; cnt < arxius.length; cnt = cnt + 1) {
         nom = arxius[cnt]
-        if (nom.indexOf('.') >=0 /* TODO: Aquí falten condicions */) {
-            /* TODO: copia aquí l'arxiu segons les instruccions */
+        if(nom.indexOf('exercici01') >= 0 /* TODO: Aquí falta la condició del 2 */) {
+            // TODO: Copia l'arxiu segons l'explicació
         }
+            
     }
+
+    console.log(await llistarArxius('./copia/'))
 
     prompt.end()
 }

@@ -17,7 +17,7 @@ async function llegirArxiu (nom) {
 
     let contingutsArxiu = await fs.promises.readFile(nom, 'utf-8')
 
-    console.log(contingutsArxiu)
+    return contingutsArxiu
 }
 
 async function escriuArxiu (nom, text) {
@@ -42,9 +42,9 @@ async function main () {
     // TODO: Demana a l'usuari que afegeixi un text per a l'arxiu
 
     // TODO: Afegeix el nou text que ha escrit l'usuari a l'arxiu amb 
-    //       la funció 'afegeixArxiu', escruy 'await' abans de cridar la funció
+    //       la funció 'afegeixArxiu', escriu 'await' abans de cridar la funció
 
-    await llegirArxiu(nomArxiu)
+    console.log(await llegirArxiu(nomArxiu))
 
     prompt.end()
 }

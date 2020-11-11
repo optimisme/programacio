@@ -17,13 +17,14 @@ async function llegirArxiu (nom) {
 
     let contingutsArxiu = await fs.promises.readFile(nom, 'utf-8')
 
-    console.log(contingutsArxiu)
+    return contingutsArxiu
 }
 
 async function main () {
 
     // TODO: Crida la funció 'llegirArxiu' i passa-li com a paràmetre
     //       './exercici064.txt'
+    //       mostra el resultat per pantalla
 
     prompt.end()
 }

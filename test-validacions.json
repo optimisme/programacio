@@ -2,19 +2,19 @@
     {
         "num": "001",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "En Pep està trist\nDesprés de parlar amb tu en Pep està content\n"
     },
     {
         "num": "002",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "L'Anna té 200 €\nEn Pau té 300 €\nTots dos junts tenen 500 €\n"
     },
     {
         "num": "003",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "El deute d'en Marc és de 1500 €\nDesprés de perdonar-li una part, ara el deute és de 1250 €\n"
     },
     {
@@ -23,7 +23,7 @@
             "500",
             "50"
         ],
-        "args": null,
+        "args": [],
         "out": "Quant diners et deu en Marc? 500\nQuant diners li vols perdonar? 50\nEl deute d'en Marc és de 500 €\nDesprés de perdonar-li 50, ara el deute és de 450\n"
     },
     {
@@ -32,13 +32,13 @@
             "200",
             "25"
         ],
-        "args": null,
+        "args": [],
         "out": "Quant diners et deu en Marc? 200\nQuant diners li vols perdonar? 25\nEl deute d'en Marc és de 200 €\nDesprés de perdonar-li 25, ara el deute és de 175\n"
     },
     {
         "num": "005",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "En Joan va amb bicicleta\nLa marta va amb cotxe\nQuan es trobin es canviaràn de transport i ...\nEn Joan va amb cotxe\nLa marta va amb bicicleta\n"
     },
     {
@@ -46,7 +46,7 @@
         "inputs": [
             "blau"
         ],
-        "args": null,
+        "args": [],
         "out": "Quin és el teu color preferit? blau\nEl teu color preferit és blau\n"
     },
     {
@@ -54,7 +54,7 @@
         "inputs": [
             "taronja"
         ],
-        "args": null,
+        "args": [],
         "out": "Quin és el teu color preferit? taronja\nEl teu color preferit és taronja\n"
     },
     {
@@ -63,7 +63,7 @@
             "25",
             "50"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 25\nEscriu un número: 50\nLa suma d'aquests números és 75\n"
     },
     {
@@ -72,7 +72,7 @@
             "2",
             "5"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 2\nEscriu un número: 5\nLa suma d'aquests números és 7\n"
     },
     {
@@ -80,7 +80,7 @@
         "inputs": [
             "voltregà"
         ],
-        "args": null,
+        "args": [],
         "out": "Quin és el teu equip preferit? voltregà\nEl teu equip preferit és el voltregà\n"
     },
     {
@@ -88,7 +88,7 @@
         "inputs": [
             "manlleu"
         ],
-        "args": null,
+        "args": [],
         "out": "Quin és el teu equip preferit? manlleu\nEl teu equip preferit és el manlleu\n"
     },
     {
@@ -96,7 +96,7 @@
         "inputs": [
             "25"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 0 i 100: 25\n25 és menor de 50\n"
     },
     {
@@ -104,7 +104,7 @@
         "inputs": [
             "50"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 0 i 100: 50\n50 és més gran o igual a 50\n"
     },
     {
@@ -112,7 +112,7 @@
         "inputs": [
             "75"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 0 i 100: 75\n75 és més gran o igual a 50\n"
     },
     {
@@ -121,7 +121,7 @@
             "50",
             "25"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 50\nEscriu un número: 25\n50 és més gran que 25\n"
     },
     {
@@ -130,7 +130,7 @@
             "25",
             "50"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 25\nEscriu un número: 50\n25 és més petit que 50\n"
     },
     {
@@ -139,7 +139,7 @@
             "40",
             "40"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 40\nEscriu un número: 40\n"
     },
     {
@@ -147,7 +147,7 @@
         "inputs": [
             "verd"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):verd\nEl parc del poble té moltes plantes de color verd\n"
     },
     {
@@ -155,7 +155,7 @@
         "inputs": [
             "blau"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):blau\nEl mar és blau\n"
     },
     {
@@ -163,7 +163,7 @@
         "inputs": [
             "vermell"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):vermell\nTinc un jersei de color vermell\n"
     },
     {
@@ -171,7 +171,7 @@
         "inputs": [
             "groc"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):groc\nEn Picachu és de color groc\n"
     },
     {
@@ -179,7 +179,7 @@
         "inputs": [
             "lila"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc):lila\nNi idea de quin color és aquest\n"
     },
     {
@@ -187,7 +187,7 @@
         "inputs": [
             "verd"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): verd\nEl parc del poble té moltes plantes de color verd\n"
     },
     {
@@ -195,7 +195,7 @@
         "inputs": [
             "blau"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): blau\nEl mar és blau\n"
     },
     {
@@ -203,7 +203,7 @@
         "inputs": [
             "vermell"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): vermell\nTinc un jersei de color vermell\n"
     },
     {
@@ -211,7 +211,7 @@
         "inputs": [
             "groc"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): groc\nEn Picachu és de color groc\n"
     },
     {
@@ -219,7 +219,7 @@
         "inputs": [
             "lila"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un d'aquests colors (verd, blau, vermell, groc): lila\nNi idea de quin color és aquest\n"
     },
     {
@@ -227,7 +227,7 @@
         "inputs": [
             "9"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 9\nMenys de 10 anys ets un nen\n"
     },
     {
@@ -235,7 +235,7 @@
         "inputs": [
             "10"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 10\nEntre 10 i 18 anys ets un adolescent\n"
     },
     {
@@ -243,7 +243,7 @@
         "inputs": [
             "11"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 11\nEntre 10 i 18 anys ets un adolescent\n"
     },
     {
@@ -251,7 +251,7 @@
         "inputs": [
             "17"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 17\nEntre 10 i 18 anys ets un adolescent\n"
     },
     {
@@ -259,7 +259,7 @@
         "inputs": [
             "18"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 18\nEntre 19 i 30 anys encara ets jove\n"
     },
     {
@@ -267,7 +267,7 @@
         "inputs": [
             "19"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 19\nEntre 19 i 30 anys encara ets jove\n"
     },
     {
@@ -275,7 +275,7 @@
         "inputs": [
             "29"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 29\nEntre 19 i 30 anys encara ets jove\n"
     },
     {
@@ -283,7 +283,7 @@
         "inputs": [
             "30"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 30\nEntre 40 i 60 anys ets un adult\n"
     },
     {
@@ -291,7 +291,7 @@
         "inputs": [
             "31"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 31\nEntre 40 i 60 anys ets un adult\n"
     },
     {
@@ -299,7 +299,7 @@
         "inputs": [
             "39"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 39\nEntre 40 i 60 anys ets un adult\n"
     },
     {
@@ -307,7 +307,7 @@
         "inputs": [
             "40"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 40\nEntre 40 i 60 anys ets un adult\n"
     },
     {
@@ -315,7 +315,7 @@
         "inputs": [
             "41"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 41\nEntre 40 i 60 anys ets un adult\n"
     },
     {
@@ -323,7 +323,7 @@
         "inputs": [
             "59"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 59\nEntre 40 i 60 anys ets un adult\n"
     },
     {
@@ -331,7 +331,7 @@
         "inputs": [
             "60"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 60\nMés de 60 anys estàs fet un xaval\n"
     },
     {
@@ -339,7 +339,7 @@
         "inputs": [
             "61"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina edat tens? 61\nMés de 60 anys estàs fet un xaval\n"
     },
     {
@@ -347,7 +347,7 @@
         "inputs": [
             "musica"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) musica\nM'agrada fer música\n"
     },
     {
@@ -355,7 +355,7 @@
         "inputs": [
             "esports"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) esports\nM'agrada qualsevol cosa\n"
     },
     {
@@ -363,7 +363,7 @@
         "inputs": [
             "amics"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) amics\nM'agrada estar amb els amics\n"
     },
     {
@@ -371,7 +371,7 @@
         "inputs": [
             "menjar"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) menjar\nM'agrada provar nous menjars\n"
     },
     {
@@ -379,7 +379,7 @@
         "inputs": [
             "viatjar"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) viatjar\nM'agrada viatjar\n"
     },
     {
@@ -387,7 +387,7 @@
         "inputs": [
             "saltar"
         ],
-        "args": null,
+        "args": [],
         "out": "Quina és la teva afició? (musica, esport, amics, menjar, viatjar) saltar\nM'agrada qualsevol cosa\n"
     },
     {
@@ -396,7 +396,7 @@
             "gat",
             "corda"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un animal, gat o gos:gat\nEscull un joc, corda o pilota:corda\nEl gat juga amb una corda\n"
     },
     {
@@ -405,7 +405,7 @@
             "gat",
             "pilota"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un animal, gat o gos:gat\nEscull un joc, corda o pilota:pilota\nEl gat ignora la pilota\n"
     },
     {
@@ -414,7 +414,7 @@
             "gos",
             "corda"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un animal, gat o gos:gos\nEscull un joc, corda o pilota:corda\nEl gos mossega la corda\n"
     },
     {
@@ -423,7 +423,7 @@
             "gos",
             "pilota"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un animal, gat o gos:gos\nEscull un joc, corda o pilota:pilota\nEl gos juga amb la pilota\n"
     },
     {
@@ -432,7 +432,7 @@
             "pasta",
             "fruita"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:pasta\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :fruita\nEl client vol menjar pasta o arros\n"
     },
     {
@@ -441,7 +441,7 @@
             "arròs",
             "fruita"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:arròs\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :fruita\n"
     },
     {
@@ -450,7 +450,7 @@
             "sopa",
             "fruita"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:sopa\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :fruita\nEl client vol menjar sopa i fruita\n"
     },
     {
@@ -459,7 +459,7 @@
             "carn",
             "gelat"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:carn\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :gelat\nEl client vol gelat de postre\n"
     },
     {
@@ -468,7 +468,7 @@
             "carn",
             "cafè"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:carn\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :cafè\n"
     },
     {
@@ -477,7 +477,7 @@
             "arròs",
             "yogurt"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:arròs\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :yogurt\nEl client vol yogurt o flam\n"
     },
     {
@@ -486,7 +486,7 @@
             "arròs",
             "flam"
         ],
-        "args": null,
+        "args": [],
         "out": "Escull un menjar entre pasta, arròs, sopa o carn:arròs\nEscull un postre entre fruita, gelat, yogurt, flam o cafè :flam\nEl client vol yogurt o flam\n"
     },
     {
@@ -494,7 +494,7 @@
         "inputs": [
             "5"
         ],
-        "args": null,
+        "args": [],
         "out": "Fins a quin número vols comptar?5\n# 0\n# 1\n# 2\n# 3\n# 4\n# 5\n"
     },
     {
@@ -502,7 +502,7 @@
         "inputs": [
             "9"
         ],
-        "args": null,
+        "args": [],
         "out": "Fins a quin número vols comptar?9\n# 0\n# 1\n# 2\n# 3\n# 4\n# 5\n# 6\n# 7\n# 8\n# 9\n"
     },
     {
@@ -510,7 +510,7 @@
         "inputs": [
             "5"
         ],
-        "args": null,
+        "args": [],
         "out": "Fins a quin número vols comptar?5\n# 0\n# 2\n# 4\n"
     },
     {
@@ -518,31 +518,31 @@
         "inputs": [
             "8"
         ],
-        "args": null,
+        "args": [],
         "out": "Fins a quin número vols comptar?8\n# 0\n# 2\n# 4\n# 6\n# 8\n"
     },
     {
         "num": "019",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "El color de la posició 0 és verd\nEl color de la posició 1 és blau\nEl color de la posició 2 és vermell\nEl color de la posició 3 és groc\nEn total hi ha  6  colors a l'array\n"
     },
     {
         "num": "020",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "A la posició 0 hi ha un gos\nA la posició 1 hi ha un gat\nA la posició 2 hi ha un ocell\nEn total hi ha 5 animals\n"
     },
     {
         "num": "021",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "Color verd\nColor blau\nColor vermell\nColor groc\nColor taronja\nColor lila\n"
     },
     {
         "num": "022",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "Un gos és un animal domesticat\nUn gat és un animal domesticat\nUn hamster és un animal domesticat\nUn cabrit és un animal salvatge\nUn llop és un animal salvatge\nUn cocodril és un animal salvatge\n"
     },
     {
@@ -550,7 +550,7 @@
         "inputs": [
             "2"
         ],
-        "args": null,
+        "args": [],
         "out": "Fins a quin número vols comptar?2\n#\n##\n"
     },
     {
@@ -558,7 +558,7 @@
         "inputs": [
             "5"
         ],
-        "args": null,
+        "args": [],
         "out": "Fins a quin número vols comptar?5\n#\n##\n###\n####\n#####\n"
     },
     {
@@ -566,7 +566,7 @@
         "inputs": [
             "8"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 1 i 100?8\n8\n7\n6\n5\n4\n3\n2\n1\n0\n"
     },
     {
@@ -574,7 +574,7 @@
         "inputs": [
             "16"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 1 i 100?16\n16\n15\n14\n13\n12\n11\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n"
     },
     {
@@ -582,7 +582,7 @@
         "inputs": [
             "7"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 7\n5\n6\n7\n8\n9\n"
     },
     {
@@ -590,7 +590,7 @@
         "inputs": [
             "42"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 42\n40\n41\n42\n43\n44\n"
     },
     {
@@ -598,7 +598,7 @@
         "inputs": [
             "gat gos guineu lleó ovella"
         ],
-        "args": null,
+        "args": [],
         "out": "- Escriu tipus d'animals separats per espai ? gat gos guineu lleó ovella\nEls animals de l'array:\ngat\ngos\nguineu\nlleó\novella\n"
     },
     {
@@ -606,73 +606,73 @@
         "inputs": [
             "conill roselló"
         ],
-        "args": null,
+        "args": [],
         "out": "- Escriu tipus d'animals separats per espai ? conill roselló\nEls animals de l'array:\nconill\nroselló\n"
     },
     {
         "num": "027",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "Les marques de l'array:\ncoca-cola\ncolgate\ntesla\nadidas\napple\n"
     },
     {
         "num": "028",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "coca-cola;colgate;tesla;adidas;apple\n"
     },
     {
         "num": "029",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "La paraula bosc està a la posicio 28\nLa paraula guineu està a la posicio 46\n"
     },
     {
         "num": "030",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "El conte amb vaca: Una vaca molt feliç es va perdre pel bosc fins que una guineu se la va menjar i es va quedar feliç\nEl conte amb amargada: Una ovella molt amargada es va perdre pel bosc fins que una guineu se la va menjar i es va quedar amargada\n"
     },
     {
         "num": "031",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "La posició de la paraula \"cavall\": 3\nLa posició de la paraula \"cotxe\": -1\nFixa't que quan no troba una paraula diu que la posició és -1!\n"
     },
     {
         "num": "032",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "La posició de la paraula \"colgate\": 2\nLa posició de la paraula \"nike\": -1\nFixa't que quan no troba una paraula diu que la posició és -1!\n"
     },
     {
         "num": "033",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "La llargada de la paraula casa és 8\nLa llargada de la paraula coca-cola és 9\nLa llargada de la paraula sony és 4\nLa llargada de la paraula colgate és 7\nLa llargada de la paraula tesla és 5\nLa llargada de la paraula adidas és 6\nLa llargada de la paraula apple és 5\n"
     },
     {
         "num": "034",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "La lletra que hi ha a la posició 3 de la cadena de text és: c\nLa lletra que hi ha a la posició 3 de la cadena de text és: a\nLa lletra que hi ha a la posició 5 de la cadena de text és: s\nLa lletra que hi ha a la posició 3 de la cadena de text és: a\n"
     },
     {
         "num": "035",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "cotxe :\n  La primera lletra és c\n  La longitud és 5\n  La última lletra és e\nara :\n  La primera lletra és a\n  La longitud és 3\n  La última lletra és a\nplàtan :\n  La primera lletra és p\n  La longitud és 6\n  La última lletra és n\n"
     },
     {
         "num": "036",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "Paraules de l'array que acaben en \"a\":\nara\nsabata\nicona\n"
     },
     {
         "num": "037",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "Paraules de l'array que començen en vocal:\nara\nestiu\nicona\nordinador\nutòpic\n"
     },
     {
@@ -680,7 +680,7 @@
         "inputs": [
             "22 25 12 181 2 3 4 5 6 7 8 9"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu uns quants números separats per un espai:22 25 12 181 2 3 4 5 6 7 8 9\nNúmeros parells que ha escrit l'usuari:\n22\n12\n2\n4\n6\n8\n"
     },
     {
@@ -688,7 +688,7 @@
         "inputs": [
             "1 2 3 4 5 6 7 8 9"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu uns quants números separats per un espai:1 2 3 4 5 6 7 8 9\nNúmeros imparells que ha escrit l'usuari:\nEl número 1 és imparell\nEl número 3 és imparell\nEl número 5 és imparell\nEl número 7 és imparell\nEl número 9 és imparell\n"
     },
     {
@@ -696,7 +696,7 @@
         "inputs": [
             "22 25 12 18 17 15 44"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu uns quants números separats per un espai:22 25 12 18 17 15 44\nNúmeros imparells que ha escrit l'usuari:\nEl número 25 és imparell\nEl número 17 és imparell\nEl número 15 és imparell\n"
     },
     {
@@ -705,7 +705,7 @@
             "1",
             "8"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 0 i 5: 1\nEscriu un número entre 5 i 9: 8\nL'array original és: [\n   0, 1,  1,  2,  3,\n   5, 8, 13, 21, 34,\n  55\n]\nEl subarray escollit per l'usuari va des de la posició 1 fins a la posicio 8\nEl subarray escollit per l'usuari és: [\n  1, 1,  2, 3,\n  5, 8, 13\n]\n"
     },
     {
@@ -714,7 +714,7 @@
             "4",
             "6"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número entre 0 i 5: 4\nEscriu un número entre 5 i 9: 6\nL'array original és: [\n   0, 1,  1,  2,  3,\n   5, 8, 13, 21, 34,\n  55\n]\nEl subarray escollit per l'usuari va des de la posició 4 fins a la posicio 6\nEl subarray escollit per l'usuari és: [ 3, 5 ]\n"
     },
     {
@@ -723,7 +723,7 @@
             "4",
             "22"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 4\nEscriu un número més gran que l'anterior: 22\nLa cadena de text original és: La ovella més bonica va saltar la tanca per anar a veure aigua al riu\nLa subcadena escollida per l'usuari va des de la posició 4 fins a la posicio 22\nLa subcadena escollida per l'usuari és: vella més bonica v\n"
     },
     {
@@ -732,7 +732,7 @@
             "17",
             "37"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu un número: 17\nEscriu un número més gran que l'anterior: 37\nLa cadena de text original és: La ovella més bonica va saltar la tanca per anar a veure aigua al riu\nLa subcadena escollida per l'usuari va des de la posició 17 fins a la posicio 37\nLa subcadena escollida per l'usuari és: ica va saltar la tan\n"
     },
     {
@@ -740,7 +740,7 @@
         "inputs": [
             "22 25 12"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu uns quants números separats per un espai: 22 25 12\nLa suma dels números que has introduit és: 59\n"
     },
     {
@@ -748,7 +748,7 @@
         "inputs": [
             "12 18 17 15 44"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu uns quants números separats per un espai: 12 18 17 15 44\nLa suma dels números que has introduit és: 106\n"
     },
     {
@@ -756,31 +756,31 @@
         "inputs": [
             "22 25 12 7 5 6"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu uns quants números separats per un espai: 22 25 12 7 5 6\nLa suma dels números imparells que has introduit és: 37\nLa multiplicacio dels números parells que has introduit és: 1584\n"
     },
     {
         "num": "044",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "- El cotxe d'en Toni és un Citroen C2\n  té un motor de 70 cavalls\n  i funciona amb gasolina\n  a més, té una ocupació de 4 persones\n  i és de color negre\n  No és un cotxe ecològic\n  Els seus extras són:\n\t elevadures\n\t aire acondicionat\n\t comandament remot\n"
     },
     {
         "num": "045",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "M'he comprat un televisor Samsung\nque és de 55 pulzades\nAquesta televisió té SmartTV\n"
     },
     {
         "num": "046",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "L'animal és un gos\nL'animal és de color negre\nL'animal té 8 anys\n\nModifiquem les dades de l'objecte \"animal\"\n\nL'animal és un gat\nL'animal és de color blanc\nL'animal té 14 anys\n"
     },
     {
         "num": "047",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "L'alumne fa el curs: 1\nL'alumne fa els estudis: smx\nL'alumne normalment és: maleducat\nEls comunicats de l'alumne:\n- 10/02\n- 15/03\n- 08/07\n"
     },
     {
@@ -792,13 +792,13 @@
             "181",
             "programació musica passejar"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu el teu nom: Albert\nQuin és el teu color preferit? verd\nQuants anys tens? 41\nQuina és la teva alçada en cm? 181\nLlista les teves aficions (separant-les per un espai): programació musica passejar\n{\n  nom: 'Albert',\n  color: 'verd',\n  edat: 41,\n  alt: '181',\n  aficions: [ 'programació', 'musica', 'passejar' ]\n}\n"
     },
     {
         "num": "049",
         "inputs": [],
-        "args": null,
+        "args": [],
         "out": "La Marta medeix 165 i pesa 60\nEn Marc medeix 176 i pesa 70\nLa Marta té el cabell pelroig i és de caràcter alegre\nEn Marc té el cabell castany i és de caràcter malhumorat\nLa Marta té pigues\nEn Marc no té pigues\nEls estudis de la Marta:\n\t eso\n\t batxillerat\n\t biologia\nEls estudis d'en Marc:\n\t eso\n\t smx\n"
     },
     {
@@ -806,36 +806,36 @@
         "inputs": [
             "La Marta i en Manel tornen de l'hort amb una eixada, alls i patates"
         ],
-        "args": null,
+        "args": [],
         "out": "Escriu una frase: La Marta i en Manel tornen de l'hort amb una eixada, alls i patates\nLa:\n  llarg = 2, lletres (L, a), la primera lletra és consonant\nMarta:\n  llarg = 5, lletres (M, a), la primera lletra és consonant\nManel:\n  llarg = 5, lletres (M, l), la primera lletra és consonant\ntornen:\n  llarg = 6, lletres (t, n), la primera lletra és consonant\nde:\n  llarg = 2, lletres (d, e), la primera lletra és consonant\nl'hort:\n  llarg = 6, lletres (l, t), la primera lletra és consonant\namb:\n  llarg = 3, lletres (a, b), la primera lletra és vocal\nuna:\n  llarg = 3, lletres (u, a), la primera lletra és vocal\neixada,:\n  llarg = 7, lletres (e, ,), la primera lletra és vocal\nalls:\n  llarg = 4, lletres (a, s), la primera lletra és vocal\npatates:\n  llarg = 7, lletres (p, s), la primera lletra és consonant\n"
     },
     {
         "num": "051",
         "inputs": [],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Hola funcions\n"
     },
     {
         "num": "052",
         "inputs": [],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Hola funcions\nAdeu funcions\n"
     },
     {
         "num": "053",
         "inputs": [
             "verd"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu el teu color favorit: verd\nEl color és: verd\n"
     },
     {
         "num": "053",
         "inputs": [
             "groc"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu el teu color favorit: groc\nEl color és: groc\n"
     },
     {
         "num": "054",
@@ -843,8 +843,8 @@
             "3",
             "5"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 3\nEscriu un altre numero enter: 5\nLa suma de 3 i 5 és 8\n"
     },
     {
         "num": "054",
@@ -852,8 +852,8 @@
             "11",
             "4"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 11\nEscriu un altre numero enter: 4\nLa suma de 11 i 4 és 15\n"
     },
     {
         "num": "055",
@@ -862,8 +862,8 @@
             "4",
             "16"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 11\nEscriu un altre numero enter: 4\nEscriu un tercer numero enter: 16\n11 + 4 + 16 = 31\n"
     },
     {
         "num": "055",
@@ -872,8 +872,8 @@
             "200",
             "25"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 8\nEscriu un altre numero enter: 200\nEscriu un tercer numero enter: 25\n8 + 200 + 25 = 233\n"
     },
     {
         "num": "056",
@@ -881,8 +881,8 @@
             "6",
             "7"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 6\nEscriu un altre numero enter: 7\n6 * 7 = 42\n"
     },
     {
         "num": "056",
@@ -890,8 +890,8 @@
             "11",
             "19"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 11\nEscriu un altre numero enter: 19\n11 * 19 = 209\n"
     },
     {
         "num": "057",
@@ -899,8 +899,8 @@
             "verd",
             "blau"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un color: verd\nEscriu un altre color: blau\nL'objecte del color verd és 'arbre'\nL'objecte del color blau és 'mar'\n"
     },
     {
         "num": "057",
@@ -908,8 +908,8 @@
             "groc",
             "vermell"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un color: groc\nEscriu un altre color: vermell\nL'objecte del color groc és 'llimona'\nL'objecte del color vermell és 'tomàquet'\n"
     },
     {
         "num": "057",
@@ -917,8 +917,8 @@
             "blanc",
             "taronja"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un color: blanc\nEscriu un altre color: taronja\nL'objecte del color blanc és ''\nL'objecte del color taronja és 'carbasa'\n"
     },
     {
         "num": "058",
@@ -926,8 +926,8 @@
             "6",
             "7"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 6\nEscriu un altre numero enter: 7\n7 és més gran que 6\n"
     },
     {
         "num": "058",
@@ -935,8 +935,8 @@
             "11",
             "19"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 11\nEscriu un altre numero enter: 19\n19 és més gran que 11\n"
     },
     {
         "num": "058",
@@ -944,8 +944,8 @@
             "5",
             "5"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 5\nEscriu un altre numero enter: 5\n5 és més gran que 5\n"
     },
     {
         "num": "059",
@@ -954,8 +954,8 @@
             "2",
             "3"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 1\nEscriu un altre numero enter: 2\nEscriu un tercer numero enter: 3\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -964,8 +964,8 @@
             "3",
             "2"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 1\nEscriu un altre numero enter: 3\nEscriu un tercer numero enter: 2\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -974,8 +974,8 @@
             "1",
             "3"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 2\nEscriu un altre numero enter: 1\nEscriu un tercer numero enter: 3\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -984,8 +984,8 @@
             "3",
             "2"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 2\nEscriu un altre numero enter: 3\nEscriu un tercer numero enter: 2\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -994,8 +994,8 @@
             "1",
             "2"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 3\nEscriu un altre numero enter: 1\nEscriu un tercer numero enter: 2\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -1004,8 +1004,8 @@
             "2",
             "1"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 3\nEscriu un altre numero enter: 2\nEscriu un tercer numero enter: 1\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -1014,8 +1014,8 @@
             "1",
             "1"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 3\nEscriu un altre numero enter: 1\nEscriu un tercer numero enter: 1\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -1024,8 +1024,8 @@
             "2",
             "1"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 2\nEscriu un altre numero enter: 2\nEscriu un tercer numero enter: 1\nEl valor més gran és 2\n"
     },
     {
         "num": "059",
@@ -1034,8 +1034,8 @@
             "1",
             "3"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 3\nEscriu un altre numero enter: 1\nEscriu un tercer numero enter: 3\nEl valor més gran és 3\n"
     },
     {
         "num": "059",
@@ -1044,82 +1044,128 @@
             "2",
             "1"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu un numero enter: 1\nEscriu un altre numero enter: 2\nEscriu un tercer numero enter: 1\nEl valor més gran és 2\n"
     },
     {
         "num": "060",
         "inputs": [
             "34"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu la teva edat: 34\nSegons la teva edat t'agrada Fer el gandul\n"
     },
     {
         "num": "060",
         "inputs": [
             "35"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu la teva edat: 35\nSegons la teva edat t'agrada Aprofitar el dia a dia\n"
     },
     {
         "num": "060",
         "inputs": [
             "36"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu la teva edat: 36\nSegons la teva edat t'agrada Aprofitar el dia a dia\n"
     },
     {
         "num": "060",
         "inputs": [
             "49"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu la teva edat: 49\nSegons la teva edat t'agrada Aprofitar el dia a dia\n"
     },
     {
         "num": "060",
         "inputs": [
             "50"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu la teva edat: 50\nSegons la teva edat t'agrada Contemplar als atres\n"
     },
     {
         "num": "060",
         "inputs": [
             "51"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Escriu la teva edat: 51\nSegons la teva edat t'agrada Contemplar als atres\n"
     },
     {
         "num": "061",
         "inputs": [],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "arr0 amb un 2: 2,3,4,5,6,7,8,9,10,11\narr0 amb un 3: 3,4,5,6,7,8,9,10,11,12\narr1 amb un 2: 11,10,9,8,7,6,5,4,3,2\narr1 amb un 3: 12,11,10,9,8,7,6,5,4,3\n"
     },
     {
         "num": "062",
         "inputs": [],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Array resultant entre arr0 i arr0: 0,2,4,6,8,10,12,14,16,18\nArray resultant entre arr0 i arr1: 9,9,9,9,9,9,9,9,9,9\nArray resultant entre arr1 i arr1: 18,16,14,12,10,8,6,4,2,0\n"
     },
     {
         "num": "063",
         "inputs": [],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Array resultant és: 9,8,7,6,5,4,3,2,1,0\n"
     },
     {
         "num": "064",
         "inputs": [
             "exercici064.txt"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry. Lorem Ipsum has been \nthe industry's standard dummy text ever since \nthe 1500s, when an unknown printer took a galley \nof type and scrambled it to make a type specimen \nbook. It has survived not only five centuries, \nbut also the leap into electronic typesetting, \nremaining essentially unchanged. It was \npopularised in the 1960s with the release of \nLetraset sheets containing Lorem Ipsum passages, \nand more recently with desktop publishing \nsoftware like Aldus PageMaker including versions \nof Lorem Ipsum.\nexercici064.txt\nab\n"
+    },
+    {
+        "num": "065",
+        "inputs": [
+            "En Tintin va anar al Tibet"
+        ],
+        "args": [],
+        "out": "Escriu el text que volguis guardar a l'arxiu: En Tintin va anar al Tibet\nEn Tintin va anar al Tibet\n"
+    },
+    {
+        "num": "065",
+        "inputs": [
+            "L'Asterix va anar a roma"
+        ],
+        "args": [],
+        "out": "Escriu el text que volguis guardar a l'arxiu: L'Asterix va anar a roma\nL'Asterix va anar a roma\n"
+    },
+    {
+        "num": "066",
+        "inputs": [
+            "En Tintin va anar al Tibet",
+            "i va passar molt fred"
+        ],
+        "args": [],
+        "out": "Escriu el text que volguis guardar a l'arxiu: En Tintin va anar al Tibet\nEscriu més text, per afegir a l'arxiu: i va passar molt fred\nEn Tintin va anar al Tibet\ni va passar molt fred\n"
+    },
+    {
+        "num": "066",
+        "inputs": [
+            "L'Asterix va anar a roma",
+            "i es va enfadar amb els funcionaris"
+        ],
+        "args": [],
+        "out": "Escriu el text que volguis guardar a l'arxiu: L'Asterix va anar a roma\nEscriu més text, per afegir a l'arxiu: i es va enfadar amb els funcionaris\nL'Asterix va anar a roma\ni es va enfadar amb els funcionaris\n"
+    },
+    {
+        "num": "067",
+        "inputs": [],
+        "args": [],
+        "out": "S'ha copiat exercici010.js\nS'ha copiat exercici011.js\nS'ha copiat exercici012.js\nS'ha copiat exercici013.js\nS'ha copiat exercici014.js\nS'ha copiat exercici015.js\nS'ha copiat exercici016.js\nS'ha copiat exercici017.js\nS'ha copiat exercici018.js\nS'ha copiat exercici019.js\nS'ha copiat exercici020.js\nS'ha copiat exercici021.js\nS'ha copiat exercici022.js\nS'ha copiat exercici023.js\nS'ha copiat exercici024.js\nS'ha copiat exercici025.js\nS'ha copiat exercici026.js\nS'ha copiat exercici027.js\nS'ha copiat exercici028.js\nS'ha copiat exercici029.js\n[\n  'exercici010.js', 'exercici011.js',\n  'exercici012.js', 'exercici013.js',\n  'exercici014.js', 'exercici015.js',\n  'exercici016.js', 'exercici017.js',\n  'exercici018.js', 'exercici019.js',\n  'exercici020.js', 'exercici021.js',\n  'exercici022.js', 'exercici023.js',\n  'exercici024.js', 'exercici025.js',\n  'exercici026.js', 'exercici027.js',\n  'exercici028.js', 'exercici029.js'\n]\n"
+    },
+    {
+        "num": "068",
+        "inputs": [],
+        "args": [],
+        "out": "S'ha esborrat l'arxiu: 'copia/exercici010.js'\nS'ha esborrat l'arxiu: 'copia/exercici011.js'\nS'ha esborrat l'arxiu: 'copia/exercici012.js'\nS'ha esborrat l'arxiu: 'copia/exercici013.js'\nS'ha esborrat l'arxiu: 'copia/exercici014.js'\nS'ha esborrat l'arxiu: 'copia/exercici015.js'\nS'ha esborrat l'arxiu: 'copia/exercici016.js'\nS'ha esborrat l'arxiu: 'copia/exercici017.js'\nS'ha esborrat l'arxiu: 'copia/exercici018.js'\nS'ha esborrat l'arxiu: 'copia/exercici019.js'\nS'ha esborrat l'arxiu: 'copia/exercici020.js'\nS'ha esborrat l'arxiu: 'copia/exercici021.js'\nS'ha esborrat l'arxiu: 'copia/exercici022.js'\nS'ha esborrat l'arxiu: 'copia/exercici023.js'\nS'ha esborrat l'arxiu: 'copia/exercici024.js'\nS'ha esborrat l'arxiu: 'copia/exercici025.js'\nS'ha esborrat l'arxiu: 'copia/exercici026.js'\nS'ha esborrat l'arxiu: 'copia/exercici027.js'\nS'ha esborrat l'arxiu: 'copia/exercici028.js'\nS'ha esborrat l'arxiu: 'copia/exercici029.js'\n"
     },
     {
         "num": "069",
@@ -1127,7 +1173,7 @@
             "king",
             "3"
         ],
-        "args": null,
-        "out": ""
+        "args": [],
+        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.167316\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.239665\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.197502\n    Nom: The Winter King\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
     }
 ]

@@ -13,7 +13,7 @@ async function llistarArxius (directori) {
     let arxius = []
 
     try {
-        await fs.promises.readdir(directori)
+        arxius = await fs.promises.readdir(directori)
     } catch (e) {
         if (e.code != 'ENOENT') {
             console.log(e)
@@ -22,7 +22,6 @@ async function llistarArxius (directori) {
 
     return arxius
 }
-
 async function esborrarCarpeta (path) {
 
     try {
@@ -53,6 +52,7 @@ async function main () {
     // TODO: Per cada un dels arxius de la carpeta 'copia'
     //       esborra l'arxiu amb
     //       await esborrarArxiu('copia/' + nom)
+    //       Escriu per pantalla "S'ha esborrat l'arxiu: 'copia/${nom}'"
 
     // TODO: Esborra la carpeta 'copia' fent servir
     //       la funció 'esborrarCarpeta'
