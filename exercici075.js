@@ -59,63 +59,6 @@ Modifica el següent programa segons les instruccions
       'No entenc la comanda'
 */
 
-function executaComanda (comanda, joc) {
-
-    if (joc.pantalla === 'bosc' && comanda === 'ajuda') {
-
-        console.log('Ets al bosc, pots demanar: (ajuda, mirar, caminar, escalar, cridar)')
-
-    } else if (joc.pantalla === 'vall' && comanda === 'ajuda') {
-
-        console.log('Ets a la vall, pots demanar: (ajuda, mirar, tornar, escalar, cridar)')
-
-    } else if (joc.pantalla === 'muntanya' && comanda === 'ajuda') {
-
-        console.log('Ets a la muntanya, pots demanar: (ajuda, mirar, caminar, cridar)')
-
-    } else if (joc.pantalla === 'bosc' && comanda === 'mirar') {
-
-        console.log('Des del bosc, pots veure una vall, una muntanya i el cel')
-
-    } else if (joc.pantalla === 'vall' && comanda === 'mirar') {
-
-        console.log('Des de la vall, pots veure un bosc, una muntanya i el cel')
-
-    } else if (joc.pantalla === 'muntanya' && comanda === 'mirar') {
-
-        console.log('Des de la muntanya, pots veure una vall, un bosc, una ciutat i el cel')
-
-    } else if (joc.pantalla === 'bosc' && comanda === 'caminar') {
-
-        console.log('Camines a la vall')
-        joc.pantalla = 'vall'
-
-    } else if (joc.pantalla === 'vall' && comanda === 'tornar') {
-
-        console.log('Tornes al bosc, estàs en un bosc perdut i és fosc')
-        joc.pantalla = 'bosc'
-
-    } else if (joc.pantalla === 'muntanya' && comanda === 'caminar') {
-
-        console.log('Camines fins a la ciutat')
-        joc.guanyat = true
-
-    } else if (comanda === 'escalar') {
-
-        console.log('Pujes a dalt de la muntanya')
-        joc.pantalla = 'muntanya'
-
-    } else if (comanda === 'cridar') {
-
-        console.log(`Els llops senten que crides, venen i se't menjen`)
-        joc.perdut = true
-
-    } else {
-
-        console.log('No entenc la comanda')
-    }
-}
-
 async function main () {
 
     let comanda = ''
@@ -133,11 +76,9 @@ async function main () {
     while (jugar) {
         // TODO: Demana una comanda a l'usuari i guarda el valor a la variable comanda
         //       el text que has de fer servir és: '\x1b[2mQuè vols fer? \x1b[0m'
-        comanda = await prompt('\x1b[2mQuè vols fer? \x1b[0m')
 
         // TODO: Crida a la funció 'executaComanda' que has creat anteriorment,
         //       amb els paràmetres necessaris
-        executaComanda(comanda, joc)
 
         // TODO: Si el joc està 'guanyat' o 'perdut' posa la variable jugar a false
         //       per sortir del bucle i acabar la partida
