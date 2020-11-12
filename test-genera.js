@@ -217,7 +217,7 @@ async function main () {
         arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args))
     }
 
-    await fs.promises.writeFile('test-validacions.json', JSON.stringify(arrRst, null, 4), { encoding: 'utf8' })
+    // await fs.promises.writeFile('test-validacions.json', JSON.stringify(arrRst, null, 4), { encoding: 'utf8' })
 }
 
 main()
