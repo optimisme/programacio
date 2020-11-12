@@ -63,17 +63,23 @@ async function main () {
     let crides = JSON.parse(await fs.promises.readFile('./test-validacions.json', 'utf-8'))
 
     if (callArgs.length === 0) {
+        // Sense arguments mostra un missatge d'ajuda
+
         console.log('Falta un argument, per exemple:')
         console.log('  node test-avalua.js 010')
         console.log('  node test-avalua.js 010 detalls')
         console.log('  node test-avalua.js tots')
         console.log('  node test-avalua.js tots detalls')
+
     } else if (callArgs[0] === 'tots') {
+        // Amb l'argument 'tots' comprova tots els exercicis i mostra una nota
         
+        // Valida cada un dels exercicis
         for (cnt = 0; cnt < crides.length; cnt = cnt + 1) {
             arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args, crides[cnt].out, detalls))
         }
     
+        // Calcula les execucions correctes i les errònies de cada exercici
         for (cnt = 0; cnt < arrRst.length; cnt = cnt + 1) {
             key = arrRst[cnt][0]
             if (objRst[key] === undefined) {
@@ -86,18 +92,24 @@ async function main () {
             }
         }
     
+        // Calcula la nota total ponderada
         arrKys = Object.keys(objRst)
         for (cnt = 0; cnt < arrKys.length; cnt = cnt + 1) {
             key = arrKys[cnt]
             nota = nota + (objRst[key].ok / (objRst[key].ok + objRst[key].ko))
         }
-    
         nota = 10 * (nota / arrKys.length)
     
+        // Mostra el resultat
         console.log('Nota:', nota.toFixed(1))
+
     } else {
+
+        // Valida l'exercici que coincideix amb el primer argument (tots els tests d'aquest exercici)
         for (cnt = 0; cnt < crides.length; cnt = cnt + 1) {
+
             if (crides[cnt].num === callArgs[0]) {
+
                 arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args, crides[cnt].out, detalls))
             }
         }
