@@ -1119,7 +1119,7 @@
             "exercici064.txt"
         ],
         "args": [],
-        "out": "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry. Lorem Ipsum has been \nthe industry's standard dummy text ever since \nthe 1500s, when an unknown printer took a galley \nof type and scrambled it to make a type specimen \nbook. It has survived not only five centuries, \nbut also the leap into electronic typesetting, \nremaining essentially unchanged. It was \npopularised in the 1960s with the release of \nLetraset sheets containing Lorem Ipsum passages, \nand more recently with desktop publishing \nsoftware like Aldus PageMaker including versions \nof Lorem Ipsum.\nexercici064.txt\nab\n"
+        "out": "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry. Lorem Ipsum has been \nthe industry's standard dummy text ever since \nthe 1500s, when an unknown printer took a galley \nof type and scrambled it to make a type specimen \nbook. It has survived not only five centuries, \nbut also the leap into electronic typesetting, \nremaining essentially unchanged. It was \npopularised in the 1960s with the release of \nLetraset sheets containing Lorem Ipsum passages, \nand more recently with desktop publishing \nsoftware like Aldus PageMaker including versions \nof Lorem Ipsum.\nab\n"
     },
     {
         "num": "065",
@@ -1174,12 +1174,112 @@
             "3"
         ],
         "args": [],
-        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.16752\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.239893\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.197714\n    Nom: The Winter King\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
+        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.376535\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.280839\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.161146\n    Nom: King Geunchogo\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
     },
     {
         "num": "070",
         "inputs": [],
         "args": [],
         "out": "Consoles fabricades als 80: Mega Drive,NES,Master System,Atari 7800\nConsoles més ràpides de 100MHz: Xbox Series X,Playstation 5,Nintendo Switch,Xbox One,Playstation 4,Wii U,Wii,Playstation 3,Xbox 360,Xbox,GameCube,Playstation 2,Dreamcast\nConsoles fabricades per Sega: Dreamcast,Nintendo 64,Sega Saturn,Sega 32X,Mega Drive,Super Nintendo,Master System\nConsoles fabricades amb processador PowerPC: Wii U,Wii,Playstation 3,Xbox 360,GameCube,Apple Bandai\nConsoles de Sony amb processador AMD: Playstation 5,Playstation 4\nConsoles alternatives rares: Apple Bandai,Amiga,Atari 7800\nConsoles blanques de Microsoft: Xbox 360\nConsoles que han venut més de 100M d'unitat: Playstation 4,Wii,Playstation 2,Playstation\n"
+    },
+    {
+        "num": "071",
+        "inputs": [],
+        "args": [],
+        "out": "La variable varNumerica és de tipus number\nLa variable varText és de tipus string\nLa variable varBooleana és de tipus boolean\nLa variable varArray és de tipus array\nLa variable varObjecte és de tipus object\n"
+    },
+    {
+        "num": "072",
+        "inputs": [
+            "1",
+            "hola",
+            "1 2 3"
+        ],
+        "args": [],
+        "out": "Escriu un valor numèric: 1\nEscriu un petit text: hola\nEscriu números separats per espai: 1 2 3\nLa variable varNumerica és de tipus number, i té de valor 1\nLa variable varText és de tipus string, i té de valor hola\nLa variable varArray és de tipus array, i té de valor [1,2,3]\n"
+    },
+    {
+        "num": "073",
+        "inputs": [
+            "1,2,3,4,5,6,7,8,9"
+        ],
+        "args": [],
+        "out": "Escriu números separats per coma ',': 1,2,3,4,5,6,7,8,9\nLa suma dels números introduis és 45\n"
+    },
+    {
+        "num": "073",
+        "inputs": [
+            "4000,300,20,1"
+        ],
+        "args": [],
+        "out": "Escriu números separats per coma ',': 4000,300,20,1\nLa suma dels números introduis és 4321\n"
+    },
+    {
+        "num": "073",
+        "inputs": [
+            "1"
+        ],
+        "args": [],
+        "out": "Escriu números separats per coma ',': 1\nLa suma dels números introduis és 1\n"
+    },
+    {
+        "num": "074",
+        "inputs": [
+            "5 1 2 3 4 5 6 7 8 9"
+        ],
+        "args": [],
+        "out": "Escriu números separats per espai ' ': 5 1 2 3 4 5 6 7 8 9\nEls números més grans que 5 són 6 7 8 9\n"
+    },
+    {
+        "num": "074",
+        "inputs": [
+            "50 90 88 70 60 50 40 30 20 10"
+        ],
+        "args": [],
+        "out": "Escriu números separats per espai ' ': 50 90 88 70 60 50 40 30 20 10\nEls números més grans que 50 són 90 88 70 60\n"
+    },
+    {
+        "num": "074",
+        "inputs": [
+            "16 2 4 8 16 32 64 128 256 512"
+        ],
+        "args": [],
+        "out": "Escriu números separats per espai ' ': 16 2 4 8 16 32 64 128 256 512\nEls números més grans que 16 són 32 64 128 256 512\n"
+    },
+    {
+        "num": "075",
+        "inputs": [
+            "ajuda",
+            "mirar",
+            "caminar",
+            "mirar",
+            "tornar",
+            "caminar",
+            "ajuda",
+            "cridar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mmirar\nDes del bosc, pots veure una vall, una muntanya i el cel\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0mmirar\nDes de la vall, pots veure un bosc, una muntanya i el cel\n\u001b[2mQuè vols fer? \u001b[0mtornar\nTornes al bosc, estàs en un bosc perdut i és fosc\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts a la vall, pots demanar: ajuda, mirar, tornar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mcridar\nEls llops senten que crides, venen i se't menjen\n\u001b[31mGame over, loser\u001b[0m\n\n"
+    },
+    {
+        "num": "075",
+        "inputs": [
+            "caminar",
+            "mirar",
+            "escalar",
+            "caminar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0mmirar\nDes de la vall, pots veure un bosc, una muntanya i el cel\n\u001b[2mQuè vols fer? \u001b[0mescalar\nPujes a dalt de la muntanya\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines fins a la ciutat\n\u001b[32mHas sobreviscut, gracies per jugar!\u001b[0m\n\n"
+    },
+    {
+        "num": "075",
+        "inputs": [
+            "ajuda",
+            "escalar",
+            "cridar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mescalar\nPujes a dalt de la muntanya\n\u001b[2mQuè vols fer? \u001b[0mcridar\nEls llops senten que crides, venen i se't menjen\n\u001b[31mGame over, loser\u001b[0m\n\n"
     }
 ]

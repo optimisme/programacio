@@ -150,7 +150,18 @@ let crides = [
     { "num": "067", "inputs": [], "args": [] },
     { "num": "068", "inputs": [], "args": [] },
     { "num": "069", "inputs": [ "king", "3" ], "args": [] },
-    { "num": "070", "inputs": [], "args": [] }
+    { "num": "070", "inputs": [], "args": [] },
+    { "num": "071", "inputs": [], "args": [] },
+    { "num": "072", "inputs": ['1', 'hola', '1 2 3'], "args": [] },
+    { "num": "073", "inputs": ['1,2,3,4,5,6,7,8,9'], "args": [] },
+    { "num": "073", "inputs": ['4000,300,20,1'], "args": [] },
+    { "num": "073", "inputs": ['1'], "args": [] },
+    { "num": "074", "inputs": ['5 1 2 3 4 5 6 7 8 9'], "args": [] },
+    { "num": "074", "inputs": ['50 90 88 70 60 50 40 30 20 10'], "args": [] },
+    { "num": "074", "inputs": ['16 2 4 8 16 32 64 128 256 512'], "args": [] },
+    { "num": "075", "inputs": ['ajuda', 'mirar', 'caminar', 'mirar', 'tornar', 'caminar', 'ajuda', 'cridar'], "args": [] },
+    { "num": "075", "inputs": ['caminar', 'mirar', 'escalar', 'caminar'], "args": [] },
+    { "num": "075", "inputs": ['ajuda', 'escalar', 'cridar'], "args": [] }
 ]
 
 async function runNode (file, inputs, args) {
@@ -161,7 +172,14 @@ async function runNode (file, inputs, args) {
         child = spawn(`node ${file}`, args, { cwd: carpetaSolucions, shell: true })
         child.stdin.setEncoding('utf-8')
         child.stdout.on('data', (data) => {
-            if (cntInput < inputs.length) {
+            let str = data.toString()
+            if (str.slice(-1) === ':' 
+             || str.slice(-1) === '?' 
+             || str.slice(-2) === ': ' 
+             || str.slice(-2) === '? '
+             || str.slice(-6) === '? \x1b[0m'
+             || str.indexOf(': (') >= 0
+             || str.indexOf('? (') >= 0) {
                 child.stdin.write(inputs[cntInput])
                 out = out + data + inputs[cntInput] + '\n'
                 cntInput = cntInput + 1
@@ -199,7 +217,7 @@ async function main () {
         arrRst.push(await comprova(crides[cnt].num, crides[cnt].inputs, crides[cnt].args))
     }
 
-    // await fs.promises.writeFile('test-validacions.json', JSON.stringify(arrRst, null, 4), { encoding: 'utf8' })
+    await fs.promises.writeFile('test-validacions.json', JSON.stringify(arrRst, null, 4), { encoding: 'utf8' })
 }
 
 main()
