@@ -121,7 +121,7 @@ function executaInstruccio (instruccio) {
 
     if (instruccio.accio === 'escriuSi') {
         // TODO: Fes servir la comanda 'eval' per avaluar la condició
-        //       de la variable 'instruccio.condicio)
+        //       de la variable 'instruccio.condicio'
         //       guarda el resultat d'aquesta avaluació a la variable 'condicio'
 
         // TODO: Si la variable 'condicio' és certa, escriu el valor de 'instruccio.valor'
