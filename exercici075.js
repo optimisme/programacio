@@ -9,7 +9,7 @@ Modifica el següent programa segons les instruccions
 
 /* TODO:
 
-    Crea una funció 'executaComanda' que rebrà dos paràmetres 'comanda' i 'joc'
+    Crea una funció 'executaComanda' que rebrà el paràmetre 'comanda'
     - El paràmetre 'comanda' és la comanda introduida per l'usuari en el bucle 'while' del 'main'
     - El paràmetre 'joc' és l'objecte de joc del 'main'
 
@@ -59,15 +59,16 @@ Modifica el següent programa segons les instruccions
       'No entenc la comanda'
 */
 
+let joc = {
+  guanyat: false,
+  perdut: false,
+  pantalla: 'bosc'
+}
+
 async function main () {
 
     let comanda = ''
     let jugar = true
-    let joc = {
-        guanyat: false,
-        perdut: false,
-        pantalla: 'bosc'
-    }
 
     console.log('Hola viatjer,')
     console.log('Estàs en un bosc perdut i és fosc ...')
@@ -78,7 +79,7 @@ async function main () {
       comanda = await prompt('\x1b[2mQuè vols fer? \x1b[0m')
 
       // Crida a la funció 'executaComanda' amb els paràmetres necessaris
-      executaComanda(comanda, joc)
+      executaComanda(comanda)
 
       // Si el joc està 'guanyat' o 'perdut' posa la variable jugar a false
       // per sortir del bucle i acabar la partida
