@@ -73,7 +73,7 @@ async function main () {
     console.log('Estàs en un bosc perdut i és fosc ...')
     console.log('Escriu \x1b[32m"ajuda"\x1b[0m si no saps què pots fer')
 
-    while (jugar) {
+  while (jugar) {
       // Demana una comanda a l'usuari i guarda el valor a la variable comanda
       comanda = await prompt('\x1b[2mQuè vols fer? \x1b[0m')
 
