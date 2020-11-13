@@ -70,35 +70,35 @@ function executaComanda (comanda) {
 
         console.log('Ets al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar')
 
+    } else if (joc.pantalla === 'bosc' && comanda === 'mirar') {
+
+      console.log('Des del bosc, pots veure una vall, una muntanya i el cel')
+
+    } else if (joc.pantalla === 'bosc' && comanda === 'caminar') {
+
+      console.log('Camines a la vall')
+      joc.pantalla = 'vall'
+
     } else if (joc.pantalla === 'vall' && comanda === 'ajuda') {
 
         console.log('Ets a la vall, pots demanar: ajuda, mirar, tornar, escalar, cridar')
+
+    } else if (joc.pantalla === 'vall' && comanda === 'mirar') {
+
+      console.log('Des de la vall, pots veure un bosc, una muntanya i el cel')
+
+    } else if (joc.pantalla === 'vall' && comanda === 'tornar') {
+
+      console.log('Tornes al bosc, estàs en un bosc perdut i és fosc')
+      joc.pantalla = 'bosc'
 
     } else if (joc.pantalla === 'muntanya' && comanda === 'ajuda') {
 
         console.log('Ets a la muntanya, pots demanar: ajuda, mirar, caminar, cridar')
 
-    } else if (joc.pantalla === 'bosc' && comanda === 'mirar') {
-
-        console.log('Des del bosc, pots veure una vall, una muntanya i el cel')
-
-    } else if (joc.pantalla === 'vall' && comanda === 'mirar') {
-
-        console.log('Des de la vall, pots veure un bosc, una muntanya i el cel')
-
     } else if (joc.pantalla === 'muntanya' && comanda === 'mirar') {
 
         console.log('Des de la muntanya, pots veure una vall, un bosc, una ciutat i el cel')
-
-    } else if (joc.pantalla === 'bosc' && comanda === 'caminar') {
-
-        console.log('Camines a la vall')
-        joc.pantalla = 'vall'
-
-    } else if (joc.pantalla === 'vall' && comanda === 'tornar') {
-
-        console.log('Tornes al bosc, estàs en un bosc perdut i és fosc')
-        joc.pantalla = 'bosc'
 
     } else if (joc.pantalla === 'muntanya' && comanda === 'caminar') {
 

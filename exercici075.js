@@ -23,28 +23,28 @@ Modifica el següent programa segons les instruccions
     - Si la pantalla és 'bosc' i la comanda 'ajuda' escriu: 
       'Ets al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar'
     
-    - Si la pantalla és 'vall' i la comanda 'ajuda' escriu: 
-      'Ets a la vall, pots demanar: ajuda, mirar, tornar, escalar, cridar'
-    
-    - Si la pantalla és 'muntanya' i la comanda 'ajuda' escriu: 
-      'Ets a la muntanya, pots demanar: ajuda, mirar, caminar, cridar'
-
     - Si la pantalla és 'bosc' i la comanda 'mirar' escriu: 
       'Des del bosc, pots veure una vall, una muntanya i el cel'
-    
-    - Si la pantalla és 'vall' i la comanda 'mirar' escriu: 
-      'Des de la vall, pots veure un bosc, una muntanya i el cel'
-    
-    - Si la pantalla és 'muntanya' i la comanda 'mirar' escriu: 
-      'Des de la muntanya, pots veure una vall, un bosc, una ciutat i el cel'
-    
+
     - Si la pantalla és 'bosc' i la comanda 'caminar' escriu: 
       'Camines a la vall'
       i posa el valor 'vall' a la variable 'pantalla' de l'objecte 'joc'
     
+    - Si la pantalla és 'vall' i la comanda 'ajuda' escriu: 
+      'Ets a la vall, pots demanar: ajuda, mirar, tornar, escalar, cridar'
+    
+    - Si la pantalla és 'vall' i la comanda 'mirar' escriu: 
+      'Des de la vall, pots veure un bosc, una muntanya i el cel'
+    
     - Si la pantalla és 'vall' i la comanda 'tornar' escriu: 
       'Tornes al bosc, estàs en un bosc perdut i és fosc'
       i posa el valor 'bosc' a la variable 'pantalla' de l'objecte 'joc'
+    
+    - Si la pantalla és 'muntanya' i la comanda 'ajuda' escriu: 
+      'Ets a la muntanya, pots demanar: ajuda, mirar, caminar, cridar'
+
+    - Si la pantalla és 'muntanya' i la comanda 'mirar' escriu: 
+      'Des de la muntanya, pots veure una vall, un bosc, una ciutat i el cel'
     
     - Si la pantalla és 'muntanya' i la comanda 'caminar' escriu: 
       'Camines fins a la ciutat'

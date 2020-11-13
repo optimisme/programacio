@@ -34,13 +34,11 @@ async function main () {
 
     // TODO: Fes servir 'eval' per executar la instrucció que hi
     //       ha a la variable 'instruccio'
-    eval(instruccio)
 
     instruccio = 'crida(c, b, a)'
 
     // TODO: Torna a fer servir 'eval' per executar la instrucció que hi
     //       ha a la variable 'instruccio'
-    eval(instruccio)
 
     prompt.end()
 }

@@ -161,7 +161,15 @@ let crides = [
     { "num": "074", "inputs": ['16 2 4 8 16 32 64 128 256 512'], "args": [] },
     { "num": "075", "inputs": ['ajuda', 'mirar', 'caminar', 'mirar', 'tornar', 'caminar', 'ajuda', 'cridar'], "args": [] },
     { "num": "075", "inputs": ['caminar', 'mirar', 'escalar', 'caminar'], "args": [] },
-    { "num": "075", "inputs": ['ajuda', 'escalar', 'cridar'], "args": [] }
+    { "num": "075", "inputs": ['ajuda', 'escalar', 'cridar'], "args": [] },
+    { "num": "076", "inputs": [], "args": [] },
+    { "num": "077", "inputs": [], "args": [] },
+    { "num": "078", "inputs": ['ajuda', 'mirar', 'caminar', 'mirar', 'tornar', 'caminar', 'ajuda', 'cridar'], "args": [] },
+    { "num": "078", "inputs": ['caminar', 'mirar', 'escalar', 'caminar'], "args": [] },
+    { "num": "078", "inputs": ['ajuda', 'escalar', 'cridar'], "args": [] },
+    { "num": "079", "inputs": ['menjar', 'escalar', 'dormir', 'menjar', 'caminar'], "args": [] },
+    { "num": "079", "inputs": ['nedar'], "args": [] },
+    { "num": "079", "inputs": ['caminar', 'galopar'], "args": [] },
 ]
 
 async function runNode (file, inputs, args) {

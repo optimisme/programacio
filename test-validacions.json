@@ -1174,7 +1174,7 @@
             "3"
         ],
         "args": [],
-        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.376535\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.280839\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.161146\n    Nom: King Geunchogo\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
+        "out": "Busca les dades d'una sèrie (per exemple 'walking dead'): king\nQuants resultats vols mostrar? 3\nResultat número 0:\n    Puntuació: 18.545748\n    Nom: King\n    Tipus: Scripted\nResultat número 1:\n    Puntuació: 14.017124\n    Nom: Janet King\n    Tipus: Scripted\nResultat número 2:\n    Puntuació: 13.900017\n    Nom: King & Maxwell\n    Tipus: Scripted\nMostrant 3 resultats de 10 rebuts\n"
     },
     {
         "num": "070",
@@ -1281,5 +1281,82 @@
         ],
         "args": [],
         "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mescalar\nPujes a dalt de la muntanya\n\u001b[2mQuè vols fer? \u001b[0mcridar\nEls llops senten que crides, venen i se't menjen\n\u001b[31mGame over, loser\u001b[0m\n\n"
+    },
+    {
+        "num": "076",
+        "inputs": [],
+        "args": [],
+        "out": "5\n1\n3 2 1\n1 2 3\n"
+    },
+    {
+        "num": "077",
+        "inputs": [],
+        "args": [],
+        "out": "Les propietats de l'objecte \"persona\" són: nom,cognom,edat,cabell,genere\nPropietat \"nom\", valor: Pepito\nPropietat \"cognom\", valor: Grillo\nPropietat \"edat\", valor: 35\nPropietat \"cabell\", valor: Castany\nPropietat \"genere\", valor: Neutre\nLes propietats de l'objecte \"alumne\" són: nom,cognom,grup,edat\nPropietat \"nom\", valor: Neil\nPropietat \"cognom\", valor: Armstrong\nPropietat \"grup\", valor: Ciencies\nPropietat \"edat\", valor: 25\n"
+    },
+    {
+        "num": "078",
+        "inputs": [
+            "ajuda",
+            "mirar",
+            "caminar",
+            "mirar",
+            "tornar",
+            "caminar",
+            "ajuda",
+            "cridar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mmirar\nDes del bosc, pots veure una vall, una muntanya i el cel\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0mmirar\nDes de la vall, pots veure un bosc, una muntanya i el cel\n\u001b[2mQuè vols fer? \u001b[0mtornar\nTornes al bosc, estàs en un bosc perdut i és fosc\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts a la vall, pots demanar: ajuda, mirar, tornar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mcridar\nEls llops senten que crides, venen i se't menjen\n\u001b[31mGame over, loser\u001b[0m\n\n"
+    },
+    {
+        "num": "078",
+        "inputs": [
+            "caminar",
+            "mirar",
+            "escalar",
+            "caminar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0mmirar\nDes de la vall, pots veure un bosc, una muntanya i el cel\n\u001b[2mQuè vols fer? \u001b[0mescalar\nPujes a dalt de la muntanya\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines fins a la ciutat\n\u001b[32mHas sobreviscut, gracies per jugar!\u001b[0m\n\n"
+    },
+    {
+        "num": "078",
+        "inputs": [
+            "ajuda",
+            "escalar",
+            "cridar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0majuda\nEts al bosc, pots demanar: ajuda, mirar, caminar, escalar, cridar\n\u001b[2mQuè vols fer? \u001b[0mescalar\nPujes a dalt de la muntanya\n\u001b[2mQuè vols fer? \u001b[0mcridar\nEls llops senten que crides, venen i se't menjen\n\u001b[31mGame over, loser\u001b[0m\n\n"
+    },
+    {
+        "num": "079",
+        "inputs": [
+            "menjar",
+            "escalar",
+            "dormir",
+            "menjar",
+            "caminar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0mmenjar\nNo tens gana\n\u001b[2mQuè vols fer? \u001b[0mescalar\nPujes a dalt de la muntanya\n\u001b[2mQuè vols fer? \u001b[0mdormir\nDorms tota la nit ...\nEt lleves mort de fred i amb molta gana\n\u001b[2mQuè vols fer? \u001b[0mmenjar\nMenjes una poma de la pomera\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines fins a la ciutat\n\u001b[32mHas sobreviscut, gracies per jugar!\u001b[0m\n\n"
+    },
+    {
+        "num": "079",
+        "inputs": [
+            "nedar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0mnedar\nAl riu hi ha cocodrils, venen i se't menjen\n\u001b[31mGame over, loser\u001b[0m\n\n"
+    },
+    {
+        "num": "079",
+        "inputs": [
+            "caminar",
+            "galopar"
+        ],
+        "args": [],
+        "out": "Hola viatjer,\nEstàs en un bosc perdut i és fosc ...\nEscriu \u001b[32m\"ajuda\"\u001b[0m si no saps què pots fer\n\u001b[2mQuè vols fer? \u001b[0mcaminar\nCamines a la vall\n\u001b[2mQuè vols fer? \u001b[0mgalopar\nPujes a la mula i vas fins a una ciutat\n\u001b[32mHas sobreviscut, gracies per jugar!\u001b[0m\n\n"
     }
 ]
