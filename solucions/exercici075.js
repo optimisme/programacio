@@ -1,6 +1,12 @@
 const prompt = require('prompt-promise')
 const fs = require('fs')
 
+let joc = {
+  guanyat: false,
+  perdut: false,
+  pantalla: 'bosc'
+}
+
 /*
 
 Modifica el següent programa segons les instruccions
@@ -11,7 +17,6 @@ Modifica el següent programa segons les instruccions
 
     Crea una funció 'executaComanda' que rebrà el paràmetre 'comanda'
     - El paràmetre 'comanda' és la comanda introduida per l'usuari en el bucle 'while' del 'main'
-    - El paràmetre 'joc' és l'objecte de joc del 'main'
 
     Dins d'aquesta funció, fes les següents condicions:
     
@@ -58,12 +63,6 @@ Modifica el següent programa segons les instruccions
     - En qualsevol altre cas escriu:
       'No entenc la comanda'
 */
-
-let joc = {
-  guanyat: false,
-  perdut: false,
-  pantalla: 'bosc'
-}
 
 function executaComanda (comanda) {
 
