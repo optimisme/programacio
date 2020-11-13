@@ -74,18 +74,26 @@ async function main () {
     console.log('Escriu \x1b[32m"ajuda"\x1b[0m si no saps què pots fer')
 
     while (jugar) {
-        // TODO: Demana una comanda a l'usuari i guarda el valor a la variable comanda
-        //       el text que has de fer servir és: '\x1b[2mQuè vols fer? \x1b[0m'
+      // Demana una comanda a l'usuari i guarda el valor a la variable comanda
+      comanda = await prompt('\x1b[2mQuè vols fer? \x1b[0m')
 
-        // TODO: Crida a la funció 'executaComanda' que has creat anteriorment,
-        //       amb els paràmetres necessaris
+      // Crida a la funció 'executaComanda' amb els paràmetres necessaris
+      executaComanda(comanda, joc)
 
-        // TODO: Si el joc està 'guanyat' o 'perdut' posa la variable jugar a false
-        //       per sortir del bucle i acabar la partida
-    }
+      // Si el joc està 'guanyat' o 'perdut' posa la variable jugar a false
+      // per sortir del bucle i acabar la partida
+      if (joc.guanyat || joc.perdut) {
+          jugar = false
+      }
+  }
 
-    // TODO: Si s'ha guanyat el joc, escriure: '\x1b[32mHas sobreviscut, gracies per jugar!\x1b[0m\n'
-    //       Si s'ha perdut, esriure: '\x1b[31mGame over, loser\x1b[0m\n'
+  // Si s'ha guanyat el joc, escriure: '\x1b[32mHas sobreviscut, gracies per jugar!\x1b[0m\n'
+  // Si s'ha perdut, esriure: '\x1b[31mGame over, loser\x1b[0m\n'
+  if (joc.guanyat) {
+      console.log('\x1b[32mHas sobreviscut, gracies per jugar!\x1b[0m\n')
+  } else {
+      console.log('\x1b[31mGame over, loser\x1b[0m\n')
+  }
 
     prompt.end()
 }

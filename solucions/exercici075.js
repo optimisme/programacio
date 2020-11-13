@@ -132,11 +132,9 @@ async function main () {
 
     while (jugar) {
         // Demana una comanda a l'usuari i guarda el valor a la variable comanda
-        // el text que has de fer servir és: '\x1b[2mQuè vols fer? \x1b[0m'
         comanda = await prompt('\x1b[2mQuè vols fer? \x1b[0m')
 
-        // Crida a la funció 'executaComanda' que has creat anteriorment,
-        // amb els paràmetres necessaris
+        // Crida a la funció 'executaComanda' amb els paràmetres necessaris
         executaComanda(comanda, joc)
 
         // Si el joc està 'guanyat' o 'perdut' posa la variable jugar a false
