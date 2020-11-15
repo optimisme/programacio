@@ -52,14 +52,14 @@ async function main () {
     console.log(`A la posició 2, el caràcter és "${cad.charAt(2)}"`)
 
     // Podem agafar parts d'un array amb '.substring(inici, fi)'
-    console.log('\n5:')
+    console.log('\n6:')
     console.log(`El text 'cad' conté [${cad}]`)
     console.log(`La subcadena entre els caràcters 2 i 5 és "${cad.substring(1, 5)}"`)
     console.log(`La subcadena entre els caràcters 2 i 5 és "${cad.substring(6, 15)}"`)
 
     // Si enlloc de dir la posició final, necessitem dir la longitud
     // hem de fer servir '.substr(inici, long)'
-    console.log('\n6:')
+    console.log('\n7:')
     console.log(`El text 'cad' conté [${cad}]`)
     console.log(`La subcadena a partir del caràcter 1 fins al caràcter 4 és "${cad.substr(1, 4)}"`)
     console.log(`La subcadena a partir del caràcter 6 fins al caràcter 9 és "${cad.substr(6, 9)}"`)
@@ -67,7 +67,7 @@ async function main () {
     // Podem reempleçar subcadenes de text, dins d'una cadena
     // cadena de text amb: '.replace()'
 
-    console.log('\n7:')
+    console.log('\n8:')
     console.log(`El text 'cad' conté [${cad}]`)
     console.log(`Rempleçar la primera aparició de 'programar' per 'cuinar': ${cad.replace('programar', 'cuinar')}"`)
     console.log(`Rempleçar tote les aparicions de 'a' per '(@)': ${cad.replace(/a/g, '(@)')}"`)
