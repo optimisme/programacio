@@ -31,6 +31,13 @@ async function main () {
     console.log('L\'objecte bicicleta conté:', bicicleta)
     console.log(`La marca de la bicicleta és: ${bicicleta.marca}`)
 
+    /*
+    La sortida d'aquest codi és: (executa'l per veure que triga 2 segons)
+    1:
+    L'objecte bicicleta conté: { marca: 'BH', electrica: false, radi: 20 }
+    La marca de la bicicleta és: BH
+    */
+
     // Aquest exemple transforma l'objecte 'bicicleta'
     // en una cadena de text que es pot guardar en
     // un arxiu o base de dades
@@ -41,6 +48,13 @@ async function main () {
     console.log('Transformació a JSON simple')
     console.log(bicicletaJSON)
 
+    /*
+    La sortida d'aquest codi és: (executa'l per veure que triga 2 segons)
+    2:
+    Transformació a JSON simple
+    {"marca":"BH","electrica":false,"radi":20}
+    */
+
     // Si volem que a més ens conservi els
     // salts de línia i ens tabuli correctament
     // ho podem fer amb els paràmetres 'null i 2'
@@ -50,6 +64,17 @@ async function main () {
     console.log('\n3:')
     console.log('Transformació a JSON amb salts de linia i tabulació')
     console.log(bicicletaJSONtext)
+
+    /*
+    La sortida d'aquest codi és: (executa'l per veure que triga 2 segons)
+    3:
+    Transformació a JSON amb salts de linia i tabulació
+    {
+    "marca": "BH",
+    "electrica": false,
+    "radi": 20
+    }
+    */
 
     // Per fer la operació contrària, 
     // transformar un text tipus JSON en un objecte
@@ -70,6 +95,14 @@ async function main () {
 
     console.log('L\'objecte bicicleta recuperat d\'un text JSON és:', bicicleta)
     console.log(`La marca de la bicicleta és: ${bicicleta.marca}`)
+
+    /*
+    La sortida d'aquest codi és: (executa'l per veure que triga 2 segons)
+    4:
+    L'objecte bicicleta conté: null
+    L'objecte bicicleta recuperat d'un text JSON és: { marca: 'BH', electrica: false, radi: 20 }
+    La marca de la bicicleta és: BH
+    */
 }
 
 main()
