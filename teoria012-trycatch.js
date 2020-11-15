@@ -32,6 +32,13 @@ async function main () {
     }
 
     console.log('El programa acaba sense penjar-se')
+
+    /*
+    La sortida d'aquest codi és: (executa'l per veure que triga 2 segons)
+    1:
+    Hi ha hagut un error al codi, (ReferenceError: cridaABC is not defined)
+    El programa acaba sense penjar-se
+    */
 }
 
 main()

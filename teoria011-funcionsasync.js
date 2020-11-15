@@ -43,6 +43,12 @@ async function main () {
     await espera(2)
     console.log('Ja!')
 
+    /*
+    La sortida d'aquest codi és:
+    1:
+    Espera 2 segons ...
+    Ja!
+    */
 }
 
 main()

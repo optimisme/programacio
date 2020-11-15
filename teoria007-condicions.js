@@ -22,17 +22,28 @@ async function main () {
     // El simbol !==, cert si dos elements no són iguals (també en tipus)
     // El simbol != , cert si dos elements no són iguals (no compara el tipus)
 
-    console.log('1:')
+    console.log('\n1:')
     console.log(`La comparació entre 3===3 dóna com a resutat '${3===3}'`)
     console.log(`La comparació entre 3==="3" dóna com a resutat '${3==="3"}'`)
     console.log(`La comparació entre 2==2 dóna com a resutat '${2==2}'`)
     console.log(`La comparació entre 2=="2" dóna com a resutat '${2=="2"}'`)
-
-    console.log('2:')
     console.log(`La comparació entre 3!==3 dóna com a resutat '${3!==3}'`)
     console.log(`La comparació entre 3!=="3" dóna com a resutat '${3!=="3"}'`)
     console.log(`La comparació entre 2!=2 dóna com a resutat '${2!=2}'`)
     console.log(`La comparació entre 2!="2" dóna com a resutat '${2!="2"}'`)
+
+    /*
+    La sortida d'aquest codi és:
+    1:
+    La comparació entre 3===3 dóna com a resutat 'true'
+    La comparació entre 3==="3" dóna com a resutat 'false'
+    La comparació entre 2==2 dóna com a resutat 'true'
+    La comparació entre 2=="2" dóna com a resutat 'true'
+    La comparació entre 3!==3 dóna com a resutat 'false'
+    La comparació entre 3!=="3" dóna com a resutat 'true'
+    La comparació entre 2!=2 dóna com a resutat 'false'
+    La comparació entre 2!="2" dóna com a resutat 'false'
+    */
 
     // Les condicions ens permeten decidir si un troç
     // de codi s'executa o s'ignora
@@ -49,6 +60,12 @@ async function main () {
         console.log(`El codi dins d'una condició falsa, no s'executa`)
     }
 
+    /*
+    La sortida d'aquest codi és:
+    2:
+    El codi dins d'una condició certa, s'executa
+    */
+
     // Les condicions poden definir el codi que
     // cal executar si la condició no es compleix
     // això es fa amb un 'else'
@@ -61,6 +78,12 @@ async function main () {
     } else {
         console.log(`La part de l'else només s'executa si la condició anterior no s'ha complert`)
     }
+
+    /*
+    La sortida d'aquest codi és:
+    3:
+    La part de l'else només s'executa si la condició anterior no s'ha complert
+    */
 
     // A vegades necessitem comparar més d'una condició
     // abans de decidis si executar el codi que hi ha a 'else'
@@ -82,6 +105,12 @@ async function main () {
         console.log(`Aquest codi només s'executa si "objecte" no val ni "tele" ni "radio"`)
     }
 
+    /*
+    La sortida d'aquest codi és:
+    4:
+    Aquest codi només s'executa si "objecte" té el valor "radio"
+    */
+
     // Fixa't que anem descartant per ordre de condicions, així 
     // en el següent exemple no cal comparar si l'edat és més gran que
     // les anteriors ja comparades
@@ -96,6 +125,12 @@ async function main () {
     } else {
         console.log('Ets un adult')
     }
+
+    /*
+    La sortida d'aquest codi és:
+    5:
+    Ets un adult
+    */
 
     // A vegades volem comparar una variable
     // amb diverses possibilitats, això es fa amb un 'switch'
@@ -115,6 +150,12 @@ async function main () {
             console.log('Quin color tant lleig')
     }
 
+    /*
+    La sortida d'aquest codi és:
+    6:
+    El mar és blau
+    */
+
     // Si no posem 'break' després d'una coincidència
     // s'excecuta el codi de la següent coincidència
     console.log('\n7:')
@@ -128,6 +169,13 @@ async function main () {
         default:
             console.log('Quin color tant lleig')
     }
+
+    /*
+    La sortida d'aquest codi és:
+    7:
+    El mar és blau
+    La gespa és verda
+    */
 }
 
 main()

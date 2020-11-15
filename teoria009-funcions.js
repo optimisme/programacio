@@ -66,6 +66,12 @@ async function main () {
     console.log('\n1:')
     escriu('Hola')
 
+    /*
+    La sortida d'aquest codi és:
+    1:
+    Hola
+    */
+
     // A les funcions se li poden posar
     // tants paràmetres com necessitem
 
@@ -83,6 +89,12 @@ async function main () {
     console.log('\n2:')
     console.log(`El resultat de cridar a 'sumaTres(1, 3, 6)': ${sumaTres(1, 3, 6)}`)
 
+    /*
+    La sortida d'aquest codi és:
+    2:
+    El resultat de cridar a 'sumaTres(1, 3, 6)': 10
+    */
+
     // A vegades no sabem quans paràmetres 
     // tindrà una funció, aleshores podem
     // fer servir '...args'
@@ -95,6 +107,14 @@ async function main () {
     console.log(`El resultat de cridar a 'sumaMolts(1, 3)': ${sumaMolts(1, 3)}`)
     console.log(`El resultat de cridar a 'sumaMolts(1, 3, 6)': ${sumaMolts(1, 3, 6)}`)
 
+    /*
+    La sortida d'aquest codi és:
+    3:
+    El resultat de cridar a 'sumaMolts(1)': 1
+    El resultat de cridar a 'sumaMolts(1, 3)': 4
+    El resultat de cridar a 'sumaMolts(1, 3, 6)': 10
+    */
+
     // Per entendre què són els paràmetres,
     // pensa que són les indicacions de com
     // s'ha de fer una ordre, mira el següent exemple
@@ -102,6 +122,13 @@ async function main () {
     console.log('\n4:')
     pintaParet('vermell', 'rodillo')
     pintaParet('blau', 'pinzell')
+
+    /*
+    La sortida d'aquest codi és:
+    4:
+    Vols pintar la paret de color "vermell" amb "rodillo"
+    Vols pintar la paret de color "blau" amb "pinzell"
+    */
 
     // Quan fem servir funcions, tenim 2 tipus de variables:
     // - Les variables 'globals' que conserven el valor a tot el codi
@@ -116,6 +143,15 @@ async function main () {
     console.log(`A nivell global, 'varProva' val: ${varProva}`)
     prova()
     console.log(`A nivell global, 'varProva' val: ${varProva}`)
+
+    /*
+    La sortida d'aquest codi és:
+    5:
+    A nivell global, 'varProva' val: 3
+    A nivell local, 'varProva' val: 2
+    A nivell local, 'varProva' val: 4
+    A nivell global, 'varProva' val: 3
+    */
 }
 
 main()

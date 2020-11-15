@@ -33,6 +33,13 @@ async function main () {
     }
 
     funcX(4)
+
+    /*
+    La sortida d'aquest codi és:
+    1:
+    El valor del paràmetre 'x' és: 4
+    El valor de la variable 'a' és: 5
+    */
 }
 
 main()
