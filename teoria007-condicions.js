@@ -86,7 +86,7 @@ async function main () {
     // en el següent exemple no cal comparar si l'edat és més gran que
     // les anteriors ja comparades
 
-    onsole.log('\n5:')
+    console.log('\n5:')
 
     let edat = 25
     if (edat <= 10) {
