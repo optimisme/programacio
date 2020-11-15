@@ -21,6 +21,12 @@ async function main () {
 
     console.log(`L'usuari ha escrit: '${text}'`)
 
+    /*
+    La sortida d'aquest codi és:
+    Escriu un text: Hola
+    L'usuari ha escrit: Hola
+    */
+
     prompt.end()
 }
 

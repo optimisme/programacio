@@ -66,7 +66,7 @@ async function main () {
     // abans de decidis si executar el codi que hi ha a 'else'
     // això ho podem fer amb 'else if'
 
-    onsole.log('\n4:')
+    console.log('\n4:')
 
     let objecte = 'radio'
     if (objecte === 'tele') {

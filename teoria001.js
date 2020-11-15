@@ -14,6 +14,11 @@ async function main () {
     // que volem escriure per pantalla
     
     console.log('Hola')
+
+    /*
+    La sortida d'aquest codi és:
+    Hola
+    */
 }
 
 main()
