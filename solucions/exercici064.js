@@ -26,7 +26,6 @@ async function main () {
     // './exercici064.txt'
     // mostra el resultat per pantalla
     console.log(await llegirArxiu('./exercici064.txt'))
-    console.log('ab')
 
     prompt.end()
 }

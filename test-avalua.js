@@ -8,7 +8,7 @@ async function runNode (file, inputs, args) {
         let child = null
         let out = ''
         let cntInput = 0
-        child = spawn(`node ${file}`, args, { cwd: './solucions/', shell: true })
+        child = spawn(`node ${file}`, args, { cwd: './', shell: true })
         child.stdin.setEncoding('utf-8')
         child.stdout.on('data', (data) => {
             let str = data.toString()

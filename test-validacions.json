@@ -1119,7 +1119,7 @@
             "exercici064.txt"
         ],
         "args": [],
-        "out": "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry. Lorem Ipsum has been \nthe industry's standard dummy text ever since \nthe 1500s, when an unknown printer took a galley \nof type and scrambled it to make a type specimen \nbook. It has survived not only five centuries, \nbut also the leap into electronic typesetting, \nremaining essentially unchanged. It was \npopularised in the 1960s with the release of \nLetraset sheets containing Lorem Ipsum passages, \nand more recently with desktop publishing \nsoftware like Aldus PageMaker including versions \nof Lorem Ipsum.\nab\n"
+        "out": "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry. Lorem Ipsum has been \nthe industry's standard dummy text ever since \nthe 1500s, when an unknown printer took a galley \nof type and scrambled it to make a type specimen \nbook. It has survived not only five centuries, \nbut also the leap into electronic typesetting, \nremaining essentially unchanged. It was \npopularised in the 1960s with the release of \nLetraset sheets containing Lorem Ipsum passages, \nand more recently with desktop publishing \nsoftware like Aldus PageMaker including versions \nof Lorem Ipsum.\n"
     },
     {
         "num": "065",
