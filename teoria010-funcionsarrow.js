@@ -9,7 +9,7 @@ executa'l amb:
 
 async function main () {
 
-    // A vegades no sabem quanta
+    // A vegades no sabem quant
     // necessitem declarar una funció 
     // dins el mateix codi (el main o una altra funció)
 
@@ -22,8 +22,8 @@ async function main () {
     // locals d'aquell codi, com si fóssin globals
 
     // Les funcions arrow no es declaren amb 
-    // 'function nomFuncio() { /* codi de la funcio */ }'
-    // sinó que es declaren amb '() => { /* codi de la funcio */ }'
+    // 'function nomFuncio(paràmetres) { /* codi de la funcio */ }'
+    // sinó que es declaren amb '(paràmetres) => { /* codi de la funcio */ }'
 
     console.log('\n1:')
     let a = 5

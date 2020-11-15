@@ -12,13 +12,13 @@ async function main () {
     // Els bucles permeten executar unes mateixes
     // linies de codi diverses vegades
 
-    // El bucle for funciona amb una
+    // El bucle 'for' funciona amb una
     // variable que conta un valor
     // entre un número inicial i una
     // condició de sortida
 
     // Cada cop que s'executa el codi del bucle
-    // la variable que conta, cnavia de valor
+    // la variable que conta, canvia de valor
     // segons el paràmetre final del 'for'
 
     console.log('\n1:')
@@ -28,7 +28,7 @@ async function main () {
         console.log(`El valor de 'cnt' és: ${cnt}`)
     }
 
-    // Això és molt útil per fer opeacions
+    // Això és molt útil per fer operacions
     // amb 'arrays', per exemple, per
     // escriure tots els valors d'un array
     // manualment hem de:
@@ -37,10 +37,10 @@ async function main () {
 
     let arr = ['A', 'B', 'C', 'D', 'E']
     console.log(`El valor de la posició 0 de l'array és ${arr[0]}`)
-    console.log(`El valor de la posició 0 de l'array és ${arr[1]}`)
-    console.log(`El valor de la posició 0 de l'array és ${arr[2]}`)
-    console.log(`El valor de la posició 0 de l'array és ${arr[3]}`)
-    console.log(`El valor de la posició 0 de l'array és ${arr[4]}`)
+    console.log(`El valor de la posició 1 de l'array és ${arr[1]}`)
+    console.log(`El valor de la posició 2 de l'array és ${arr[2]}`)
+    console.log(`El valor de la posició 3 de l'array és ${arr[3]}`)
+    console.log(`El valor de la posició 4 de l'array és ${arr[4]}`)
 
     // Fer-ho amb un bucle té dues avantatges:
     // - No cal repetir codi, se n'encarrega el bucle
@@ -64,6 +64,7 @@ async function main () {
 
     // A vegades no sabem a priori quants cops
     // cal repetir un bucle, fins a la condició de sortida
+    // (no podem contar un número de vegades)
 
     // En aquest cas, fem servir un bucle 'while'
     // que repeteix un mateix troç de codi, fins que es compleix

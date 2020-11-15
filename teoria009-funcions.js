@@ -39,19 +39,24 @@ function prova () {
     console.log(`A nivell local, 'varProva' val: ${varProva}`)
 }
 
+function pintaParet (color, eina) {
+
+    console.log(`Vols pintar la paret de color "${color}" amb "${eina}"`)
+}
+
 async function main () {
 
     // Una funció permet tenir unes línies
     // de codi reservades, que cridem
     // quan ens fan falta (normalment per
-    // executar funcions específiques)
+    // executar accions específiques)
 
     // Les funcions, normalment es declaren
     // amb 'function nomDeLaFuncio(parametres)
 
     // Els paràmetres van a dins dels parèntesis,
     // i a la definició de la funció, actuen
-    // com funcions que agafen el valor
+    // com variables que agafen el valor
     // del moment que es crida a la funció
 
     // És a dir, en el següent exemple, 
@@ -90,6 +95,14 @@ async function main () {
     console.log(`El resultat de cridar a 'sumaMolts(1, 3)': ${sumaMolts(1, 3)}`)
     console.log(`El resultat de cridar a 'sumaMolts(1, 3, 6)': ${sumaMolts(1, 3, 6)}`)
 
+    // Per entendre què són els paràmetres,
+    // pensa que són les indicacions de com
+    // s'ha de fer una ordre, mira el següent exemple
+
+    console.log('\n4:')
+    pintaParet('vermell', 'rodillo')
+    pintaParet('blau', 'pinzell')
+
     // Quan fem servir funcions, tenim 2 tipus de variables:
     // - Les variables 'globals' que conserven el valor a tot el codi
     // - Les variables 'locals' que només conserven el valor dins la funció
@@ -99,7 +112,7 @@ async function main () {
     // A la funció 'prova' hi ha una variable 'local' amb el
     // mateix nom, que no afecta al valor de la variable 'global'
 
-    console.log('\n4:')
+    console.log('\n5:')
     console.log(`A nivell global, 'varProva' val: ${varProva}`)
     prova()
     console.log(`A nivell global, 'varProva' val: ${varProva}`)
