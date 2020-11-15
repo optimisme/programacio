@@ -158,6 +158,24 @@ async function main () {
     console.log(`El valor de la variable 'text' dins l'objecte 'varObjecte' és ${varObjecte.text}`)
     console.log(`El valor de la variable 'arrayNumeric' dins l'objecte 'varObjecte' és [${varObjecte.arrayNumeric}]`)
     console.log(`El valor de la variable 'text' dins l'objecte 'joguina' de dins l'objecte 'varObjecte' és '${varObjecte.joguina.text}'`)
+
+    // Les variables de text es poden convertir en numèriques
+    // de dues maneres
+
+    let numText = '3.56'
+    let numDecimal = parseFloat(numText)
+    let numEnter = parseInt(numText)
+
+    console.log('\n11:')
+    console.log(`El text '${numText} es pot transformar en decimal: ${numDecimal}`)
+    console.log(`El text '${numText} es pot transformar en enter: ${numEnter}`)
+
+    // Igualment un número decimal es pot transformar en enter
+    numDecimal = 4.467
+    numEnter = parseInt(numDecimal)
+
+    console.log('\n12:')
+    console.log(`El valor enter de '${numDecimal}' és: ${numEnter}`)
 }
 
 main()
