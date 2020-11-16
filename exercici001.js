@@ -21,6 +21,8 @@ async function main () {
     console.log('Després de parlar amb tu en Pep està', anims)
 
     console.log('abc')
+
+    console.log('ccc')
 }
 
 main()
