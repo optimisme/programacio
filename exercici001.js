@@ -19,10 +19,6 @@ async function main () {
     // TODO: Canvia aquí el valor de la variable 'anims' a 'content'
 
     console.log('Després de parlar amb tu en Pep està', anims)
-
-    console.log('abc')
-
-    console.log('ccc')
 }
 
 main()
