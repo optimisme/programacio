@@ -9,20 +9,49 @@
         margin: 0;
         padding: 0;
     }
+    #exterior {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    #taulell {
+        border: 1px solid grey;
+        overflow: hidden;
+        position: relative;
+        height: 400px;
+        width: 500px;
+    }
     #jugador {
-        position: absolute;
-        background-color: lightBlue;
-        top: 100px;
+        background-color: lightgray;
+        border-top: 1px solid black;
+        top: 350px;
         left: 100px;
+        position: absolute;
         width: 100px;
-        height: 50px;
+        height: 15px;
+    }
+    #pilota {
+        background-color: black;
+        border-radius: 50px;
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        width: 15px;
+        height: 15px;
     }
     </style>
     <!-- Quan s'acabi de carregar la pàgina --> 
     <!-- es cridarà a la funció 'init()' --> 
     <body onload='init()'>
-        <!-- Per poder modificar un element HTML des de  --> 
-        <!-- Javascript cal donar-li un identificador  --> 
-        <div id='jugador'/>
+        <div id='exterior'>
+            <div id='taulell'>
+                <!-- Per poder modificar un element HTML des de  --> 
+                <!-- Javascript cal donar-li un identificador  --> 
+                <div id='jugador'></div>
+                <div id='pilota'></div>
+            </div>
+        </div>
     </body>
 </html>

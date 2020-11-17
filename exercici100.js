@@ -15,10 +15,10 @@ function init() {
     // d'aquest objecte des de Javascript,
     // per exemple, podem canviar-li el color de fons
 
-    refJugador.style.backgroundColor = 'lightBlue'
+    refJugador.style.backgroundColor = 'lightblue'
 
     // Fixa't que les propietats CSS s'escriuen juntes
-    // enlloc de amb guió, i amg una lletra majúscula
+    // enlloc de amb guió, i amb una lletra majúscula
     // després d'on al CSS tenim el guió
 
     // També podem canviar el codi de dins

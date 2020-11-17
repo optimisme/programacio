@@ -65,20 +65,16 @@ function run () {
             pilotaLeft = pilotaLeft + 1
             break
         case 'avallEsquerra':
-            // TODO: Suma o resta un 1 a
-            //       pilotaTop i pilotaLeft
-            //       per animar la pilota en la
-            //       direcció 'avallEsquerra'
+            pilotaTop = pilotaTop + 1
+            pilotaLeft = pilotaLeft - 1
             break
         case 'amuntDreta':
             pilotaTop = pilotaTop - 1
             pilotaLeft = pilotaLeft + 1
             break
         case 'amuntEsquerra':
-            // TODO: Suma o resta un 1 a
-            //       pilotaTop i pilotaLeft
-            //       per animar la pilota en la
-            //       direcció 'amuntesquerra'
+            pilotaTop = pilotaTop - 1
+            pilotaLeft = pilotaLeft - 1
             break
     }
 
@@ -88,13 +84,12 @@ function run () {
     limitAlt = taulellAlt - 15      // Perquè 15 és l'alt de la pilota
 
     if (pilotaLeft <= 0) {
-        // TODO: Si la pilota xoca conta la part
-        //       esquerra de la pantalla, ha de
-        //       canviar de direcció:
-        //       - Si està amb 'avallEsquerra'
-        //         a de canviar a 'avallDreta'
-        //       - Si està amb 'amuntEsquerra'
-        //         a de canviar a 'amuntDreta'
+        if (pilotaDireccio === 'avallEsquerra') {
+            pilotaDireccio = 'avallDreta'
+        }
+        if (pilotaDireccio === 'amuntEsquerra') {
+            pilotaDireccio = 'amuntDreta'
+        }
     }
 
     if (pilotaLeft >= limitAmple) {
@@ -107,14 +102,19 @@ function run () {
     }
 
     if (pilotaTop <= 0) {
-        // TODO: Si la pilota xoca conta la part
-        //       superior de la pantalla, ha de
-        //       canviar de direcció:
-        //       - Si està amb 'amuntEsquerra'
-        //         a de canviar a 'avallEsquerra'
-        //       - Si està amb 'amuntDreta'
-        //         a de canviar a 'avallDreta'
+        if (pilotaDireccio === 'amuntEsquerra') {
+            pilotaDireccio = 'avallEsquerra'
+        }
+        if (pilotaDireccio === 'amuntDreta') {
+            pilotaDireccio = 'avallDreta'
+        }
     }
+
+    // TODO: Afegeix una condició, si
+    //       la funcio 'xocPilotaJugador()' 
+    //       torna cert, aleshores fer el
+    //       mateix que es fa a la condició
+    //       'pilotaTop >= limitAlt'
 
     if (pilotaTop >= limitAlt) {
         if (pilotaDireccio === 'avallDreta') {
@@ -159,4 +159,26 @@ function teclaAlliberada (e) {
             }
             break
         }
+}
+
+// Aquesta funcio retorna 'true' si
+// la pilota xoca amb el jugador
+function xocPilotaJugador () {
+
+    // TODO: Inicia les següents variables,
+    //       segons la descripció del seu valor
+    let pilotaPartInferior = 0  // És la posició top de la pilota més la seva alçada (15)
+    let pilotaMeitatX = 0       // És la posició left del jugador més la meitat del seu ample (7.5)
+    let jugadorTop = 0          // És la posició top del jugador, segons el CSS (350)
+    let jugadorLimitDreta = 0   // És la posició del cantó dret del jugador, on està més el seu ample (100) 
+    let rst = false
+
+    if (pilotaPartInferior >= jugadorTop &&
+        pilotaMeitatX >= jugadorLeft && 
+        pilotaMeitatX <= jugadorLimitDreta) {
+
+        rst = true
+    }
+    
+    return rst
 }

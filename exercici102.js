@@ -1,7 +1,7 @@
+let taulellAmple = 500  // Iniciem aquests valors com al CSS
+let taulellAlt = 400
 
-
-let refJugador = null
-let jugadorTop = 100
+let refJugador = null   // Iniciem les variables del jugador
 let jugadorLeft = 100
 let jugadorDireccio = 'cap'
 
@@ -14,11 +14,17 @@ function init() {
     document.body.addEventListener('keydown', teclaApretada)
     document.body.addEventListener('keyup',   teclaAlliberada)
 
+    // Agafem les referències
     refJugador = document.getElementById('jugador')
+
+    // Iniciem el bucle del joc
     run()
 }
 
 function run () {
+
+    let limitAmple = 0
+    let limitAlt = 0
 
     if (jugadorDireccio == 'esquerra') {
         jugadorLeft = jugadorLeft - 1
@@ -31,8 +37,7 @@ function run () {
 
     // Limitem els moviments del jugador
 
-    let webAmple = window.innerWidth
-    let limitAmple = webAmple - 100
+    limitAmple = taulellAmple - 100
 
     if (jugadorLeft <= 0) {
         jugadorLeft = 0
@@ -42,20 +47,11 @@ function run () {
         jugadorLeft = limitAmple
     }
 
-    let webAlt = window.innerHeight
-    let limitAlt = webAlt - 50
-
-    // TODO: Limita que el jugador no
-    //       pogui estàr més amunt que el 
-    //       valor 0 del top
-
-    if (jugadorTop >= limitAlt) {
-        jugadorTop = limitAlt
-    }
-
-    refJugador.style.top = jugadorTop + 'px'
+    // Modificar els elements HTML
     refJugador.style.left = jugadorLeft + 'px'
 
+    // Tornar a executar la funció 'run'
+    // (al següent cicle de refresc)
     requestAnimationFrame(run)
 }
 
@@ -73,6 +69,7 @@ function teclaApretada (e) {
         break
     }
 }
+
 function teclaAlliberada (e) {
     switch (e.key) {
         case 'ArrowLeft':   
