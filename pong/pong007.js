@@ -10,7 +10,15 @@ let pilotaTop = 200
 let pilotaLeft = 250
 let pilotaDireccio = 'avallDreta'
 
+let refMarcador = null  // Iniciem les variables del marcador
+let marcador = 0
+
+let fps = null          // Iniciem la variable que gestionarà els FPS
+
 function init() {
+
+    // Iniciem l'objecte fps
+    fps = new FPS()
 
     // Iniciem les funcions de captura de tecles
     document.body.addEventListener('keydown', teclaApretada)
@@ -19,6 +27,7 @@ function init() {
     // Agafem les referències
     refJugador = document.getElementById('jugador')
     refPilota = document.getElementById('pilota')
+    refMarcador = document.getElementById('marcador')
 
     // Iniciem el bucle del joc
     run()
@@ -26,17 +35,21 @@ function init() {
 
 function run () {
 
+    // Actualitzem les dades de l'objecte 'fps'
+    fps.run()
+
     mouJugador()
     xocJugadorTaulell()
 
     mouPilota()
     xocPilotaTaulell()
-    // TODO: Crida a la funció 'xocPilotaJugador()'
+    xocPilotaJugador()
 
     // Actualitzem els valors dels elements HTML
     refJugador.style.left = jugadorLeft + 'px'
     refPilota.style.top = pilotaTop + 'px'
     refPilota.style.left = pilotaLeft + 'px'
+    refMarcador.innerHTML = marcador
 
     // Tornar a executar la funció 'run'
     // (al següent cicle de refresc)
@@ -45,12 +58,14 @@ function run () {
 
 function mouJugador () {
 
+    let distanciaJugador = fps.distancia(250) // 250 pixels cada segon
+
     if (jugadorDireccio == 'esquerra') {
-        jugadorLeft = jugadorLeft - 1
+        jugadorLeft = jugadorLeft - distanciaJugador
     }
 
     if (jugadorDireccio == 'dreta') {
-        jugadorLeft = jugadorLeft + 1
+        jugadorLeft = jugadorLeft + distanciaJugador
     }
 }
 
@@ -69,22 +84,24 @@ function xocJugadorTaulell () {
 
 function mouPilota () {
 
+    let distanciaPilota = fps.distancia(100) // 100 pixels cada segon
+
     switch (pilotaDireccio) {
         case 'avallDreta':
-            pilotaTop = pilotaTop + 1
-            pilotaLeft = pilotaLeft + 1
+            pilotaTop = pilotaTop + distanciaPilota
+            pilotaLeft = pilotaLeft + distanciaPilota
             break
         case 'avallEsquerra':
-            pilotaTop = pilotaTop + 1
-            pilotaLeft = pilotaLeft - 1
+            pilotaTop = pilotaTop + distanciaPilota
+            pilotaLeft = pilotaLeft - distanciaPilota
             break
         case 'amuntDreta':
-            pilotaTop = pilotaTop - 1
-            pilotaLeft = pilotaLeft + 1
+            pilotaTop = pilotaTop - distanciaPilota
+            pilotaLeft = pilotaLeft + distanciaPilota
             break
         case 'amuntEsquerra':
-            pilotaTop = pilotaTop - 1
-            pilotaLeft = pilotaLeft - 1
+            pilotaTop = pilotaTop - distanciaPilota
+            pilotaLeft = pilotaLeft - distanciaPilota
             break
     }
 }
@@ -128,6 +145,7 @@ function xocPilotaTaulell () {
         if (pilotaDireccio === 'avallEsquerra') {
             pilotaDireccio = 'amuntEsquerra'
         }
+        marcador = marcador - 5
     }
 }
 
@@ -135,43 +153,30 @@ function xocPilotaJugador () {
     
     let xoquen = false
 
-    let rectangleJugador = {x: jugadorLeft, y: 350,       width: 100, height: 15 } // Segons CSS
+    let rectangleJugador = {x: jugadorLeft, y: 350,       width: 100, height: 5 } // Segons CSS
     let rectanglePilota  = {x: pilotaLeft,  y: pilotaTop, width: 15,  height: 15 }
 
-    let distanciaLeft = 0
-    let distanciaTop = 0
-    
     if (rectangleJugador.x < (rectanglePilota.x + rectanglePilota.width) &&
         rectangleJugador.y < (rectanglePilota.y + rectanglePilota.height) &&
         rectanglePilota.x  < (rectangleJugador.x + rectangleJugador.width) &&
         rectanglePilota.y  < (rectangleJugador.y + rectangleJugador.height)) {
         xoquen = true
+        marcador = marcador + 1
     }
 
     if (xoquen) {
-        distanciaLeft = pilotaLeft - jugadorLeft
-        distanciaTop = pilotaTop - 350 // 300 és la posició 'top' del jugador
-
         if (pilotaDireccio === 'avallDreta') {
             pilotaDireccio = 'amuntDreta'
             pilotaTop = 335 // Que és 350 - 15 de l'alt de la pilota
         } else if (pilotaDireccio === 'avallEsquerra') {
-            // TODO: Si la pilota xoca amb el jugador
-            //       en la direcció 'avallEsquerra'
-            //       canvia la direcció de la pilota
-            //       a 'amuntEsquerra'
-            //       i posa la pilota a la posició 'top' 335
-            //       on 335 = 350 - 15 de l'alt de la pilota
+            pilotaDireccio = 'amuntEsquerra'
+            pilotaTop = 335
         } else if (pilotaDireccio === 'amuntDreta') {
             pilotaDireccio = 'avallDreta'
-            pilotaTop = 365 // Que és 350 + 15 de l'alt del jugador
+            pilotaTop = 355 // Que és 350 + 5 de l'alt del jugador
         } else if (pilotaDireccio === 'amuntEsquerra') {
-            // TODO: Si la pilota xoca amb el jugador
-            //       en la direcció 'amuntEsquerra'
-            //       canvia la direcció de la pilota
-            //       a 'avallEsquerra'
-            //       i posa la pilota a la posició 'top' 365
-            //       on 365 = 350 + 15 de l'alt del jugador
+            pilotaDireccio = 'avallEsquerra'
+            pilotaTop = 355
         }
     }
 }
@@ -201,4 +206,31 @@ function teclaAlliberada (e) {
             }
             break
         }
+}
+
+// FPS (framse per second)
+// ens ajuda a controlar la velocitat en diferents
+// tipus d'equips (més ràpids i més lents)
+class FPS { 
+    constructor () {
+        this.actual = 0
+        this.anterior = 0
+        this.diferencia = 0
+        this.valor = 0
+    }
+    run () {
+        this.actual = new Date()
+        this.diferencia = (this.actual - this.anterior) / 1000
+        this.valor = 1000 / (this.diferencia * 1000)
+        if (this.valor < 1) {
+            this.diferencia = 0
+        }
+        this.anterior = this.actual
+    }
+    // valor: és la distància que volem recórrer en 1 segon
+    // retorna: la distànca que ha recorregut en l'últim frame
+    //          tenint en compte els FPS (frames per segon) actuals
+    distancia (valor) {
+        return this.diferencia * valor
+    }
 }

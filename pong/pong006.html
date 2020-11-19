@@ -2,7 +2,7 @@
     <head>
         <meta charset='utf-8'/>
         <title>Pong</title>
-        <script src='./exercici104.js'></script>
+        <script src='./pong006.js'></script>
     </head>
     <style>
     body {
@@ -25,12 +25,13 @@
     }
     #jugador {
         background-color: lightgray;
+        border-bottom: 1px solid black;
         border-top: 1px solid black;
         top: 350px;
         left: 100px;
         position: absolute;
         width: 100px;
-        height: 15px;
+        height: 5px;
     }
     #pilota {
         background-color: black;
@@ -40,6 +41,11 @@
         left: 250px;
         width: 15px;
         height: 15px;
+    }
+    #marcador {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+        text-align: center;
     }
     </style>
     <!-- Quan s'acabi de carregar la pàgina --> 
@@ -51,6 +57,7 @@
                 <!-- Javascript cal donar-li un identificador  --> 
                 <div id='jugador'></div>
                 <div id='pilota'></div>
+                <div id='marcador'>0</div>
             </div>
         </div>
     </body>

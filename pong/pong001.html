@@ -2,7 +2,7 @@
     <head>
         <meta charset='utf-8'/>
         <title>Pong</title>
-        <script src='./exercici106.js'></script>
+        <script src='./pong001.js'></script>
     </head>
     <style>
     body {
@@ -25,26 +25,13 @@
     }
     #jugador {
         background-color: lightgray;
-        border: 1px solid black;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
         top: 350px;
         left: 100px;
         position: absolute;
         width: 100px;
-        height: 15px;
-    }
-    #pilota {
-        background-color: black;
-        border-radius: 50px;
-        position: absolute;
-        top: 200px;
-        left: 250px;
-        width: 15px;
-        height: 15px;
-    }
-    #marcador {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 5px;
-        text-align: center;
+        height: 5px;
     }
     </style>
     <!-- Quan s'acabi de carregar la pàgina --> 
@@ -55,8 +42,6 @@
                 <!-- Per poder modificar un element HTML des de  --> 
                 <!-- Javascript cal donar-li un identificador  --> 
                 <div id='jugador'></div>
-                <div id='pilota'></div>
-                <div id='marcador'>0</div>
             </div>
         </div>
     </body>

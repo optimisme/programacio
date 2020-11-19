@@ -34,8 +34,9 @@ function run () {
 
     // Actualitzem els valors dels elements HTML
     refJugador.style.left = jugadorLeft + 'px'
-    refPilota.style.top = pilotaTop + 'px'
-    refPilota.style.left = pilotaLeft + 'px'
+
+    // TODO: posa el valor 'top' de l'estil de refPilota a "pilotaTop + 'px'"
+    // TODO: posa el valor 'left' de l'estil de refPilota a "pilotaLeft + 'px'"
 
     // Tornar a executar la funció 'run'
     // (al següent cicle de refresc)
