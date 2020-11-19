@@ -13,9 +13,12 @@ let pilotaDireccio = 'avallDreta'
 let refMarcador = null  // Iniciem les variables del marcador
 let marcador = 0
 
-let fps = new FPS()     // Iniciem el contador de FPS
+let fps = null          // Iniciem la variable que gestionarà els FPS
 
 function init() {
+
+    // Iniciem l'objecte fps
+    fps = new FPS()
 
     // Iniciem les funcions de captura de tecles
     document.body.addEventListener('keydown', teclaApretada)
@@ -200,4 +203,31 @@ function teclaAlliberada (e) {
             }
             break
         }
+}
+
+// FPS (framse per second)
+// ens ajuda a controlar la velocitat en diferents
+// tipus d'equips (més ràpids i més lents)
+class FPS { 
+    constructor () {
+        this.actual = 0
+        this.anterior = 0
+        this.diferencia = 0
+        this.fpsValue = 0
+    }
+    run () {
+        this.actual = new Date()
+        this.diferencia = (this.actual - this.anterior) / 1000
+        this.fpsValue = 1000 / (this.diferencia * 1000)
+        if (this.fpsValue < 1) {
+            this.diferencia = 0
+        }
+        this.anterior = this.actual
+    }
+    // valor: és la distància que volem recórrer en 1 segon
+    // retorna: la distànca que ha recorregut en l'últim frame
+    //          tenint en compte els FPS (frames per segon) actuals
+    distancia (valor) {
+        return this.diferencia * valor
+    }
 }
