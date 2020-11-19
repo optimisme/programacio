@@ -208,7 +208,7 @@ function teclaAlliberada (e) {
         }
 }
 
-// FPS (framse per second)
+// FPS (frames per second)
 // ens ajuda a controlar la velocitat en diferents
 // tipus d'equips (més ràpids i més lents)
 class FPS { 

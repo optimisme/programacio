@@ -39,8 +39,8 @@ function run () {
 //       que incrementi 'jugadorLeft'
 //       en 1 cada vegada que s'executa
 
-// TODO: Crea una funció al final del codi
-//       que es digui 'xocJugadorTaulell()'
+// TODO: Crea una funció que es 
+//       digui 'xocJugadorTaulell()'
 //       sense paràmetres ni retorn
 //       que compari:
 //       - si 'jugadorLeft <= 0' aleshores

@@ -88,5 +88,5 @@ function teclaAlliberada (e) {
             //       i la variable 'jugadorDirecció'
             //       té el valor 'dreta'
             break
-        }
+    }
 }
