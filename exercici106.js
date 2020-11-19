@@ -4,7 +4,7 @@ let taulellAlt = 400
 
 let refJugador = null   // Iniciem les variables del jugador
 let jugadorLeft = 100
-let jugadorDireccio = 'cap'
+let jugadorDireccio = 'quiet'
 
 let refPilota = null    // Iniciem les variables de la pilota
 let pilotaTop = 200
@@ -211,12 +211,12 @@ function teclaAlliberada (e) {
     switch (e.key) {
         case 'ArrowLeft':   
             if (jugadorDireccio === 'esquerra') {
-                jugadorDireccio = 'cap'
+                jugadorDireccio = 'quiet'
             }
             break
         case 'ArrowRight': 
             if (jugadorDireccio === 'dreta') {
-                jugadorDireccio = 'cap'
+                jugadorDireccio = 'quiet'
             }
             break
         }
@@ -226,16 +226,16 @@ function teclaAlliberada (e) {
 // la pilota xoca amb el jugador
 function xocPilotaJugador () {
 
-    let pilotaPartInferior = pilotaTop + 15     // És la posició top de la pilota més la seva alçada (15)
-    let pilotaMeitatX = pilotaLeft + 7.5        // És la posició left del jugador més la meitat del seu ample (7.5)
-    let jugadorTop = 350                        // És la posició top del jugador, segons el CSS (350)
-    let jugadorLimitDreta = jugadorLeft + 100   // És la posició del cantó dret del jugador, on està més el seu ample (100) 
+    let jugadorTop = 350 // És la posició top del jugador, segons el CSS (350)
     let rst = false
 
-    if (pilotaPartInferior >= jugadorTop &&
-        pilotaMeitatX >= jugadorLeft && 
-        pilotaMeitatX <= jugadorLimitDreta) {
-
+    let rectangleJugador    = {x: jugadorLeft, y: jugadorTop, width: 100, height: 15 }
+    let rectanglePilota     = {x: pilotaLeft + 4, y: pilotaTop, width: 8, height: 15}
+    
+    if (rectangleJugador.x < (rectanglePilota.x  + rectanglePilota.width)  &&
+        rectanglePilota.x  < (rectangleJugador.x + rectangleJugador.width) &&
+        rectangleJugador.y < (rectanglePilota.y  + rectanglePilota.height) &&
+        rectanglePilota.y  < (rectangleJugador.y + rectangleJugador.height)) {
         rst = true
     }
     
