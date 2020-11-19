@@ -19,24 +19,7 @@ function init() {
 
 function run () {
 
-    // TODO: Crea una funció al final del codi
-    //       que es digui 'mouJugador()'
-    //       sense paràmetres ni retorn
-    //       que incrementi 'jugadorLeft'
-    //       en 1 cada vegada que s'executa
-
     // TODO: crida aquí a la funció 'mouJugador()'
-
-    // TODO: Crea una funció al final del codi
-    //       que es digui 'xocJugadorTaulell()'
-    //       sense paràmetres ni retorn
-    //       que compari:
-    //       - si 'jugadorLeft <= 0' aleshores
-    //         posa 'jugadorLeft' a 0
-    //       - si 'jugadorLeft >= posicioMaxJugador'
-    //         aleshores 'jugadorLeft = posicioMaxJugador'
-    //       on 'posicioMaxJugador' és 
-    //       'taulellAmple - 100' (100 correspon a l'ample del jugador)
 
     // TODO: crida aquí a la funció 'xocJugadorTaulell()'
 
@@ -50,3 +33,19 @@ function run () {
     // (al següent cicle de refresc)
     requestAnimationFrame(run)
 }
+
+// TODO: Crea una funció que es digui 'mouJugador()'
+//       sense paràmetres ni retorn
+//       que incrementi 'jugadorLeft'
+//       en 1 cada vegada que s'executa
+
+// TODO: Crea una funció al final del codi
+//       que es digui 'xocJugadorTaulell()'
+//       sense paràmetres ni retorn
+//       que compari:
+//       - si 'jugadorLeft <= 0' aleshores
+//         posa 'jugadorLeft' a 0
+//       - si 'jugadorLeft >= posicioMaxJugador'
+//         aleshores 'jugadorLeft = posicioMaxJugador'
+//       on 'posicioMaxJugador' és 
+//       'taulellAmple - 100' (100 correspon a l'ample del jugador)

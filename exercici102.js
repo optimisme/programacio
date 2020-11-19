@@ -3,7 +3,7 @@ let taulellAlt = 400
 
 let refJugador = null   // Iniciem les variables del jugador
 let jugadorLeft = 100
-let jugadorDireccio = 'cap'
+let jugadorDireccio = 'quiet'
 
 function init() {
 
@@ -23,36 +23,39 @@ function init() {
 
 function run () {
 
-    let limitAmple = 0
-    let limitAlt = 0
+    mouJugador()
 
-    if (jugadorDireccio == 'esquerra') {
-        jugadorLeft = jugadorLeft - 1
-    }
+    xocJugadorTaulell()
 
-    // TODO: fes que el valor de la variable
-    //       jugadorLeft s'incrementi en 1
-    //       si la direcció del jugador és
-    //       'dreta'
-
-    // Limitem els moviments del jugador
-
-    limitAmple = taulellAmple - 100
-
-    if (jugadorLeft <= 0) {
-        jugadorLeft = 0
-    }
-
-    if (jugadorLeft >= limitAmple) {
-        jugadorLeft = limitAmple
-    }
-
-    // Modificar els elements HTML
+    // Actualitzem els valors dels elements HTML
     refJugador.style.left = jugadorLeft + 'px'
 
     // Tornar a executar la funció 'run'
     // (al següent cicle de refresc)
     requestAnimationFrame(run)
+}
+
+function mouJugador () {
+
+    // TODO: fes que el valor de la variable
+    //       jugadorLeft s'incrementi en 1
+    //       només si la direcció del 
+    //       jugador és 'dreta'
+    //       i que es decrementi en 1
+    //       si la direcció és esquerra
+}
+
+function xocJugadorTaulell () {
+
+    let posicioMaxJugador = taulellAmple - 100
+
+    if (jugadorLeft <= 0) {
+        jugadorLeft = 0
+    }
+    
+    if (jugadorLeft >= posicioMaxJugador) {
+        jugadorLeft = posicioMaxJugador
+    }
 }
 
 function teclaApretada (e) {

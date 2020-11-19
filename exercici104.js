@@ -1,10 +1,9 @@
-
 let taulellAmple = 500  // Iniciem aquests valors com al CSS
 let taulellAlt = 400
 
 let refJugador = null   // Iniciem les variables del jugador
 let jugadorLeft = 100
-let jugadorDireccio = 'cap'
+let jugadorDireccio = 'quiet'
 
 let refPilota = null    // Iniciem les variables de la pilota
 let pilotaTop = 200
@@ -12,6 +11,7 @@ let pilotaLeft = 250
 let pilotaDireccio = 'avallDreta'
 
 function init() {
+
     // Iniciem les funcions de captura de tecles
     document.body.addEventListener('keydown', teclaApretada)
     document.body.addEventListener('keyup',   teclaAlliberada)
@@ -26,11 +26,25 @@ function init() {
 
 function run () {
 
-    let limitAmple = 0
-    let limitAlt = 0
+    mouJugador()
+    xocJugadorTaulell()
 
-    // Movem el jugador segons les
-    // fletxes del teclat apretades
+    mouPilota()
+    xocPilotaTaulell()
+    // TODO: Crida a la funció 'xocPilotaJugador()'
+    xocPilotaJugador()
+
+    // Actualitzem els valors dels elements HTML
+    refJugador.style.left = jugadorLeft + 'px'
+    refPilota.style.top = pilotaTop + 'px'
+    refPilota.style.left = pilotaLeft + 'px'
+
+    // Tornar a executar la funció 'run'
+    // (al següent cicle de refresc)
+    requestAnimationFrame(run)
+}
+
+function mouJugador () {
 
     if (jugadorDireccio == 'esquerra') {
         jugadorLeft = jugadorLeft - 1
@@ -39,25 +53,22 @@ function run () {
     if (jugadorDireccio == 'dreta') {
         jugadorLeft = jugadorLeft + 1
     }
+}
 
-    // Limitem els moviments del jugador
+function xocJugadorTaulell () {
 
-    limitAmple = taulellAmple - 100
+    let posicioMaxJugador = taulellAmple - 100
 
     if (jugadorLeft <= 0) {
         jugadorLeft = 0
     }
-
-    if (jugadorLeft >= limitAmple) {
-        jugadorLeft = limitAmple
+    
+    if (jugadorLeft >= posicioMaxJugador) {
+        jugadorLeft = posicioMaxJugador
     }
+}
 
-    limitAlt = taulellAlt - 50
-
-    refJugador.style.left = jugadorLeft + 'px'
-
-    // Movem la pilota segons
-    // la direcció corresponent
+function mouPilota () {
 
     switch (pilotaDireccio) {
         case 'avallDreta':
@@ -77,11 +88,12 @@ function run () {
             pilotaLeft = pilotaLeft - 1
             break
     }
+}
 
-    // Limitem els moviments de la pilota
+function xocPilotaTaulell () {
 
-    limitAmple = taulellAmple - 15  // Perquè 15 és l'ample de la pilota
-    limitAlt = taulellAlt - 15      // Perquè 15 és l'alt de la pilota
+    let limitAmple = taulellAmple - 15  // Perquè 15 és l'ample de la pilota
+    let limitAlt = taulellAlt - 15      // Perquè 15 és l'alt de la pilota
 
     if (pilotaLeft <= 0) {
         if (pilotaDireccio === 'avallEsquerra') {
@@ -110,12 +122,6 @@ function run () {
         }
     }
 
-    // TODO: Afegeix una condició, si
-    //       la funcio 'xocPilotaJugador()' 
-    //       torna cert, aleshores fer el
-    //       mateix que es fa a la condició
-    //       'pilotaTop >= limitAlt'
-
     if (pilotaTop >= limitAlt) {
         if (pilotaDireccio === 'avallDreta') {
             pilotaDireccio = 'amuntDreta'
@@ -124,14 +130,56 @@ function run () {
             pilotaDireccio = 'amuntEsquerra'
         }
     }
+}
 
-    // Modificar els elements HTML
-    refPilota.style.top = pilotaTop + 'px'
-    refPilota.style.left = pilotaLeft + 'px'
+function xocPilotaJugador () {
+    
+    let xoquen = false
 
-    // Tornar a executar la funció 'run'
-    // (al següent cicle de refresc)
-    requestAnimationFrame(run)
+    let rectangleJugador = {x: jugadorLeft, y: 350,       width: 100, height: 15 } // Segons CSS
+    let rectanglePilota  = {x: pilotaLeft,  y: pilotaTop, width: 15,  height: 15 }
+
+    let distanciaLeft = 0
+    let distanciaTop = 0
+    
+    if (rectangleJugador.x < (rectanglePilota.x + rectanglePilota.width) &&
+        rectangleJugador.y < (rectanglePilota.y + rectanglePilota.height) &&
+        rectanglePilota.x  < (rectangleJugador.x + rectangleJugador.width) &&
+        rectanglePilota.y  < (rectangleJugador.y + rectangleJugador.height)) {
+        xoquen = true
+    }
+
+    if (xoquen) {
+        distanciaLeft = pilotaLeft - jugadorLeft
+        distanciaTop = pilotaTop - 300 // 300 és la posició 'top' del jugador
+
+        if (pilotaDireccio === 'avallDreta') {
+            if (distanciaLeft >= distanciaTop) {
+                pilotaDireccio = 'amuntDreta'
+            } else {
+                pilotaDireccio = 'avallEsquerra'
+            }
+        } else if (pilotaDireccio === 'avallEsquerra') {
+            if (distanciaLeft <= distanciaTop) {
+                pilotaDireccio = 'amuntEsquerra'
+            } else {
+                pilotaDireccio = 'avallDreta'
+            }
+        } else if (pilotaDireccio === 'amuntDreta') {
+            if (distanciaLeft >= distanciaTop) {
+                pilotaDireccio = 'avallDreta'
+            } else {
+                pilotaDireccio = 'amuntEsquerra'
+            }
+        } else if (pilotaDireccio === 'amuntEsquerra') {
+            if (distanciaLeft <= distanciaTop) {
+                pilotaDireccio = 'avallEsquerra'
+            } else {
+                pilotaDireccio = 'amuntDreta'
+            }
+        }
+        console.log(pilotaDireccio)
+    }
 }
 
 function teclaApretada (e) {
@@ -150,35 +198,13 @@ function teclaAlliberada (e) {
     switch (e.key) {
         case 'ArrowLeft':   
             if (jugadorDireccio === 'esquerra') {
-                jugadorDireccio = 'cap'
+                jugadorDireccio = 'quiet'
             }
             break
         case 'ArrowRight': 
             if (jugadorDireccio === 'dreta') {
-                jugadorDireccio = 'cap'
+                jugadorDireccio = 'quiet'
             }
             break
         }
-}
-
-// Aquesta funcio retorna 'true' si
-// la pilota xoca amb el jugador
-function xocPilotaJugador () {
-
-    // TODO: Inicia les següents variables,
-    //       segons la descripció del seu valor
-    let pilotaPartInferior = 0  // És la posició top de la pilota més la seva alçada (15)
-    let pilotaMeitatX = 0       // És la posició left del jugador més la meitat del seu ample (7.5)
-    let jugadorTop = 0          // És la posició top del jugador, segons el CSS (350)
-    let jugadorLimitDreta = 0   // És la posició del cantó dret del jugador, on està més el seu ample (100) 
-    let rst = false
-
-    if (pilotaPartInferior >= jugadorTop &&
-        pilotaMeitatX >= jugadorLeft && 
-        pilotaMeitatX <= jugadorLimitDreta) {
-
-        rst = true
-    }
-    
-    return rst
 }
