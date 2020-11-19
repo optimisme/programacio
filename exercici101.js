@@ -19,28 +19,31 @@ function init() {
 
 function run () {
 
-    let limitAmple = 0
-
-    // TODO: Fest que jugadorLeft s'incrementi
+    // TODO: Crea una funció al final del codi
+    //       que es digui 'mouJugador()'
+    //       sense paràmetres ni retorn
+    //       que incrementi 'jugadorLeft'
     //       en 1 cada vegada que s'executa
-    //       aquesta funció
 
-    // Si el quadre intenta sortir de l'ample
-    // de la finestra, aturar-lo al seu limit
-    // El limit està a l'ample de la finestra 
-    // menys la mida d'ample del jugador
+    // TODO: crida aquí a la funció 'mouJugador()'
 
-    limitAmple = taulellAmple - 100
+    // TODO: Crea una funció al final del codi
+    //       que es digui 'xocJugadorTaulell()'
+    //       sense paràmetres ni retorn
+    //       que compari:
+    //       - si 'jugadorLeft <= 0' aleshores
+    //         posa 'jugadorLeft' a 0
+    //       - si 'jugadorLeft >= posicioMaxJugador'
+    //         aleshores 'jugadorLeft = posicioMaxJugador'
+    //       on 'posicioMaxJugador' és 
+    //       'taulellAmple - 100' (100 correspon a l'ample del jugador)
 
-    if (jugadorLeft >= limitAmple) {
-        jugadorLeft = limitAmple
-    }
+    // TODO: crida aquí a la funció 'xocJugadorTaulell()'
 
     // Posem la capa amb id='jugador'
     // a la posició corresponent segons
     // jugadorLeft
     // modificant el seu estil
-
     refJugador.style.left = jugadorLeft + 'px'
 
     // Tornar a executar la funció 'run'
