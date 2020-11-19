@@ -30,7 +30,24 @@ Per actualitzar el codi des del servidor remot:
 git pull origin main
 ```
 
-### Crear una branca per fer els exercicis
+### Mesclar els canvis remots amb els locals
+
+```
+git add .
+git stash
+git pull
+git stash merge
+```
+
+### Descartar el contingut local i quedar-se només amb el codi remot amb 'stash'
+
+```
+git stash
+git pull
+git stash drop
+```
+
+### Crear una branca per fer els exercicis anomenada 'exercicis'
 
 Per crear una branca per fer els exercicis
 ```
@@ -40,7 +57,7 @@ git checkout exercicis
 ```
 Ara podeu fer els canvis oportuns al codi
 
-### Guardar els canvis
+### Guardar els canvis fent servir una branca 'exercicis'
 
 Cal guardar els canvis que es van fent al git, amb una explicació del què es modifica
 ```
@@ -48,7 +65,7 @@ git checkout exercicis
 git commit -a -m "Explicació de les modificacions"
 ```
 
-### Descarregar canvis remots
+### Descarregar canvis remots fent servir una branca 'exercicis'
 
 Per descarregar el nou codi remot sense afectar les teves modificacions
 ```
