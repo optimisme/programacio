@@ -35,6 +35,9 @@ function init() {
 
 function run () {
 
+    // Actualitzem les dades de l'objecte 'fps'
+    fps.run()
+
     mouJugador()
     xocJugadorTaulell()
 
@@ -223,13 +226,13 @@ class FPS {
         this.actual = 0
         this.anterior = 0
         this.diferencia = 0
-        this.fpsValue = 0
+        this.valor = 0
     }
     run () {
         this.actual = new Date()
         this.diferencia = (this.actual - this.anterior) / 1000
-        this.fpsValue = 1000 / (this.diferencia * 1000)
-        if (this.fpsValue < 1) {
+        this.valor = 1000 / (this.diferencia * 1000)
+        if (this.valor < 1) {
             this.diferencia = 0
         }
         this.anterior = this.actual
