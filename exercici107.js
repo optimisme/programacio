@@ -10,6 +10,11 @@ let pilotaTop = 200
 let pilotaLeft = 250
 let pilotaDireccio = 'avallDreta'
 
+let refMarcador = null  // Iniciem les variables del marcador
+let marcador = 0
+
+let fps = new FPS()     // Iniciem el contador de FPS
+
 function init() {
 
     // Iniciem les funcions de captura de tecles
@@ -19,6 +24,7 @@ function init() {
     // Agafem les referències
     refJugador = document.getElementById('jugador')
     refPilota = document.getElementById('pilota')
+    refMarcador = document.getElementById('marcador')
 
     // Iniciem el bucle del joc
     run()
@@ -31,12 +37,13 @@ function run () {
 
     mouPilota()
     xocPilotaTaulell()
-    // TODO: Crida a la funció 'xocPilotaJugador()'
+    xocPilotaJugador()
 
     // Actualitzem els valors dels elements HTML
     refJugador.style.left = jugadorLeft + 'px'
     refPilota.style.top = pilotaTop + 'px'
     refPilota.style.left = pilotaLeft + 'px'
+    refMarcador.innerHTML = marcador
 
     // Tornar a executar la funció 'run'
     // (al següent cicle de refresc)
@@ -45,12 +52,14 @@ function run () {
 
 function mouJugador () {
 
+    let distanciaJugador = fps.distancia(250)
+
     if (jugadorDireccio == 'esquerra') {
-        jugadorLeft = jugadorLeft - 1
+        jugadorLeft = jugadorLeft - distanciaJugador
     }
 
     if (jugadorDireccio == 'dreta') {
-        jugadorLeft = jugadorLeft + 1
+        jugadorLeft = jugadorLeft + distanciaJugador
     }
 }
 
@@ -69,22 +78,24 @@ function xocJugadorTaulell () {
 
 function mouPilota () {
 
+    let distanciaPilota = fps.distancia(100)
+
     switch (pilotaDireccio) {
         case 'avallDreta':
-            pilotaTop = pilotaTop + 1
-            pilotaLeft = pilotaLeft + 1
+            pilotaTop = pilotaTop + distanciaPilota
+            pilotaLeft = pilotaLeft + distanciaPilota
             break
         case 'avallEsquerra':
-            pilotaTop = pilotaTop + 1
-            pilotaLeft = pilotaLeft - 1
+            pilotaTop = pilotaTop + distanciaPilota
+            pilotaLeft = pilotaLeft - distanciaPilota
             break
         case 'amuntDreta':
-            pilotaTop = pilotaTop - 1
-            pilotaLeft = pilotaLeft + 1
+            pilotaTop = pilotaTop - distanciaPilota
+            pilotaLeft = pilotaLeft + distanciaPilota
             break
         case 'amuntEsquerra':
-            pilotaTop = pilotaTop - 1
-            pilotaLeft = pilotaLeft - 1
+            pilotaTop = pilotaTop - distanciaPilota
+            pilotaLeft = pilotaLeft - distanciaPilota
             break
     }
 }
@@ -128,6 +139,7 @@ function xocPilotaTaulell () {
         if (pilotaDireccio === 'avallEsquerra') {
             pilotaDireccio = 'amuntEsquerra'
         }
+        marcador = marcador - 5
     }
 }
 
@@ -138,40 +150,27 @@ function xocPilotaJugador () {
     let rectangleJugador = {x: jugadorLeft, y: 350,       width: 100, height: 15 } // Segons CSS
     let rectanglePilota  = {x: pilotaLeft,  y: pilotaTop, width: 15,  height: 15 }
 
-    let distanciaLeft = 0
-    let distanciaTop = 0
-    
     if (rectangleJugador.x < (rectanglePilota.x + rectanglePilota.width) &&
         rectangleJugador.y < (rectanglePilota.y + rectanglePilota.height) &&
         rectanglePilota.x  < (rectangleJugador.x + rectangleJugador.width) &&
         rectanglePilota.y  < (rectangleJugador.y + rectangleJugador.height)) {
         xoquen = true
+        marcador = marcador + 1
     }
 
     if (xoquen) {
-        distanciaLeft = pilotaLeft - jugadorLeft
-        distanciaTop = pilotaTop - 350 // 300 és la posició 'top' del jugador
-
         if (pilotaDireccio === 'avallDreta') {
             pilotaDireccio = 'amuntDreta'
             pilotaTop = 335 // Que és 350 - 15 de l'alt de la pilota
         } else if (pilotaDireccio === 'avallEsquerra') {
-            // TODO: Si la pilota xoca amb el jugador
-            //       en la direcció 'avallEsquerra'
-            //       canvia la direcció de la pilota
-            //       a 'amuntEsquerra'
-            //       i posa la pilota a la posició 'top' 335
-            //       on 335 = 350 - 15 de l'alt de la pilota
+            pilotaDireccio = 'amuntEsquerra'
+            pilotaTop = 335
         } else if (pilotaDireccio === 'amuntDreta') {
             pilotaDireccio = 'avallDreta'
             pilotaTop = 365 // Que és 350 + 15 de l'alt del jugador
         } else if (pilotaDireccio === 'amuntEsquerra') {
-            // TODO: Si la pilota xoca amb el jugador
-            //       en la direcció 'amuntEsquerra'
-            //       canvia la direcció de la pilota
-            //       a 'avallEsquerra'
-            //       i posa la pilota a la posició 'top' 365
-            //       on 365 = 350 + 15 de l'alt del jugador
+            pilotaDireccio = 'avallEsquerra'
+            pilotaTop = 365
         }
     }
 }

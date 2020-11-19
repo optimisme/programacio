@@ -1,4 +1,3 @@
-
 let taulellAmple = 500  // Iniciem aquests valors com al CSS
 let taulellAlt = 400
 
@@ -14,35 +13,10 @@ let pilotaDireccio = 'avallDreta'
 let refMarcador = null  // Iniciem les variables del marcador
 let marcador = 0
 
-// FPS (framse per second)
-// ens ajuda a controlar la velocitat en diferents
-// tipus d'equips (més ràpids i més lents)
-class FPS { 
-    constructor () {
-        this.actual = 0
-        this.anterior = 0
-        this.diferencia = 0
-        this.fpsValue = 0
-    }
-    run () {
-        this.actual = new Date()
-        this.diferencia = (this.actual - this.anterior) / 1000
-        this.fpsValue = 1000 / (this.diferencia * 1000)
-        if (this.fpsValue < 1) {
-            this.diferencia = 0
-        }
-        this.anterior = this.actual
-    }
-    // valor: és la distància que volem recórrer en 1 segon
-    // retorna: la distànca que ha recorregut en l'últim frame
-    //          tenint en compte els FPS (frames per segon) actuals
-    distancia (valor) {
-        return this.diferencia * valor
-    }
-}
 let fps = new FPS()     // Iniciem el contador de FPS
 
 function init() {
+
     // Iniciem les funcions de captura de tecles
     document.body.addEventListener('keydown', teclaApretada)
     document.body.addEventListener('keyup',   teclaAlliberada)
@@ -58,83 +32,88 @@ function init() {
 
 function run () {
 
-    // Actualitzem l'objecte FPS
-    fps.run()
+    mouJugador()
+    xocJugadorTaulell()
 
-    let limitAmple = 0
-    let limitAlt = 0
+    mouPilota()
+    xocPilotaTaulell()
+    xocPilotaJugador()
 
-    // Per tal de que la velocitat de les animacions
-    // (jugador i pilota) sigui igual i fluida
-    // en tots els sistemes, cal tenir en compte
-    // els FPS (frames que dibuixa cada segon)
+    // Actualitzem els valors dels elements HTML
+    refJugador.style.left = jugadorLeft + 'px'
+    refPilota.style.top = pilotaTop + 'px'
+    refPilota.style.left = pilotaLeft + 'px'
+    refMarcador.innerHTML = marcador
 
-    // Enlloc de dir-li, els píxels que s'ha de moure
-    // a cada frame (com fins ara amb el +1 o -1)
-    // cridarem a la funció 'fps.distancia(valor)'
-    // i com a paràmetres li passem la distància
-    // en pixels que volem que faci en 1 segon,
-    // aquesta funció ens retornarà la distància
-    // que ha recorregut a la velocitat FPS actual
+    // Tornar a executar la funció 'run'
+    // (al següent cicle de refresc)
+    requestAnimationFrame(run)
+}
+
+function mouJugador () {
 
     let distanciaJugador = fps.distancia(250)
-    let distanciaPilota = fps.distancia(100)
 
-    // Movem el jugador segons les
-    // fletxes del teclat apretades
+    // TODO: canvia els augments i disminucions
+    //       +1, -1 del jugador, per el valor
+    //       que hi hagi a la variable
+    //       'distanciaJugador'
 
     if (jugadorDireccio == 'esquerra') {
-        jugadorLeft = jugadorLeft - distanciaJugador
+        jugadorLeft = jugadorLeft - 1
     }
 
     if (jugadorDireccio == 'dreta') {
-        jugadorLeft = jugadorLeft + distanciaJugador
+        jugadorLeft = jugadorLeft + 1
     }
+}
 
-    // Limitem els moviments del jugador
+function xocJugadorTaulell () {
 
-    limitAmple = taulellAmple - 100
+    let posicioMaxJugador = taulellAmple - 100
 
     if (jugadorLeft <= 0) {
         jugadorLeft = 0
     }
-
-    if (jugadorLeft >= limitAmple) {
-        jugadorLeft = limitAmple
+    
+    if (jugadorLeft >= posicioMaxJugador) {
+        jugadorLeft = posicioMaxJugador
     }
+}
 
-    limitAlt = taulellAlt - 50
+function mouPilota () {
 
-    refJugador.style.left = jugadorLeft + 'px'
+    let distanciaPilota = fps.distancia(100)
 
-    // Movem la pilota segons
-    // la direcció corresponent
+    // TODO: canvia els augments i disminucions
+    //       +1, -1 de la pilota, per el valor
+    //       que hi hagi a la variable
+    //       'distanciaPilota'
 
-    // TODO: Canvia els +1 o -1 per el valor
-    //       de la variable 'distanciaPilota'
     switch (pilotaDireccio) {
         case 'avallDreta':
-            pilotaTop = pilotaTop + distanciaPilota
-            pilotaLeft = pilotaLeft + distanciaPilota
+            pilotaTop = pilotaTop + 1
+            pilotaLeft = pilotaLeft + 1
             break
         case 'avallEsquerra':
-            pilotaTop = pilotaTop + distanciaPilota
-            pilotaLeft = pilotaLeft - distanciaPilota
+            pilotaTop = pilotaTop + 1
+            pilotaLeft = pilotaLeft - 1
             break
         case 'amuntDreta':
-            pilotaTop = pilotaTop - distanciaPilota
-            pilotaLeft = pilotaLeft + distanciaPilota
+            pilotaTop = pilotaTop - 1
+            pilotaLeft = pilotaLeft + 1
             break
         case 'amuntEsquerra':
-            pilotaTop = pilotaTop - distanciaPilota
-            pilotaLeft = pilotaLeft - distanciaPilota
+            pilotaTop = pilotaTop - 1
+            pilotaLeft = pilotaLeft - 1
             break
     }
+}
 
-    // Limitem els moviments de la pilota
+function xocPilotaTaulell () {
 
-    limitAmple = taulellAmple - 15  // Perquè 15 és l'ample de la pilota
-    limitAlt = taulellAlt - 15      // Perquè 15 és l'alt de la pilota
+    let limitAmple = taulellAmple - 15  // Perquè 15 és l'ample de la pilota
+    let limitAlt = taulellAlt - 15      // Perquè 15 és l'alt de la pilota
 
     if (pilotaLeft <= 0) {
         if (pilotaDireccio === 'avallEsquerra') {
@@ -163,17 +142,6 @@ function run () {
         }
     }
 
-    if (xocPilotaJugador()) {
-        if (pilotaDireccio === 'avallDreta') {
-            pilotaDireccio = 'amuntDreta'
-        }
-        if (pilotaDireccio === 'avallEsquerra') {
-            pilotaDireccio = 'amuntEsquerra'
-        }
-        marcador = marcador + 1
-        
-    }
-
     if (pilotaTop >= limitAlt) {
         if (pilotaDireccio === 'avallDreta') {
             pilotaDireccio = 'amuntDreta'
@@ -183,16 +151,38 @@ function run () {
         }
         marcador = marcador - 5
     }
+}
 
-    // Modificar els elements HTML
-    refPilota.style.top = pilotaTop + 'px'
-    refPilota.style.left = pilotaLeft + 'px'
+function xocPilotaJugador () {
+    
+    let xoquen = false
 
-    refMarcador.innerHTML = marcador
+    let rectangleJugador = {x: jugadorLeft, y: 350,       width: 100, height: 15 } // Segons CSS
+    let rectanglePilota  = {x: pilotaLeft,  y: pilotaTop, width: 15,  height: 15 }
 
-    // Tornar a executar la funció 'run'
-    // (al següent cicle de refresc)
-    requestAnimationFrame(run)
+    if (rectangleJugador.x < (rectanglePilota.x + rectanglePilota.width) &&
+        rectangleJugador.y < (rectanglePilota.y + rectanglePilota.height) &&
+        rectanglePilota.x  < (rectangleJugador.x + rectangleJugador.width) &&
+        rectanglePilota.y  < (rectangleJugador.y + rectangleJugador.height)) {
+        xoquen = true
+        marcador = marcador + 1
+    }
+
+    if (xoquen) {
+        if (pilotaDireccio === 'avallDreta') {
+            pilotaDireccio = 'amuntDreta'
+            pilotaTop = 335 // Que és 350 - 15 de l'alt de la pilota
+        } else if (pilotaDireccio === 'avallEsquerra') {
+            pilotaDireccio = 'amuntEsquerra'
+            pilotaTop = 335
+        } else if (pilotaDireccio === 'amuntDreta') {
+            pilotaDireccio = 'avallDreta'
+            pilotaTop = 365 // Que és 350 + 15 de l'alt del jugador
+        } else if (pilotaDireccio === 'amuntEsquerra') {
+            pilotaDireccio = 'avallEsquerra'
+            pilotaTop = 365
+        }
+    }
 }
 
 function teclaApretada (e) {
@@ -220,24 +210,4 @@ function teclaAlliberada (e) {
             }
             break
         }
-}
-
-// Aquesta funcio retorna 'true' si
-// la pilota xoca amb el jugador
-function xocPilotaJugador () {
-
-    let jugadorTop = 350 // És la posició top del jugador, segons el CSS (350)
-    let rst = false
-
-    let rectangleJugador    = {x: jugadorLeft, y: jugadorTop, width: 100, height: 15 }
-    let rectanglePilota     = {x: pilotaLeft + 4, y: pilotaTop, width: 8, height: 15}
-    
-    if (rectangleJugador.x < (rectanglePilota.x  + rectanglePilota.width)  &&
-        rectanglePilota.x  < (rectangleJugador.x + rectangleJugador.width) &&
-        rectangleJugador.y < (rectanglePilota.y  + rectanglePilota.height) &&
-        rectanglePilota.y  < (rectangleJugador.y + rectangleJugador.height)) {
-        rst = true
-    }
-    
-    return rst
 }
