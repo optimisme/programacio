@@ -27,6 +27,8 @@ body {
     padding: 8px;
     cursor: pointer;
     justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
 }
 .button:hover {
     background: linear-gradient(0deg, rgba(217,214,205,1) 0%, rgba(255,253,239,1) 100%);
