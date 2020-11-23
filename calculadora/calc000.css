@@ -46,7 +46,6 @@ body {
     margin: 4px;
     padding: 8px;
     cursor: pointer;
-    flex-grow: 1;
     justify-content: center;
 }
 .button:hover {
