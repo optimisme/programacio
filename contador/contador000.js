@@ -14,4 +14,4 @@
 //
 //       modifica el codi HTML perquè
 //       el botó cridi a aquesta funció 'add()' a través
-//       de un 'onclick'
+//       d'un 'onclick'
