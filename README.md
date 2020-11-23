@@ -36,7 +36,7 @@ git pull origin main
 git add .
 git stash
 git pull
-git stash merge
+git stash pop
 ```
 
 ### Descartar el contingut local i quedar-se només amb el codi remot amb 'stash'
@@ -44,7 +44,7 @@ git stash merge
 ```
 git stash
 git pull
-git stash pop
+git stash drop
 ```
 
 * Després del pop cal arreglar els conflictes
