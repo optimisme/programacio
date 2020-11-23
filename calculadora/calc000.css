@@ -27,8 +27,6 @@ body {
     font-size: 2.5em;
     grid-column-start: 1;
     grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 1;
     margin: 4px;
     padding: 8px;
     text-align: right;
