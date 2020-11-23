@@ -1,0 +1,60 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.flexGrow {
+    flex-grow: 1;
+}
+#exterior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#calculadora {
+    border: 1px solid grey;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width: 500px;
+}
+#display {
+    font-family: 'Open Sans';
+    font-size: 2.5em;
+    margin: 4px;
+    padding: 8px;
+    height: 128px;
+    width: calc(100% - 8px);
+}
+.button {
+    align-items: center;
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 100%);
+    border: solid 1px grey;
+    border-radius: 5px;
+    display: flex;
+    margin: 4px;
+    padding: 8px;
+    cursor: pointer;
+    flex-grow: 1;
+    justify-content: center;
+}
+.button:hover {
+    background: linear-gradient(0deg, rgba(217,214,205,1) 0%, rgba(255,253,239,1) 100%);
+}
+.button:active {
+    background: linear-gradient(0deg, rgba(255,253,239,1) 0%, rgba(196,194,185,1) 100%);
+}
+.buttonVertical {
+    min-width: 64px;
+}
