@@ -1,12 +1,7 @@
 
-
-let refDisplay = null
-
-function init() {
-
-    // TODO: Agafa la referència a l'objecte amb id 'display'
-    //       i guarda aquesta referència a la variable 'refDisplay'
-}
+// Recorda que a les següents funcions, et farà falta
+// una variable 'refDisplay' que faci referència
+// a l'objecte amb id 'display'
 
 // TODO: Crea la funció 'afegeix(valor)'
 //       aquesta funció ha d'afegir el valor
