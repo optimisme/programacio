@@ -4,17 +4,6 @@ body {
     padding: 0;
     user-select: none;
 }
-.flexRow {
-    display: flex;
-    flex-direction: row;
-}
-.flexColumn {
-    display: flex;
-    flex-direction: column;
-}
-.flexGrow {
-    flex-grow: 1;
-}
 #exterior {
     display: flex;
     align-items: center;
@@ -22,20 +11,40 @@ body {
     height: 100%;
     width: 100%;
 }
-#calculadora {
-    border: 1px solid grey;
-    overflow: hidden;
-    position: relative;
-    height: 400px;
-    width: 500px;
+.graella {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 #display {
     font-family: 'Open Sans';
     font-size: 2.5em;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
     margin: 4px;
     padding: 8px;
+    text-align: right;
     height: 128px;
-    width: calc(100% - 8px);
+}
+#borrar {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#calcular {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
 }
 .button {
     align-items: center;
@@ -54,7 +63,4 @@ body {
 }
 .button:active {
     background: linear-gradient(0deg, rgba(255,253,239,1) 0%, rgba(196,194,185,1) 100%);
-}
-.buttonVertical {
-    min-width: 64px;
 }
