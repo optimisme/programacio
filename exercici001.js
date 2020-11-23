@@ -17,10 +17,7 @@ async function main () {
     console.log('En Pep està', anims)
 
     // TODO: Canvia aquí el valor de la variable 'anims' a 'content'
-<<<<<<< HEAD
-=======
-
->>>>>>> stash
+    console.log('ABC')
 }
 
 main()
