@@ -44,8 +44,10 @@ git stash merge
 ```
 git stash
 git pull
-git stash drop
+git stash pop
 ```
+
+* Després del pop cal arreglar els conflictes
 
 ### Crear una branca per fer els exercicis anomenada 'exercicis'
 
