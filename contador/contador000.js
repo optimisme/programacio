@@ -7,20 +7,20 @@
 //       aquesta funció ha de sumar un 1
 //       al valor que es veu per pantalla
 
-//       això es pot fer de dues maneres
+//       això es pot fer de dues maneres:
 
 //       - Agafar el contingut de la capa
 //         transformar-lo a format número
 //         sumar un 1
-//         tornar-lo a escriure a la capa
+//         escriure el resultat a la capa
 
 
-//       - Crear una variable 'contador' iniciada a 0
+//       - Crear una variable iniciada a 0
 //         sumar un 1 quan apreten el botó
 //         posar el valor de la variable a la capa
 
 //       En qualsevol cas, un cop es coneix
-//       el número que s'ha de mostrar. Posar-li
+//       el número que s'ha de mostrar, posar-li
 //       el color segons:
 
 
