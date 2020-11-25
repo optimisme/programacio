@@ -5,13 +5,28 @@
 
 // TODO: Crea la funció 'add()'
 //       aquesta funció ha de sumar un 1
-//       al valor que hi hagi al div amb id 'contador'
-//       i guardar el resultat al mateix div 'contador'
-//
-//       hauràs d'agafar el valor amb '.innerHTML'
-//       recorda que això és un 'text' que has de transformar
-//       a número amb 'parseFloat'
-//
-//       modifica el codi HTML perquè
-//       el botó cridi a aquesta funció 'add()' a través
-//       d'un 'onclick'
+//       al valor que es veu per pantalla
+
+//       això es pot fer de dues maneres
+
+//       - Agafar el contingut de la capa
+//         transformar-lo a format número
+//         sumar un 1
+//         tornar-lo a escriure a la capa
+
+
+//       - Crear una variable 'contador' iniciada a 0
+//         sumar un 1 quan apreten el botó
+//         posar el valor de la variable a la capa
+
+//       En qualsevol cas, un cop es coneix
+//       el número que s'ha de mostrar. Posar-li
+//       el color segons:
+
+
+//       0:negre
+//       1:verd
+//       2:blau
+//       3:vermell
+//       4:taronja
+//       >4:negre
