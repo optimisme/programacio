@@ -2,11 +2,11 @@
 /*
     TODO:
 
-    Crea una funció de 4 que rebi 4 paràmetres:
+    Crea una funció que rebi 4 paràmetres:
     - valor: tipus text
     - color: tipus text
     - repeticions: tipus numèric
-    - vertical: tipus bolèa
+    - vertical: tipus boleà
 
     El valor conté la cadena que s'ha d'escriure
     a la capa amb id='result'
