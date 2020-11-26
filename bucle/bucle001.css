@@ -13,7 +13,7 @@ body {
 .blau { background-color: blue; }
 .vermell { background-color: red; }
 .taronja { background-color: orange; }
-.gris { background-color: grey; }
+.lila { background-color: purple; }
 .negre { background-color: black; }
 #exterior {
     display: flex;
