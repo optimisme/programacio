@@ -1,0 +1,60 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.quadre {
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+}
+.verd { background-color: green; }
+.blau { background-color: blue; }
+.vermell { background-color: red; }
+.taronja { background-color: orange; }
+.lila { background-color: purple; }
+.negre { background-color: black; }
+#exterior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#continguts {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    width: 500px;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.flexCenter {
+    align-items: center;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    min-width:  400;
+}
+.button {
+    align-items: center;
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 100%);
+    border: solid 1px grey;
+    border-radius: 5px;
+    display: flex;
+    margin: 4px;
+    padding: 8px;
+    cursor: pointer;
+    justify-content: center;
+}
+.button:hover {
+    background: linear-gradient(0deg, rgba(217,214,205,1) 0%, rgba(255,253,239,1) 100%);
+}
+.button:active {
+    background: linear-gradient(0deg, rgba(255,253,239,1) 0%, rgba(196,194,185,1) 100%);
+}
