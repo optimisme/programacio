@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Bucle</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src='./web002.js'></script>
+        <link href='./web002.css' rel='stylesheet'>
+    </head>
+    <!-- 
+        Crida adequadament a la funció que has creat
+        a l'arxiu '.js' amb els paràmetres que
+        corresponen a cada un dels botons
+    -->
+    <body>
+        <div id='exterior'>
+            <div id='continguts'>
+                <div class='flexColumn'>
+                    <div class='button' onclick='mostra("*", "green", 3, false)'>* <div class='quadre verd'></div> 3, h</div>
+                    <div class='button' onclick='mostra("*", "blue", 4, false)'>* <div class='quadre blau'></div> 4, h</div>
+                    <div class='button' onclick='mostra("%", "orange", 5, false)'>% <div class='quadre taronja'></div> 5, h</div>
+                    <div class='button' onclick='mostra("%", "red", 2, true)'>% <div class='quadre vermell'></div> 2, v</div>
+                    <div class='button' onclick='mostra("[]", "purple", 3, true)'>[] <div class='quadre lila'></div> 3, v</div>
+                    <div class='button' onclick='mostra("[]", "black", 6, true)'>[] <div class='quadre negre'></div> 6, v</div>
+                </div>
+                <div class='flexCenter' id='result'>Aquí s'ha de mostrar el resultat</div>
+            </div>
+        </div>
+    </body>
+</html>
