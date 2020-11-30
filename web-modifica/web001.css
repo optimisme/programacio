@@ -1,0 +1,28 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.quadre {
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+}
+#exterior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#continguts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 500px;
+}
+#result {
+    padding: 32px;
+}
