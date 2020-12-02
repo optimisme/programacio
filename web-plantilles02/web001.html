@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Llista consoles</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src='./dadesConsoles.js'></script>
+        <script src='./web001.js'></script>
+        <link href='./web001.css' rel='stylesheet'>
+    </head>
+    <!-- 
+        En aquest exercici hi ha dues plantilles,
+        s'ha de mostrar la llista de resultats,
+        segons s'eculli una de les dues plantilles
+    -->
+    <template id="plantillaImatge">
+        <div class='flexRow'>
+            <div class='imatge'>
+                <img src='{{imatge}}' width='100%'/>
+            </div>
+            <div class='text'>
+                <h2>{{nom}}</h2>
+                Data de venda al públic: {{data}}
+                <br/>
+                Processador: {{processador}}
+                <br/>
+                Fabricant: <b>{{fabricant}}</b>
+                <hr/>
+            </div>
+        </div>
+    </template>
+    <template id="plantillaText">
+        <div class='flexRowText'>
+            <div>{{nom}}</div>
+            <div>{{data}}</div>
+            <div>{{processador}}</div>
+            <div>{{fabricant}}</div>
+        </div>
+    </template>
+    <body>
+        <div id='centrat'>
+            <div id='formulari'>
+                <button>Mostrar amb imatge</button>
+                <button>Mostrar només text</button>
+            </div>
+            <div id='dades'>Aquí s'han de mostrar les dades de totes les consoles de la llista</div>
+        </div>
+    </body>
+</html>

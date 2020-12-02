@@ -1,0 +1,50 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 16px;
+    padding: 0;
+    user-select: none;
+}
+#centrat {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+}
+#centrat > div {
+    margin-bottom: 16px;
+}
+h2 {
+    margin-bottom: 8px;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inputs {
+    margin: 16px 0;
+}
+.imatge {
+    max-width: 100px;
+    margin-right: 16px;
+}
+.text {
+    flex-grow: 1;
+}
+.flexRowText {
+    border-bottom: solid 1px black;
+    display: flex;
+    flex-direction: row;
+}
+.flexRowText > div:first-child {
+    width: 25%;
+}
+.flexRowText > div:nth-child(2) {
+    width: 20%;
+}
+.flexRowText > div:nth-child(3) {
+    width: 35%;
+}
+.flexRowText > div:nth-child(4) {
+    width: 20%;
+}
