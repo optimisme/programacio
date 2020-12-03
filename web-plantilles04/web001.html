@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Llista consoles</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src='./dadesConsoles.js'></script>
+        <script src='./formUtils.js'></script>
+        <script src='./web001.js'></script>
+        <link href='./web001.css' rel='stylesheet'>
+    </head>
+    <template id="plantillaImatge">
+        <div class='flexRow'>
+            <div class='imatge'>
+                <img src='{{imatge}}' width='100%'/>
+            </div>
+            <div class='text'>
+                <h2>{{nom}}</h2>
+                Data de venda al públic: {{data}}
+                <br/>
+                Processador: {{processador}}
+                <br/>
+                Fabricant: <b>{{fabricant}}</b>
+                <hr/>
+            </div>
+        </div>
+    </template>
+    <template id="plantillaText">
+        <div class='flexRowText'>
+            <div>{{nom}}</div>
+            <div>{{data}}</div>
+            <div>{{processador}}</div>
+            <div>{{fabricant}}</div>
+        </div>
+    </template>
+    <body>
+        <div id='centrat'>
+            <div id='formulari'>
+                <div class='flexRow inputs'>
+                    <div class='espaiColumna'>
+                        Fabricant:
+                        <br/><input type='radio' name='fabricant' value='Tots' checked/> Tots
+                        <br/><input type='radio' name='fabricant' value='Nintendo'/> Nintendo
+                        <br/><input type='radio' name='fabricant' value='Sony'/> Sony
+                        <br/><input type='radio' name='fabricant' value='Microsoft'/> Microsoft
+                        <br/><input type='radio' name='fabricant' value='Sega'/> Sega
+                    </div>
+                    <div class='espaiColumna'>
+                        Color:
+                        <br/><input type='radio' name='color' value='Tots' checked/> Tots
+                        <br/><input type='radio' name='color' value='blanc'/> Blanca
+                        <br/><input type='radio' name='color' value='negre'/> Negra
+                        <br/><input type='radio' name='color' value='gris'/> Gris
+                        <br/><input type='radio' name='color' value='lila'/> Lila
+                    </div>
+                    <div class='espaiColumna'>
+                        Venudes:
+                        <br/><input type='radio' name='venudes' value='Tots' checked/> Totes
+                        <br/><input type='radio' name='venudes' value='fins10M'/> Menys de 10 milions
+                        <br/><input type='radio' name='venudes' value='fins50M'/> Entre 10 i 50 milions
+                        <br/><input type='radio' name='venudes' value='fins100M'/> Entre 50 i 100 milions
+                        <br/><input type='radio' name='venudes' value='mes100M'/> Més de 100 milions
+                    </div>
+                    <div class='espaiColumna'>
+                        Tipus de llista:
+                        <br/><input type='radio' name='tipus' value='imatge' checked/> Amb imatge
+                        <br/><input type='radio' name='tipus' value='text'/> Només text
+                    </div>
+                </div> 
+                <button onclick='mostrar()'>Mostrar</button>
+            </div>
+            <div id='dades'>Aquí s'han de mostrar les dades de totes les consoles de la llista</div>
+        </div>
+    </body>
+</html>
