@@ -101,11 +101,27 @@ async function main () {
     // El bucle 'while' executa un codi fins que es compleix
     // la condició de sortida
 
-    let cnt = 5
+    console.log('\n5:')
+    cnt = 5
     while (cnt > -5) {
         console.log(cnt)
         cnt = cnt - 1
     }
+    /*
+    La sortida d'aquest codi és:
+    5:
+    5
+    4
+    3
+    2
+    1
+    0
+    -1
+    -2
+    -3
+    -4
+    */
+
     // A vegades no sabem a priori quants cops
     // cal repetir un bucle, fins a la condició de sortida
     // (no podem contar un número de vegades)
