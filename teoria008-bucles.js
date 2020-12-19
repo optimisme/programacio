@@ -98,6 +98,30 @@ async function main () {
     El valor de la posició 0 de l'array és A
     */
 
+    // El bucle 'while' executa un codi fins que es compleix
+    // la condició de sortida
+
+    console.log('\n5:')
+    cnt = 5
+    while (cnt > -5) {
+        console.log(cnt)
+        cnt = cnt - 1
+    }
+    /*
+    La sortida d'aquest codi és:
+    5:
+    5
+    4
+    3
+    2
+    1
+    0
+    -1
+    -2
+    -3
+    -4
+    */
+
     // A vegades no sabem a priori quants cops
     // cal repetir un bucle, fins a la condició de sortida
     // (no podem contar un número de vegades)
@@ -106,7 +130,7 @@ async function main () {
     // que repeteix un mateix troç de codi, fins que es compleix
     // la condició de sortida
 
-    console.log('\n5:')
+    console.log('\n6:')
     let lletres = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
     cnt = 0
     while (lletres[cnt] != 'd' && cnt < lletres.length) {
@@ -121,7 +145,7 @@ async function main () {
 
     /*
     La sortida d'aquest codi és:
-    5:
+    6:
     A la posició 0, hi ha una a encara no hem trobat una 'd'
     A la posició 1, hi ha una b encara no hem trobat una 'd'
     A la posició 2, hi ha una c encara no hem trobat una 'd'

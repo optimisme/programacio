@@ -21,4 +21,11 @@ async function main () {
     */
 }
 
+function pepito (p1, p2) {
+
+    let suma = p1 + p2
+
+    return suma
+}
+
 main()
