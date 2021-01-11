@@ -1,0 +1,162 @@
+[
+    {
+        "num": "001",
+        "inputs": [
+            "teclat pantalla"
+        ],
+        "args": [],
+        "out": "Escriu dues paraules separades per espai: teclat pantalla\n[ 'pantalla', 'teclat' ]\n"
+    },
+    {
+        "num": "001",
+        "inputs": [
+            "bicicleta pedal"
+        ],
+        "args": [],
+        "out": "Escriu dues paraules separades per espai: bicicleta pedal\n[ 'pedal', 'bicicleta' ]\n"
+    },
+    {
+        "num": "001",
+        "inputs": [
+            "neu pluja"
+        ],
+        "args": [],
+        "out": "Escriu dues paraules separades per espai: neu pluja\n[ 'pluja', 'neu' ]\n"
+    },
+    {
+        "num": "001",
+        "inputs": [
+            "mar peix"
+        ],
+        "args": [],
+        "out": "Escriu dues paraules separades per espai: mar peix\n[ 'peix', 'mar' ]\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cullera 1"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cullera 1\nferro\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cullera 2"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cullera 2\nfusta\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cullera 3"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cullera 3\nplàstic\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cullera 4"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cullera 4\nacer\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cabas 1"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cabas 1\nplastic\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cabas 2"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cabas 2\ntela\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cabas 3"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cabas 3\nvimet\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "cabas 4"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: cabas 4\ngoma\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "disc 1"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: disc 1\nvinil\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "disc 2"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: disc 2\nceràmica\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "disc 3"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: disc 3\nplàstic\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "disc 4"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: disc 4\nor\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "roda 1"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: roda 1\nfusta\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "roda 2"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: roda 2\nferro\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "roda 3"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: roda 3\ncautxú\n"
+    },
+    {
+        "num": "002",
+        "inputs": [
+            "roda 4"
+        ],
+        "args": [],
+        "out": "Escriu un objecte i un numero menor de 4 separats per espai: roda 4\nplastic\n"
+    }
+]
